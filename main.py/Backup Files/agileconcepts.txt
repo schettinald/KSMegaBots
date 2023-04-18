@@ -1,0 +1,240 @@
+The Kingsmen Way
+The Kingsmen Way enables our teams to grow quality software and deliver in an iterative manner, crafting a solution that works best for our customers. Instrumental in this is the refinement, product management and business analysis that leads to the solution. We start with a customer's vision and elaborate additional levels of detail until we understand enough to complete daily tasks.
+Levels and Work Item
+Vision – Capability
+1
+Road Map – Feature
+2
+Release – Function
+3
+Iteration – User Story
+4
+Daily – Task
+5
+
+
+
+
+
+5 Levels of Continuous Refinement
+
+
+
+
+
+
+
+
+
+
+Capability
+Feature
+Function
+Story
+Task
+TIMING
+PARTICIPANTS
+WORK ITEM DEFINITION
+WORK ITEM SCHEDULING
+Annual
+Semi-annual
+Quarterly
+Bi-weekly
+Daily
+Product owner
+Product owner
+Product owner & feature team
+Product owner & feature team
+Feature team
+Business objective or outcome of the product or program
+What the product does, a grouping of functionality
+What the product does, a single piece of functionality
+A set of discrete user activities in a function
+Activity needed to complete a story
+Ongoing or spans multiple releases
+Spans multiple releases
+Single release
+Single iteration
+One day-ish
+5 Levels of Continuous Planning
+Lean-Agile Operating Model - Overview
+In a Lean-Agile operating model, the overall objective is to enable the continuous flow of value aligned to business strategy.
+An efficient, high-performing system ensures that activities at all levels of the organization contribute to delivering the right technology solutions in the right way.
+
+
+
+
+
+MVPs
+Portfolio
+Program
+Team
+Lean-Agile Layers & Objectives
+While each layer of the operating model stays engaged and active at every level, focus shifts as work flows closer to the customer or end user.
+
+
+
+MVPs
+Portfolio
+Program
+Team
+Deliver Incrementally
+Detailed scope elaboration & sizing
+Iteration planning, demo & retro
+Get predictable with capacity
+Define Objectives & Vision
+Define strategic capabilities & translate into features
+Own & steer the roadmap
+Align funding & resources to value streams objectives
+Organize, Prioritize & Plan
+Define scope into rolling backlogs; flow work to teams
+Lead prioritization & release planning
+Synchronize delivery teams
+Drive From Business Value – The Flow of Scope
+
+
+
+MVPs
+Portfolio
+Program
+Team
+Line of Sight from Strategy to Task
+Drive From Business Value – The Flow of Scope
+
+Agile Teams
+DevOps Teams
+Shared Service Teams
+Team
+Where work 
+gets done
+
+Product Managers
+Program Managers
+Technical Leads
+Release Train Engineers
+Program
+Where work is organized & planned
+
+Portfolio Managers
+Project Management Offices
+Business Owners
+Architects
+Portfolio
+Where strategy is mapped to execution
+
+Executives
+Executive PMO
+Finance
+Enterprise
+Where strategy is set & governed
+We focus here.
+Planning Across Three Layers
+
+
+
+Program
+Team
+Portfolio
+Define Objectives & Vision
+Define strategic capabilities & translate into features
+Own & steer the roadmap
+Align funding & resources to value streams objectives
+Organize, Prioritize & Plan
+Define scope into rolling backlogs; flow work to teams
+Lead prioritization & release planning
+Synchronize delivery teams
+Deliver Incrementally
+Detailed scope elaboration & sizing
+Iteration planning, demo & retro
+Get predictable with capacity
+Continuous Planning
+Product owner, analyst, delivery team
+Repeatable delivery process for each story included in the iteration
+Happens continually on a two-week cycle
+
+
+Iteration 
+Architecture Runway/ 
+Platform Improvements
+Continuous Strategic 
+Planning/Rationalization
+Business/ Customer 
+Metrics and Feedback
+Operating Committee
+Function Elaboration
+5 Iteration Planning
+Story Elaboration
+Iteration Planning
+Daily Stand Up
+Story Acceptance
+Demo/Retro
+Deploy
+Product Leaders invested in a successful implementation
+Review/Prioritization of functions leveraging Weighted Shortest Job First (WSJF)
+Meet Monthly
+Product owners, analyst, team leads, UX, and architecture
+Break down features into functions, discuss business cases, process flows and requirements for functions. Size functions to inform prioritization and planning.
+Meet every week
+Analyst, team leads and UX
+Plan out functions by release based on sizing, team capacity, and dependencies
+Meet every other week (non-iteration start/end week)
+Work is continuously prioritized and planned flowing to the delivery team for elaboration and execution. The process has feedback loops to ensure adjustments can be made based on what provides the most business value.
+Continuous, Aligned Planning & Delivery
+
+
+
+
+
+Iteration 
+Vision & Roadmap
+OKRs / Strategic 
+Planning
+Steering Committee
+Operating Committee
+Function Elaboration
+Five-Iteration Planning
+Story Elaboration
+Iteration Planning
+Daily Stand Up
+Story Acceptance
+Demo/Retro
+Deploy
+Program
+Team
+Portfolio
+
+Activities & routines across the layers in a Lean-Agile model are designed to keep all appropriate stakeholders engaged and informed at the appropriate level.
+
+Feedback loops ensure adjustments are made to maximize business value.
+Function Intake
+Lean-Agile Responsibility & Collaboration
+Business & Tech collaboration is required in each layer of the model, but accountability shifts as value flows from strategy to execution.
+High
+Low
+Business Accountability & Engagement
+Technology Accountability & Engagement
+High
+Business leads; Tech supports.
+Tech Leads; Business Supports.
+Business & Tech Share Ownership
+Define Objectives & Vision
+Organize, Prioritize & Plan
+Deliver Incrementally
+Drive from Business Value - Example
+
+
+
+MVPs
+Portfolio
+Program
+Team
+Function:  Manage Asset Information
+Capability:  Application Portfolio Management
+Feature: Manage Asset Data
+Kingsmen Way
+Fundamentals
+Kingsmen Software has been built on our ability to Set and Meet expectations
+To set and meet expectations we need to be experts at Knowing the work (input) and Knowing our team (output)
+Being experts requires the whole team to have an in-depth understanding of our client’s business and technology
+Knowing the work requires us to have a repeatable methodology that allows us to build and communicate team knowledge
+Knowing our team requires us to have a repeatable methodology that allows us to plan, track and measure team work

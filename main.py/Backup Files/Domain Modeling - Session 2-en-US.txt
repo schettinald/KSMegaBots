@@ -1,0 +1,5254 @@
+WEBVTT
+
+2cf7f3ca-f9ce-47a2-8e7f-d1d035acf596-0
+00:00:00.320 --> 00:00:04.543
+On it. And then you're
+presenting that to the front
+
+2cf7f3ca-f9ce-47a2-8e7f-d1d035acf596-1
+00:00:04.543 --> 00:00:09.742
+end. Yep, correct. OK physical
+confirm is, is that the entering
+
+2cf7f3ca-f9ce-47a2-8e7f-d1d035acf596-2
+00:00:09.742 --> 00:00:14.615
+the ethanol trades? That's
+ethanol trades, Yep. OK. And did
+
+2cf7f3ca-f9ce-47a2-8e7f-d1d035acf596-3
+00:00:14.615 --> 00:00:19.002
+you want to expand it out to
+different product types,
+
+2cf7f3ca-f9ce-47a2-8e7f-d1d035acf596-4
+00:00:19.002 --> 00:00:24.200
+different underlyings? Yes, that
+was the goal was at some point
+
+2cf7f3ca-f9ce-47a2-8e7f-d1d035acf596-5
+00:00:24.200 --> 00:00:26.800
+to expand it out to any sort of.
+
+98ecce16-7fd1-496d-8729-8571d30bf1ed-0
+00:00:30.090 --> 00:00:38.317
+I want to make sure I'm using
+the correct terminology, but
+
+98ecce16-7fd1-496d-8729-8571d30bf1ed-1
+00:00:38.317 --> 00:00:47.242
+different products is what we're
+looking to expand that to. All
+
+98ecce16-7fd1-496d-8729-8571d30bf1ed-2
+00:00:47.242 --> 00:00:55.610
+right. OTC pricer. Yeah. So that
+is is it's basically like.
+
+52eae7df-4f25-4eb1-9671-483cab59511d-0
+00:00:57.620 --> 00:01:02.351
+V2 of the physical confirm, it's
+just there's a lot more going
+
+52eae7df-4f25-4eb1-9671-483cab59511d-1
+00:01:02.351 --> 00:01:06.481
+into it. There's sorry, so
+there's a there's a confirm
+
+52eae7df-4f25-4eb1-9671-483cab59511d-2
+00:01:06.481 --> 00:01:11.362
+piece, which is really important
+to how OTC's are traded that we
+
+52eae7df-4f25-4eb1-9671-483cab59511d-3
+00:01:11.362 --> 00:01:15.417
+would need to build. And then
+there's also a database
+
+52eae7df-4f25-4eb1-9671-483cab59511d-4
+00:01:15.417 --> 00:01:19.998
+component to storing all of the
+parameters for an OTC trade,
+
+52eae7df-4f25-4eb1-9671-483cab59511d-5
+00:01:19.998 --> 00:01:24.804
+which is much more complicated
+than anything we've got anywhere
+
+52eae7df-4f25-4eb1-9671-483cab59511d-6
+00:01:24.804 --> 00:01:25.179
+else.
+
+00e73212-efc0-4f47-9272-6522b0a9774b-0
+00:01:26.480 --> 00:01:31.916
+And then this API piece was a
+third component which would, we
+
+00e73212-efc0-4f47-9272-6522b0a9774b-1
+00:01:31.916 --> 00:01:37.177
+would input a bunch of the
+parameters for the OTC trade and
+
+00e73212-efc0-4f47-9272-6522b0a9774b-2
+00:01:37.177 --> 00:01:42.702
+the, you know, use the API to
+connect to our third party who's
+
+00e73212-efc0-4f47-9272-6522b0a9774b-3
+00:01:42.702 --> 00:01:48.314
+providing pricing and they would
+spit back a price based on the
+
+00e73212-efc0-4f47-9272-6522b0a9774b-4
+00:01:48.314 --> 00:01:51.120
+parameters that we were sending.
+
+cded9825-cddd-4319-97c2-b8b0a71159b0-0
+00:01:54.700 --> 00:02:02.202
+All right. This is a white
+labeling. Yeah. Do you have that
+
+cded9825-cddd-4319-97c2-b8b0a71159b0-1
+00:02:02.202 --> 00:02:09.830
+contract set up with that major
+bank? No, okay, we have been
+
+cded9825-cddd-4319-97c2-b8b0a71159b0-2
+00:02:09.830 --> 00:02:16.833
+pushing it for 10 months now.
+And as any former Bank of
+
+cded9825-cddd-4319-97c2-b8b0a71159b0-3
+00:02:16.833 --> 00:02:21.460
+America people might know, the
+bank.
+
+ec648e3e-c3ef-4c94-bae8-dae6fd43749a-0
+00:02:23.880 --> 00:02:28.790
+Processing is just real slow.
+Yep. No. Understood. These are
+
+ec648e3e-c3ef-4c94-bae8-dae6fd43749a-1
+00:02:28.790 --> 00:02:33.941
+our clients, so we get it. But
+the reason I was asking was just
+
+ec648e3e-c3ef-4c94-bae8-dae6fd43749a-2
+00:02:33.941 --> 00:02:39.093
+a gauge priority, right? Like if
+it's signed, I bet this would.
+
+ec648e3e-c3ef-4c94-bae8-dae6fd43749a-3
+00:02:39.093 --> 00:02:44.084
+Yeah, yeah, right, right. No,
+it's a low priority item as far
+
+ec648e3e-c3ef-4c94-bae8-dae6fd43749a-4
+00:02:44.084 --> 00:02:48.592
+as the fully integrated solution
+with that API keys and
+
+ec648e3e-c3ef-4c94-bae8-dae6fd43749a-5
+00:02:48.592 --> 00:02:49.880
+everything else.
+
+6cb9dd19-5f80-433c-83d3-d6dbea38c85c-0
+00:02:51.650 --> 00:02:56.646
+The confirm and database, we do
+have clients who are papered and
+
+6cb9dd19-5f80-433c-83d3-d6dbea38c85c-1
+00:02:56.646 --> 00:03:01.642
+ready to go. So like that would
+be an item that we're interested
+
+6cb9dd19-5f80-433c-83d3-d6dbea38c85c-2
+00:03:01.642 --> 00:03:06.100
+in, but it's not high priority
+for us because there's not
+
+6cb9dd19-5f80-433c-83d3-d6dbea38c85c-3
+00:03:06.100 --> 00:03:10.481
+enough scale yet where it makes
+sense to devote a lot of
+
+6cb9dd19-5f80-433c-83d3-d6dbea38c85c-4
+00:03:10.481 --> 00:03:15.170
+resources to it. All right?
+These are client facing xfinder,
+
+6cb9dd19-5f80-433c-83d3-d6dbea38c85c-5
+00:03:15.170 --> 00:03:16.169
+so that is a.
+
+0370bbba-7dae-4c62-bae1-1445b0a851fb-0
+00:03:19.180 --> 00:03:23.929
+Iteration over the ball
+dashboard. So it basically it's
+
+0370bbba-7dae-4c62-bae1-1445b0a851fb-1
+00:03:23.929 --> 00:03:28.849
+more of a front end piece to
+make the ball dashboard more
+
+0370bbba-7dae-4c62-bae1-1445b0a851fb-2
+00:03:28.849 --> 00:03:34.278
+interactive. So I'm not sure how
+much you guys have played with
+
+0370bbba-7dae-4c62-bae1-1445b0a851fb-3
+00:03:34.278 --> 00:03:39.706
+the ball dashboard, but there's
+a bunch of rows listed for each
+
+0370bbba-7dae-4c62-bae1-1445b0a851fb-4
+00:03:39.706 --> 00:03:44.626
+expiration for a product and
+basically if a customer or a
+
+0370bbba-7dae-4c62-bae1-1445b0a851fb-5
+00:03:44.626 --> 00:03:45.219
+broker.
+
+1bd2244e-3224-4dba-b653-8a130dd8f359-0
+00:03:46.230 --> 00:03:51.311
+Had an interest in a particular
+expiration, they could click on
+
+1bd2244e-3224-4dba-b653-8a130dd8f359-1
+00:03:51.311 --> 00:03:56.075
+a number of buttons that would
+price up various trades that
+
+1bd2244e-3224-4dba-b653-8a130dd8f359-2
+00:03:56.075 --> 00:04:00.283
+would be stored in like a
+dashboard type area or hot
+
+1bd2244e-3224-4dba-b653-8a130dd8f359-3
+00:04:00.283 --> 00:04:05.285
+trades, what we like to call it
+and they would be able to view
+
+1bd2244e-3224-4dba-b653-8a130dd8f359-4
+00:04:05.285 --> 00:04:10.128
+those trades and then interact
+with that with that hot trade
+
+1bd2244e-3224-4dba-b653-8a130dd8f359-5
+00:04:10.128 --> 00:04:12.590
+and potentially execute trades.
+
+6acda8aa-f6e8-47fa-b7f7-d3bc716777d2-0
+00:04:18.530 --> 00:04:25.094
+It sounds a little bit like
+you're viewing your favorite
+
+6acda8aa-f6e8-47fa-b7f7-d3bc716777d2-1
+00:04:25.094 --> 00:04:32.003
+types and then be able to hit
+execute if needed. Yep. Okay,
+
+6acda8aa-f6e8-47fa-b7f7-d3bc716777d2-2
+00:04:32.003 --> 00:04:38.797
+margin optimizer. That would be.
+So that one's a tougher 1
+
+6acda8aa-f6e8-47fa-b7f7-d3bc716777d2-3
+00:04:38.797 --> 00:04:45.822
+because we don't know. There's a
+lot of things we don't know
+
+6acda8aa-f6e8-47fa-b7f7-d3bc716777d2-4
+00:04:45.822 --> 00:04:47.550
+there and that.
+
+a03e3ca4-5a64-4569-aa8a-80c13c79bd68-0
+00:04:48.340 --> 00:04:54.539
+Makes it difficult to build, but
+basically a client there's there
+
+a03e3ca4-5a64-4569-aa8a-80c13c79bd68-1
+00:04:54.539 --> 00:05:00.270
+are some standardized position
+outputs that'll just you know
+
+a03e3ca4-5a64-4569-aa8a-80c13c79bd68-2
+00:05:00.270 --> 00:05:05.342
+contract strike expiration,
+price, quantity etcetera,
+
+a03e3ca4-5a64-4569-aa8a-80c13c79bd68-3
+00:05:05.342 --> 00:05:11.072
+etcetera, etcetera and then
+client would upload that file to
+
+a03e3ca4-5a64-4569-aa8a-80c13c79bd68-4
+00:05:11.072 --> 00:05:15.299
+through our front end and it
+would spit out.
+
+b1d072da-0150-4078-8802-de061ca64256-0
+00:05:15.660 --> 00:05:20.236
+What their current margin is
+according to span. And so the
+
+b1d072da-0150-4078-8802-de061ca64256-1
+00:05:20.236 --> 00:05:25.122
+CME and I both publish. If you
+submit a position file, they'll
+
+b1d072da-0150-4078-8802-de061ca64256-2
+00:05:25.122 --> 00:05:29.698
+tell you what your margin is.
+And then we have a tool that
+
+b1d072da-0150-4078-8802-de061ca64256-3
+00:05:29.698 --> 00:05:34.584
+goes on top of that, that just
+needs to be iterated that says,
+
+b1d072da-0150-4078-8802-de061ca64256-4
+00:05:34.584 --> 00:05:39.238
+oh hey, these are the So what
+the margin calculation engine
+
+b1d072da-0150-4078-8802-de061ca64256-5
+00:05:39.238 --> 00:05:41.100
+does, it just tells you.
+
+efa738f6-3092-42a5-b17b-a890cc498df7-0
+00:05:42.510 --> 00:05:45.858
+It runs it through like 18
+different scenarios and says
+
+efa738f6-3092-42a5-b17b-a890cc498df7-1
+00:05:45.858 --> 00:05:49.506
+which scenario generates the
+highest margin number. And then
+
+efa738f6-3092-42a5-b17b-a890cc498df7-2
+00:05:49.506 --> 00:05:53.034
+our optimizer, we're going and
+say, oh, to get that number
+
+efa738f6-3092-42a5-b17b-a890cc498df7-3
+00:05:53.034 --> 00:05:56.860
+down. This is the trade that you
+would do to do that. There's a
+
+efa738f6-3092-42a5-b17b-a890cc498df7-4
+00:05:56.860 --> 00:06:00.508
+lot of product knowledge and to
+that, but I guess we're just
+
+efa738f6-3092-42a5-b17b-a890cc498df7-5
+00:06:00.508 --> 00:06:03.617
+looking for the help on the
+technical components of
+
+efa738f6-3092-42a5-b17b-a890cc498df7-6
+00:06:03.617 --> 00:06:07.205
+uploading a file, running it
+through the optimizer and then
+
+efa738f6-3092-42a5-b17b-a890cc498df7-7
+00:06:07.205 --> 00:06:10.793
+spitting out something on the
+front end that looks coherent
+
+efa738f6-3092-42a5-b17b-a890cc498df7-8
+00:06:10.793 --> 00:06:11.750
+and makes sense.
+
+ba1e7d46-13e1-4191-adde-0920ee5ef312-0
+00:06:14.370 --> 00:06:18.321
+What sort of a margin
+calculations do the exchanges
+
+ba1e7d46-13e1-4191-adde-0920ee5ef312-1
+00:06:18.321 --> 00:06:22.880
+use? They have a span file, it
+stresses every position they
+
+ba1e7d46-13e1-4191-adde-0920ee5ef312-2
+00:06:22.880 --> 00:06:27.591
+they it's this huge file and it
+takes every single instrument
+
+ba1e7d46-13e1-4191-adde-0920ee5ef312-3
+00:06:27.591 --> 00:06:31.695
+and you know stresses that
+single instrument and then
+
+ba1e7d46-13e1-4191-adde-0920ee5ef312-4
+00:06:31.695 --> 00:06:36.330
+multiplies just your position
+with that number and then sums
+
+ba1e7d46-13e1-4191-adde-0920ee5ef312-5
+00:06:36.330 --> 00:06:37.850
+it all up basically.
+
+da60f9f6-0996-457f-a728-af63d0e5da26-0
+00:06:43.590 --> 00:06:50.366
+So does he use things like a
+like a SIM model that, you know,
+
+da60f9f6-0996-457f-a728-af63d0e5da26-1
+00:06:50.366 --> 00:06:57.033
+Scott would know this a lot
+better than I would to be honest
+
+da60f9f6-0996-457f-a728-af63d0e5da26-2
+00:06:57.033 --> 00:07:03.700
+with you, OK. And a different
+client, we're working on a SIM
+
+da60f9f6-0996-457f-a728-af63d0e5da26-3
+00:07:03.700 --> 00:07:08.510
+standard initial margin model
+which, which.
+
+87ec45e5-8cbb-4065-9347-aea3b34ce2a1-0
+00:07:11.010 --> 00:07:17.059
+It calls the same sort of logic
+like conceptual logic of what is
+
+87ec45e5-8cbb-4065-9347-aea3b34ce2a1-1
+00:07:17.059 --> 00:07:22.272
+your initial margin and it has
+you know, whole bunch of
+
+87ec45e5-8cbb-4065-9347-aea3b34ce2a1-2
+00:07:22.272 --> 00:07:27.949
+correlations across positions,
+correlations across commodity
+
+87ec45e5-8cbb-4065-9347-aea3b34ce2a1-3
+00:07:27.949 --> 00:07:32.510
+risk, foreign exchange risk,
+etcetera. And to my
+
+87ec45e5-8cbb-4065-9347-aea3b34ce2a1-4
+00:07:32.510 --> 00:07:38.280
+understanding it's an industry
+standard, but I've not used it
+
+87ec45e5-8cbb-4065-9347-aea3b34ce2a1-5
+00:07:38.280 --> 00:07:39.770
+in the past, so.
+
+10c1d208-02f5-4e6e-831a-8e14467cbd20-0
+00:07:40.230 --> 00:07:45.293
+It's still moving, but it sounds
+very similar. Yeah, Scott's our
+
+10c1d208-02f5-4e6e-831a-8e14467cbd20-1
+00:07:45.293 --> 00:07:49.966
+span expert. He spent a lot of
+time working on that. He can
+
+10c1d208-02f5-4e6e-831a-8e14467cbd20-2
+00:07:49.966 --> 00:07:54.952
+tell you everything you want to
+know. OK. Can you guys hear me?
+
+10c1d208-02f5-4e6e-831a-8e14467cbd20-3
+00:07:54.952 --> 00:07:59.703
+Oh, yes. OK. My computer is
+pretty seriously misbehaving. It
+
+10c1d208-02f5-4e6e-831a-8e14467cbd20-4
+00:07:59.703 --> 00:08:04.377
+took, like 12 minutes for zoom
+to open, so I don't know how
+
+10c1d208-02f5-4e6e-831a-8e14467cbd20-5
+00:08:04.377 --> 00:08:06.870
+well this is going to go for me.
+
+5baf9ea8-3b84-489c-b65e-af75b13ae53b-0
+00:08:09.840 --> 00:08:15.892
+But I'm here, so you're in a
+good mood in a Monday morning
+
+5baf9ea8-3b84-489c-b65e-af75b13ae53b-1
+00:08:15.892 --> 00:08:21.945
+then. Yeah, real good. All
+right. We're just going through
+
+5baf9ea8-3b84-489c-b65e-af75b13ae53b-2
+00:08:21.945 --> 00:08:27.588
+the, the eight products here
+that I'm sharing our risk
+
+5baf9ea8-3b84-489c-b65e-af75b13ae53b-3
+00:08:27.588 --> 00:08:32.000
+manager. So some of our
+customers have us.
+
+0bb6a052-7bd0-40d3-8952-3d2bf991fdee-0
+00:08:35.790 --> 00:08:39.888
+Track or like so some of our
+customers execute solely through
+
+0bb6a052-7bd0-40d3-8952-3d2bf991fdee-1
+00:08:39.888 --> 00:08:43.987
+us and then they expect us to
+submit to them a like basically
+
+0bb6a052-7bd0-40d3-8952-3d2bf991fdee-2
+00:08:43.987 --> 00:08:48.350
+a blotter of all their trade. So
+they can manage their their own,
+
+0bb6a052-7bd0-40d3-8952-3d2bf991fdee-3
+00:08:48.350 --> 00:08:52.448
+they uploaded it into a their
+own file and it just tells what
+
+0bb6a052-7bd0-40d3-8952-3d2bf991fdee-4
+00:08:52.448 --> 00:08:56.613
+their delta is and everything
+like that. What we want to do is
+
+0bb6a052-7bd0-40d3-8952-3d2bf991fdee-5
+00:08:56.613 --> 00:09:00.645
+like cut out that piece and say
+we'll execute everything for
+
+0bb6a052-7bd0-40d3-8952-3d2bf991fdee-6
+00:09:00.645 --> 00:09:00.910
+you.
+
+bd30750e-8eac-4b38-8a9b-3ba15ccaa099-0
+00:09:01.280 --> 00:09:04.977
+And we'll give you that risk
+piece. You don't have to do
+
+bd30750e-8eac-4b38-8a9b-3ba15ccaa099-1
+00:09:04.977 --> 00:09:09.000
+anything besides, you know, log
+into our front end and take a
+
+bd30750e-8eac-4b38-8a9b-3ba15ccaa099-2
+00:09:09.000 --> 00:09:12.957
+look at what what's going on and
+then give them some kind of
+
+bd30750e-8eac-4b38-8a9b-3ba15ccaa099-3
+00:09:12.957 --> 00:09:16.785
+unique analytics which we've
+used in the past to you know,
+
+bd30750e-8eac-4b38-8a9b-3ba15ccaa099-4
+00:09:16.785 --> 00:09:20.677
+and that help them evaluate
+their position because a lot of
+
+bd30750e-8eac-4b38-8a9b-3ba15ccaa099-5
+00:09:20.677 --> 00:09:24.505
+these are speculative trades
+where the guys just you know,
+
+bd30750e-8eac-4b38-8a9b-3ba15ccaa099-6
+00:09:24.505 --> 00:09:27.360
+kind of betting and these guys
+aren't very.
+
+e4808428-06eb-43a3-8242-db4d7f865e52-0
+00:09:30.740 --> 00:09:36.171
+Option savvy. So they just, you
+know, buy an option knowing
+
+e4808428-06eb-43a3-8242-db4d7f865e52-1
+00:09:36.171 --> 00:09:41.964
+that, oh, if I by, the worst I
+can do is just lose the premium.
+
+e4808428-06eb-43a3-8242-db4d7f865e52-2
+00:09:41.964 --> 00:09:47.395
+But I don't know anything beyond
+that. And so we're kind of
+
+e4808428-06eb-43a3-8242-db4d7f865e52-3
+00:09:47.395 --> 00:09:52.826
+hoping to educate them up a
+little bit. All right. And then
+
+e4808428-06eb-43a3-8242-db4d7f865e52-4
+00:09:52.826 --> 00:09:55.180
+vpm. Yeah. So this one is.
+
+1604fa90-76be-456a-850e-fe04805f054c-0
+00:09:55.540 --> 00:10:02.006
+It's got multiple layers and
+multiple iterations, so I kind
+
+1604fa90-76be-456a-850e-fe04805f054c-1
+00:10:02.006 --> 00:10:08.796
+of hang on. Let me get out of
+the full screen so I can explain
+
+1604fa90-76be-456a-850e-fe04805f054c-2
+00:10:08.796 --> 00:10:15.694
+this a little better. The goal
+here is to create a system where
+
+1604fa90-76be-456a-850e-fe04805f054c-3
+00:10:15.694 --> 00:10:18.820
+brokers can enter trades and.
+
+951f87c7-1b8d-4dce-a214-d474040373e5-0
+00:10:23.580 --> 00:10:28.466
+A1 price and then charge a
+different brokerage for a trade.
+
+951f87c7-1b8d-4dce-a214-d474040373e5-1
+00:10:28.466 --> 00:10:32.865
+So right now what happens is
+every trade we do with a
+
+951f87c7-1b8d-4dce-a214-d474040373e5-2
+00:10:32.865 --> 00:10:37.751
+particular customer lines up to
+a rate sheet. And that rate
+
+951f87c7-1b8d-4dce-a214-d474040373e5-3
+00:10:37.751 --> 00:10:42.801
+sheet just says if this is a
+corn contract, we will pay you X
+
+951f87c7-1b8d-4dce-a214-d474040373e5-4
+00:10:42.801 --> 00:10:48.095
+number of dollars per number of
+corn contracts that you paid for
+
+951f87c7-1b8d-4dce-a214-d474040373e5-5
+00:10:48.095 --> 00:10:48.339
+us.
+
+0720dcb1-44d1-496a-be08-c21f733a2baf-0
+00:10:50.280 --> 00:10:55.455
+Our system that we're building
+here is to change it. So we're
+
+0720dcb1-44d1-496a-be08-c21f733a2baf-1
+00:10:55.455 --> 00:11:00.213
+going to get you a better
+execution price and then we're
+
+0720dcb1-44d1-496a-be08-c21f733a2baf-2
+00:11:00.213 --> 00:11:05.139
+going to charge you a variable
+rate for each trade that we
+
+0720dcb1-44d1-496a-be08-c21f733a2baf-3
+00:11:05.139 --> 00:11:10.314
+execute for you. So it's like a
+trade execution system and an
+
+0720dcb1-44d1-496a-be08-c21f733a2baf-4
+00:11:10.314 --> 00:11:14.822
+accounting system and an
+invoicing system all wrapped
+
+0720dcb1-44d1-496a-be08-c21f733a2baf-5
+00:11:14.822 --> 00:11:19.080
+into one, and that's just phase
+one. Phase two is.
+
+0ddab67b-1bb7-419c-bf2c-802aa4977869-0
+00:11:19.990 --> 00:11:25.346
+Building a system that an
+automated market maker can
+
+0ddab67b-1bb7-419c-bf2c-802aa4977869-1
+00:11:25.346 --> 00:11:31.207
+stream quotes to us against our
+customers orders and then
+
+0ddab67b-1bb7-419c-bf2c-802aa4977869-2
+00:11:31.207 --> 00:11:37.574
+automatically send trades to the
+exchange. So there's a lot of
+
+0ddab67b-1bb7-419c-bf2c-802aa4977869-3
+00:11:37.574 --> 00:11:43.941
+things there. I don't know how
+much of that terminology that I
+
+0ddab67b-1bb7-419c-bf2c-802aa4977869-4
+00:11:43.941 --> 00:11:48.590
+just said we need. Yeah, that
+all made sense.
+
+338f2fc3-ea53-4e16-b5fa-4abd6bca0e68-0
+00:11:49.870 --> 00:11:55.952
+At a high level, of course, but
+sorry, hang on one SEC. Just
+
+338f2fc3-ea53-4e16-b5fa-4abd6bca0e68-1
+00:11:55.952 --> 00:12:02.334
+taking some notes here. Sorry.
+So where are yours? Where's your
+
+338f2fc3-ea53-4e16-b5fa-4abd6bca0e68-2
+00:12:02.334 --> 00:12:08.217
+biggest priority? I mean,
+you're, I mean, it just depends,
+
+338f2fc3-ea53-4e16-b5fa-4abd6bca0e68-3
+00:12:08.217 --> 00:12:14.000
+I guess my thing is like, it
+depends if you're telling me
+
+338f2fc3-ea53-4e16-b5fa-4abd6bca0e68-4
+00:12:14.000 --> 00:12:20.481
+like this variable pricing model
+is gonna take us three years to
+
+338f2fc3-ea53-4e16-b5fa-4abd6bca0e68-5
+00:12:20.481 --> 00:12:21.080
+build.
+
+14bcaa05-4afa-465c-9731-fcaf15dc37c3-0
+00:12:21.860 --> 00:12:26.426
+Then I would say let's get some
+of the other pieces done first.
+
+14bcaa05-4afa-465c-9731-fcaf15dc37c3-1
+00:12:26.426 --> 00:12:31.065
+If you're saying like you know,
+we think we can get this done in
+
+14bcaa05-4afa-465c-9731-fcaf15dc37c3-2
+00:12:31.065 --> 00:12:35.417
+9 to 18 months, then I'd say
+let's start on that. But again,
+
+14bcaa05-4afa-465c-9731-fcaf15dc37c3-3
+00:12:35.417 --> 00:12:39.842
+I, I know we can't really give
+an answer on that until we get
+
+14bcaa05-4afa-465c-9731-fcaf15dc37c3-4
+00:12:39.842 --> 00:12:43.980
+into the weeds on it. So I
+don't, I don't know if if like
+
+14bcaa05-4afa-465c-9731-fcaf15dc37c3-5
+00:12:43.980 --> 00:12:47.620
+we should just get started on
+working through the.
+
+4dc1c865-c7ec-4068-a180-17a3e617ed4e-0
+00:12:48.180 --> 00:12:51.912
+Variable pricing model. And then
+we'd be like, oh man, this thing
+
+4dc1c865-c7ec-4068-a180-17a3e617ed4e-1
+00:12:51.912 --> 00:12:55.418
+is going to take us forever.
+Like maybe we should put a pause
+
+4dc1c865-c7ec-4068-a180-17a3e617ed4e-2
+00:12:55.418 --> 00:12:58.981
+in this. We've got like how much
+time we think version one and
+
+4dc1c865-c7ec-4068-a180-17a3e617ed4e-3
+00:12:58.981 --> 00:13:02.600
+version two are going to be and
+then you know, we can come back
+
+4dc1c865-c7ec-4068-a180-17a3e617ed4e-4
+00:13:02.600 --> 00:13:05.767
+and do some other things and
+then come back for version
+
+4dc1c865-c7ec-4068-a180-17a3e617ed4e-5
+00:13:05.767 --> 00:13:08.877
+three. Like I'm just, I'm not
+quite sure what the best
+
+4dc1c865-c7ec-4068-a180-17a3e617ed4e-6
+00:13:08.877 --> 00:13:12.384
+approach here is. Well, let me
+throw an approach and you guys
+
+4dc1c865-c7ec-4068-a180-17a3e617ed4e-7
+00:13:12.384 --> 00:13:15.720
+can beat it up. Vpm sense, it
+can take a lot. It's also in
+
+4dc1c865-c7ec-4068-a180-17a3e617ed4e-8
+00:13:15.720 --> 00:13:16.059
+depth.
+
+5aec229d-b319-4199-bf90-6ae1cf412aa4-0
+00:13:17.400 --> 00:13:23.287
+So might be better to start with
+some other ones to you know get
+
+5aec229d-b319-4199-bf90-6ae1cf412aa4-1
+00:13:23.287 --> 00:13:28.812
+the, the juices flowing. Yeah,
+that's fine because they they
+
+5aec229d-b319-4199-bf90-6ae1cf412aa4-2
+00:13:28.812 --> 00:13:33.612
+might be more more point
+solutions I would say. Then
+
+5aec229d-b319-4199-bf90-6ae1cf412aa4-3
+00:13:33.612 --> 00:13:38.956
+start with like axfinder, OK,
+that was the next one on our
+
+5aec229d-b319-4199-bf90-6ae1cf412aa4-4
+00:13:38.956 --> 00:13:42.760
+road map before we reach out to
+you guys.
+
+ed41eaa0-7f7a-49cb-bff6-c3f844411d09-0
+00:13:45.510 --> 00:13:53.027
+Okay, let's, let's do that then.
+By the way, I can't help but
+
+ed41eaa0-7f7a-49cb-bff6-c3f844411d09-1
+00:13:53.027 --> 00:13:59.816
+think of like axe the body
+spray, just to be clear. All
+
+ed41eaa0-7f7a-49cb-bff6-c3f844411d09-2
+00:13:59.816 --> 00:14:06.727
+right, let's jump into that. So
+we talked about the, the
+
+ed41eaa0-7f7a-49cb-bff6-c3f844411d09-3
+00:14:06.727 --> 00:14:12.790
+volatility, the, the volatility
+dashboard, right?
+
+3de34865-705e-4d67-87ef-4738ff718900-0
+00:14:16.280 --> 00:14:22.548
+Not that we want to get into the
+exact aspects of, you know, what
+
+3de34865-705e-4d67-87ef-4738ff718900-1
+00:14:22.548 --> 00:14:28.436
+the screen would look like, but
+if if we're oh, you can't see
+
+3de34865-705e-4d67-87ef-4738ff718900-2
+00:14:28.436 --> 00:14:33.565
+the screen, hold on, stop
+sharing and share the other
+
+3de34865-705e-4d67-87ef-4738ff718900-3
+00:14:33.565 --> 00:14:34.039
+part.
+
+db85b9a1-4c5f-471a-a17a-6c651572cde9-0
+00:14:49.000 --> 00:14:58.109
+All right. So Andrew, nice job I
+put this organize this our
+
+db85b9a1-4c5f-471a-a17a-6c651572cde9-1
+00:14:58.109 --> 00:15:07.674
+craziness from earlier. Thank
+you. So right now the volatility
+
+db85b9a1-4c5f-471a-a17a-6c651572cde9-2
+00:15:07.674 --> 00:15:16.480
+data is really kind of stored
+here right in product data.
+
+61c6a447-32f1-4703-bffa-05d5b9d6b445-0
+00:15:21.060 --> 00:15:26.601
+No, no, it's stored in the oh,
+go ahead, Scott. Yeah, probably
+
+61c6a447-32f1-4703-bffa-05d5b9d6b445-1
+00:15:26.601 --> 00:15:31.879
+close to market data except
+there we go. Basically it takes
+
+61c6a447-32f1-4703-bffa-05d5b9d6b445-2
+00:15:31.879 --> 00:15:37.333
+market data as input and then
+sort of does transformations on
+
+61c6a447-32f1-4703-bffa-05d5b9d6b445-3
+00:15:37.333 --> 00:15:40.940
+it and gives new market data
+coming out.
+
+e2b9f13e-d489-4e55-8410-f9b51b48009e-0
+00:15:49.160 --> 00:15:54.640
+So maybe calculated market data?
+Sure.
+
+1bd8fc99-2c5b-48c8-a629-affdd63ca35e-0
+00:17:07.490 --> 00:17:13.506
+Can you guys hear that noise
+from me on behind me?
+
+1bd8fc99-2c5b-48c8-a629-affdd63ca35e-1
+00:17:13.506 --> 00:17:19.876
+Absolutely. Yeah. It's
+convenient construction across
+
+1bd8fc99-2c5b-48c8-a629-affdd63ca35e-2
+00:17:19.876 --> 00:17:26.482
+the alley. All right. So if
+that's that's can be stored
+
+1bd8fc99-2c5b-48c8-a629-affdd63ca35e-3
+00:17:26.482 --> 00:17:28.370
+there, I get it.
+
+a06ba4ec-8d2d-43ae-b5b2-c9a56b0d8aa5-0
+00:17:34.770 --> 00:17:40.857
+So when you are presenting data
+to or information to the client,
+
+a06ba4ec-8d2d-43ae-b5b2-c9a56b0d8aa5-1
+00:17:40.857 --> 00:17:46.756
+you have to store some of that
+client details, right? A client
+
+a06ba4ec-8d2d-43ae-b5b2-c9a56b0d8aa5-2
+00:17:46.756 --> 00:17:52.563
+will first of all they have to
+log in. You're kind of waiting
+
+a06ba4ec-8d2d-43ae-b5b2-c9a56b0d8aa5-3
+00:17:52.563 --> 00:17:57.620
+for a pause in this. It's not
+going to happen, is it?
+
+f13c963f-d1cd-419f-a594-12d9afe3f395-0
+00:18:07.610 --> 00:18:11.013
+Okay, no, all right. I'm just
+going in. So just if I just
+
+f13c963f-d1cd-419f-a594-12d9afe3f395-1
+00:18:11.013 --> 00:18:14.768
+think this through a little bit,
+it sounds like you're going to
+
+f13c963f-d1cd-419f-a594-12d9afe3f395-2
+00:18:14.768 --> 00:18:18.405
+the client that's going to log
+in. The client's going to have
+
+f13c963f-d1cd-419f-a594-12d9afe3f395-3
+00:18:18.405 --> 00:18:21.574
+to enter some of their
+favorites. You know, pick pick
+
+f13c963f-d1cd-419f-a594-12d9afe3f395-4
+00:18:21.574 --> 00:18:25.270
+what sort of products and and
+and expressions are looking for,
+
+f13c963f-d1cd-419f-a594-12d9afe3f395-5
+00:18:25.270 --> 00:18:28.966
+save their preferences and then
+see their data. Are they going
+
+f13c963f-d1cd-419f-a594-12d9afe3f395-6
+00:18:28.966 --> 00:18:32.370
+to get alerts as well? Draw this
+out a little bit for me.
+
+f45fab58-18b2-4a8c-b2ea-aef20b378a3e-0
+00:18:40.860 --> 00:18:44.199
+Mike, do you want to take that?
+That seems like a sort of a road
+
+f45fab58-18b2-4a8c-b2ea-aef20b378a3e-1
+00:18:44.199 --> 00:18:47.435
+map question. Sorry, say that
+one more time. So with with Acts
+
+f45fab58-18b2-4a8c-b2ea-aef20b378a3e-2
+00:18:47.435 --> 00:18:50.004
+Finder, I think I think what
+you're saying from a
+
+f45fab58-18b2-4a8c-b2ea-aef20b378a3e-3
+00:18:50.004 --> 00:18:53.241
+functionality standpoint is that
+you're going to have a client
+
+f45fab58-18b2-4a8c-b2ea-aef20b378a3e-4
+00:18:53.241 --> 00:18:56.015
+that's going to log in, they're
+going to choose their
+
+f45fab58-18b2-4a8c-b2ea-aef20b378a3e-5
+00:18:56.015 --> 00:18:58.995
+preferences like let's let's
+just use the additional ball
+
+f45fab58-18b2-4a8c-b2ea-aef20b378a3e-6
+00:18:58.995 --> 00:19:02.180
+dashboard as just a starting
+point. They're going to, they're
+
+f45fab58-18b2-4a8c-b2ea-aef20b378a3e-7
+00:19:02.180 --> 00:19:05.314
+going to kind of go through that
+and pick the ones that they
+
+f45fab58-18b2-4a8c-b2ea-aef20b378a3e-8
+00:19:05.314 --> 00:19:07.780
+really like. We have to save
+those preferences.
+
+9786da66-b7df-4886-a02b-3eaaa3378eac-0
+00:19:08.330 --> 00:19:13.981
+And then and then what happens
+from there? Are they setting up
+
+9786da66-b7df-4886-a02b-3eaaa3378eac-1
+00:19:13.981 --> 00:19:19.633
+notifications with price changes
+or volatility changes? Are we
+
+9786da66-b7df-4886-a02b-3eaaa3378eac-2
+00:19:19.633 --> 00:19:24.925
+recalculating data based on
+their preferences? The data is
+
+9786da66-b7df-4886-a02b-3eaaa3378eac-3
+00:19:24.925 --> 00:19:29.770
+calculated just constantly, so
+no to that second one.
+
+dd4a1b74-2717-4622-8c38-915e114637b9-0
+00:19:31.710 --> 00:19:35.485
+Their preferences would be
+saved. So like if they were just
+
+dd4a1b74-2717-4622-8c38-915e114637b9-1
+00:19:35.485 --> 00:19:39.638
+a corn trader and they right now
+we have got every single product
+
+dd4a1b74-2717-4622-8c38-915e114637b9-2
+00:19:39.638 --> 00:19:43.602
+or what are we asking like 12
+products right now. If they were
+
+dd4a1b74-2717-4622-8c38-915e114637b9-3
+00:19:43.602 --> 00:19:47.440
+just want to look at corn, we
+would just you know be able to
+
+dd4a1b74-2717-4622-8c38-915e114637b9-4
+00:19:47.440 --> 00:19:51.153
+filter and save that so they
+wouldn't have to see anything
+
+dd4a1b74-2717-4622-8c38-915e114637b9-5
+00:19:51.153 --> 00:19:54.928
+else they didn't want to. And
+then basically there would be
+
+dd4a1b74-2717-4622-8c38-915e114637b9-6
+00:19:54.928 --> 00:19:58.200
+another panel on next to the
+right next to the ball
+
+dd4a1b74-2717-4622-8c38-915e114637b9-7
+00:19:58.200 --> 00:19:58.829
+dashboard.
+
+ad636c2f-6679-459a-80ad-93aa8fa46a43-0
+00:20:00.130 --> 00:20:04.571
+That would have the action items
+based off of the data that
+
+ad636c2f-6679-459a-80ad-93aa8fa46a43-1
+00:20:04.571 --> 00:20:09.309
+they're seeing, the action items
+help me understand that action
+
+ad636c2f-6679-459a-80ad-93aa8fa46a43-2
+00:20:09.309 --> 00:20:14.195
+items. So the action items would
+be like, I am looking at like so
+
+ad636c2f-6679-459a-80ad-93aa8fa46a43-3
+00:20:14.195 --> 00:20:18.785
+sorry, oh wait, go back to your
+earlier question, dude. Would
+
+ad636c2f-6679-459a-80ad-93aa8fa46a43-4
+00:20:18.785 --> 00:20:23.449
+there be alerts? Like yes, we'd
+love to have alerts there like
+
+ad636c2f-6679-459a-80ad-93aa8fa46a43-5
+00:20:23.449 --> 00:20:27.669
+hey if corn volatility front
+month, corn volatility goes
+
+ad636c2f-6679-459a-80ad-93aa8fa46a43-6
+00:20:27.669 --> 00:20:28.410
+below 27%.
+
+acfe9750-ec62-4b3f-9d83-a86f44a28b26-0
+00:20:28.750 --> 00:20:34.314
+Send me an alert like great. We
+also were looking at like do you
+
+acfe9750-ec62-4b3f-9d83-a86f44a28b26-1
+00:20:34.314 --> 00:20:39.365
+want to look at the so the a
+good measure of volatility in
+
+acfe9750-ec62-4b3f-9d83-a86f44a28b26-2
+00:20:39.365 --> 00:20:44.672
+the trading spheres to buy a
+straddle which is 2 at the money
+
+acfe9750-ec62-4b3f-9d83-a86f44a28b26-3
+00:20:44.672 --> 00:20:49.723
+options of the same strike and
+so that would be one of the
+
+acfe9750-ec62-4b3f-9d83-a86f44a28b26-4
+00:20:49.723 --> 00:20:55.117
+action items that would be on
+the right side is like I want to
+
+acfe9750-ec62-4b3f-9d83-a86f44a28b26-5
+00:20:55.117 --> 00:20:56.230
+buy you know.
+
+002f43db-994d-4fc9-a312-89b07b61f9e3-0
+00:20:56.620 --> 00:21:01.905
+Volatility and it would price up
+the at the money straddled and
+
+002f43db-994d-4fc9-a312-89b07b61f9e3-1
+00:21:01.905 --> 00:21:07.025
+that would be something that you
+could view on this dashboard
+
+002f43db-994d-4fc9-a312-89b07b61f9e3-2
+00:21:07.025 --> 00:21:12.145
+that would be at like you know
+the top of the page. I guess I
+
+002f43db-994d-4fc9-a312-89b07b61f9e3-3
+00:21:12.145 --> 00:21:17.596
+haven't fully worked out how the
+UI would work for this as far as
+
+002f43db-994d-4fc9-a312-89b07b61f9e3-4
+00:21:17.596 --> 00:21:22.468
+versus like the hot trades
+versus the ball dashboard view,
+
+002f43db-994d-4fc9-a312-89b07b61f9e3-5
+00:21:22.468 --> 00:21:23.460
+but I guess.
+
+5d56fdb6-5461-4576-ae46-b4cfe68d1331-0
+00:21:23.900 --> 00:21:28.292
+Like I said, if someone can give
+me some multiple choice
+
+5d56fdb6-5461-4576-ae46-b4cfe68d1331-1
+00:21:28.292 --> 00:21:33.071
+questions on what they think the
+best way for that to work, I
+
+5d56fdb6-5461-4576-ae46-b4cfe68d1331-2
+00:21:33.071 --> 00:21:37.926
+would be very interested here.
+So the I'm sorry these would be
+
+5d56fdb6-5461-4576-ae46-b4cfe68d1331-3
+00:21:37.926 --> 00:21:42.319
+proposed strategies so that the
+yeah we were just having
+
+5d56fdb6-5461-4576-ae46-b4cfe68d1331-4
+00:21:42.319 --> 00:21:46.789
+throttle or caller or predefined
+strategies that would be
+
+5d56fdb6-5461-4576-ae46-b4cfe68d1331-5
+00:21:46.789 --> 00:21:50.180
+available for for our customers
+to look at.
+
+0f160168-bbed-4dbd-8a2a-1773b0ce16a8-0
+00:22:05.890 --> 00:22:11.829
+So just to throw out a proposed
+implementation here, I would
+
+0f160168-bbed-4dbd-8a2a-1773b0ce16a8-1
+00:22:11.829 --> 00:22:18.157
+sort of see something like this
+working, like right click on a a
+
+0f160168-bbed-4dbd-8a2a-1773b0ce16a8-2
+00:22:18.157 --> 00:22:24.097
+line of the ball dashboard which
+is going to correspond to a
+
+0f160168-bbed-4dbd-8a2a-1773b0ce16a8-3
+00:22:24.097 --> 00:22:29.744
+particular product and contract
+date and then you'll have
+
+0f160168-bbed-4dbd-8a2a-1773b0ce16a8-4
+00:22:29.744 --> 00:22:31.010
+options like.
+
+ba41d179-fca4-4520-b944-d94df2fee526-0
+00:22:32.040 --> 00:22:41.337
+Send, straddle the hot trades,
+set alert, something like that
+
+ba41d179-fca4-4520-b944-d94df2fee526-1
+00:22:41.337 --> 00:22:50.484
+and then we would probably have
+a different view for kind of
+
+ba41d179-fca4-4520-b944-d94df2fee526-2
+00:22:50.484 --> 00:23:00.381
+the, the focus stuff that people
+want to get alerts or sort of be
+
+ba41d179-fca4-4520-b944-d94df2fee526-3
+00:23:00.381 --> 00:23:06.230
+tracking more granular
+information on.
+
+f3e42e0b-0691-486c-8714-e97829c8c690-0
+00:23:08.450 --> 00:23:12.815
+And Scott, the the set send
+startle to hot trades, the buy
+
+f3e42e0b-0691-486c-8714-e97829c8c690-1
+00:23:12.815 --> 00:23:17.329
+volatility, the set alerts,
+those would be all the different
+
+f3e42e0b-0691-486c-8714-e97829c8c690-2
+00:23:17.329 --> 00:23:21.842
+action items that Michael you
+are referring to, right? Yeah,
+
+f3e42e0b-0691-486c-8714-e97829c8c690-3
+00:23:21.842 --> 00:23:26.504
+the clients, well the clients
+have different types of products
+
+f3e42e0b-0691-486c-8714-e97829c8c690-4
+00:23:26.504 --> 00:23:30.944
+too or is it just be like this
+client just deals with corn,
+
+f3e42e0b-0691-486c-8714-e97829c8c690-5
+00:23:30.944 --> 00:23:33.089
+this one just deals with oil?
+
+49363d56-270e-45ec-a548-f70859bebb4a-0
+00:23:36.640 --> 00:23:45.799
+It's actually per trader that
+preferences would be distributed
+
+49363d56-270e-45ec-a548-f70859bebb4a-1
+00:23:45.799 --> 00:23:53.941
+okay or saved. And in general
+probably I'm a little bit
+
+49363d56-270e-45ec-a548-f70859bebb4a-2
+00:23:53.941 --> 00:24:03.100
+guessing here, so Mike, tell me
+if I'm off base here, but like
+
+49363d56-270e-45ec-a548-f70859bebb4a-3
+00:24:03.100 --> 00:24:06.590
+probably clients have a.
+
+cd19823f-b7f2-428f-a884-c7d02c34c7ec-0
+00:24:07.340 --> 00:24:11.783
+A few products or a set of
+products that sort of their
+
+cd19823f-b7f2-428f-a884-c7d02c34c7ec-1
+00:24:11.783 --> 00:24:16.953
+interest is most interested in,
+but it's not necessarily easily
+
+cd19823f-b7f2-428f-a884-c7d02c34c7ec-2
+00:24:16.953 --> 00:24:21.880
+like defined. It's kind of a
+user level thing. You know like
+
+cd19823f-b7f2-428f-a884-c7d02c34c7ec-3
+00:24:21.880 --> 00:24:26.646
+like if the person, like one
+person might be purely a corn
+
+cd19823f-b7f2-428f-a884-c7d02c34c7ec-4
+00:24:26.646 --> 00:24:31.493
+trader, they don't care about
+anything but corn. One person
+
+cd19823f-b7f2-428f-a884-c7d02c34c7ec-5
+00:24:31.493 --> 00:24:36.260
+might be sort of a a more
+complete agricultural or grains.
+
+95e7fa4a-9b0d-4766-8344-d7c28e140dbe-0
+00:24:36.780 --> 00:24:40.804
+Say like sector focus, so they
+might care about all of the
+
+95e7fa4a-9b0d-4766-8344-d7c28e140dbe-1
+00:24:40.804 --> 00:24:44.965
+grain products, but say not care
+about crude oil at all. You
+
+95e7fa4a-9b0d-4766-8344-d7c28e140dbe-2
+00:24:44.965 --> 00:24:49.127
+might have an ethanol trader
+that cares about corn and crude
+
+95e7fa4a-9b0d-4766-8344-d7c28e140dbe-3
+00:24:49.127 --> 00:24:53.356
+oil and ethanol, but not any of
+the other things. So probably
+
+95e7fa4a-9b0d-4766-8344-d7c28e140dbe-4
+00:24:53.356 --> 00:24:57.517
+the clean, cleanest way to to
+model it is just a trader gets
+
+95e7fa4a-9b0d-4766-8344-d7c28e140dbe-5
+00:24:57.517 --> 00:25:01.678
+to set what products they want
+to be looking at at any given
+
+95e7fa4a-9b0d-4766-8344-d7c28e140dbe-6
+00:25:01.678 --> 00:25:02.020
+time.
+
+40b8c7ea-87d5-4991-a401-b7bf9b009e7b-0
+00:25:07.770 --> 00:25:13.372
+Yeah, it might be, it might be
+more than financial instruments,
+
+40b8c7ea-87d5-4991-a401-b7bf9b009e7b-1
+00:25:13.372 --> 00:25:19.150
+right? It might. They might want
+to have a hot trade at a product
+
+40b8c7ea-87d5-4991-a401-b7bf9b009e7b-2
+00:25:19.150 --> 00:25:23.702
+level. A hot trade would
+probably be at the product
+
+40b8c7ea-87d5-4991-a401-b7bf9b009e7b-3
+00:25:23.702 --> 00:25:29.392
+product contract date level. And
+then there'd be a few different
+
+40b8c7ea-87d5-4991-a401-b7bf9b009e7b-4
+00:25:29.392 --> 00:25:33.770
+categories. So like the most
+basic ones would be.
+
+757507af-eb14-422d-a897-613b97266740-0
+00:25:35.610 --> 00:25:40.275
+If you want to do a ball trade,
+you do a straddle. If you want
+
+757507af-eb14-422d-a897-613b97266740-1
+00:25:40.275 --> 00:25:44.570
+to do a skew trade, you do a
+risk reversal or it's really
+
+757507af-eb14-422d-a897-613b97266740-2
+00:25:44.570 --> 00:25:49.309
+kind of what were you thinking,
+Mike? We had like a a matrix of
+
+757507af-eb14-422d-a897-613b97266740-3
+00:25:49.309 --> 00:25:54.123
+like are you bullish or bearish
+on price and volatility. So that
+
+757507af-eb14-422d-a897-613b97266740-4
+00:25:54.123 --> 00:25:58.714
+gives you 4 four boxes and those
+are basically the four trade
+
+757507af-eb14-422d-a897-613b97266740-5
+00:25:58.714 --> 00:26:01.009
+items that you'll be suggested.
+
+303a055d-6c76-4da1-9df6-3f7e3e18b213-0
+00:26:01.790 --> 00:26:07.506
+And it was, it was what was
+bullish or bearish underlying
+
+303a055d-6c76-4da1-9df6-3f7e3e18b213-1
+00:26:07.506 --> 00:26:13.025
+and then bullish or bearish
+volatility as well and that
+
+303a055d-6c76-4da1-9df6-3f7e3e18b213-2
+00:26:13.025 --> 00:26:19.136
+would give you risk reversals
+and straddles. I'm sorry, there
+
+303a055d-6c76-4da1-9df6-3f7e3e18b213-3
+00:26:19.136 --> 00:26:25.148
+was three, right, it was bulls
+bear skew volatility and just
+
+303a055d-6c76-4da1-9df6-3f7e3e18b213-4
+00:26:25.148 --> 00:26:29.190
+underlying. OK, so that gives us
+6 by 6.
+
+6244571a-14c5-42fb-8cd9-0f1e7fe164c4-0
+00:26:30.450 --> 00:26:44.597
+So 36 different suggested
+trades, yeah, say those again,
+
+6244571a-14c5-42fb-8cd9-0f1e7fe164c4-1
+00:26:44.597 --> 00:26:58.248
+bullish and bearish on
+underlying price volatility and
+
+6244571a-14c5-42fb-8cd9-0f1e7fe164c4-2
+00:26:58.248 --> 00:26:59.490
+skew.
+
+b782b261-ab19-482e-bf70-a5f1e4f9ae35-0
+00:27:04.000 --> 00:27:15.408
+This is awesome. OK, which
+that's our options. That's like
+
+b782b261-ab19-482e-bf70-a5f1e4f9ae35-1
+00:27:15.408 --> 00:27:27.202
+too big to fit in a right click
+menu. I guess we could have.
+
+b782b261-ab19-482e-bf70-a5f1e4f9ae35-2
+00:27:27.202 --> 00:27:31.650
+Don't worry about that.
+
+b3293667-7aa6-4f12-9f91-23e5dc74caff-0
+00:27:33.800 --> 00:27:40.985
+Yeah. But you said there's a
+matrix. Yeah. So essentially
+
+b3293667-7aa6-4f12-9f91-23e5dc74caff-1
+00:27:40.985 --> 00:27:48.046
+what we listed there is 6
+different. What is it? No. OK.
+
+b3293667-7aa6-4f12-9f91-23e5dc74caff-2
+00:27:48.046 --> 00:27:55.479
+So three different things. You
+can be bullish or bearish on
+
+b3293667-7aa6-4f12-9f91-23e5dc74caff-3
+00:27:55.479 --> 00:28:02.788
+each of them. Oh, so you're
+saying it's bullish or bearish
+
+b3293667-7aa6-4f12-9f91-23e5dc74caff-4
+00:28:02.788 --> 00:28:03.160
+on.
+
+6c4682e3-76e7-4145-b61d-7eb2385b8008-0
+00:28:04.620 --> 00:28:09.127
+Yeah, like that. Actually, it's
+not even a grid, right? It's. Am
+
+6c4682e3-76e7-4145-b61d-7eb2385b8008-1
+00:28:09.127 --> 00:28:13.287
+I right? That's gonna be a
+three-dimensional thing. No, no,
+
+6c4682e3-76e7-4145-b61d-7eb2385b8008-2
+00:28:13.287 --> 00:28:17.864
+I'm missing the third dimension.
+I thought we had the the. It was
+
+6c4682e3-76e7-4145-b61d-7eb2385b8008-3
+00:28:17.864 --> 00:28:22.093
+just like wasn't one of the
+implementations. Just like there
+
+6c4682e3-76e7-4145-b61d-7eb2385b8008-4
+00:28:22.093 --> 00:28:26.323
+would be 3 buttons next to the
+row and it would be like, you
+
+6c4682e3-76e7-4145-b61d-7eb2385b8008-5
+00:28:26.323 --> 00:28:28.820
+click it once and it would be
+like.
+
+bca7f366-78fe-4716-bdd7-3b85dfc5f87d-0
+00:28:29.170 --> 00:28:32.225
+Red or you know, green for
+bullish, red for bearish and
+
+bca7f366-78fe-4716-bdd7-3b85dfc5f87d-1
+00:28:32.225 --> 00:28:35.608
+just neutral. If you just didn't
+have an opinion, right? Like
+
+bca7f366-78fe-4716-bdd7-3b85dfc5f87d-2
+00:28:35.608 --> 00:28:38.772
+that was the that was the
+simplest way to do it. And then
+
+bca7f366-78fe-4716-bdd7-3b85dfc5f87d-3
+00:28:38.772 --> 00:28:42.100
+you just had underlying price
+volatility in skew, right? You
+
+bca7f366-78fe-4716-bdd7-3b85dfc5f87d-4
+00:28:42.100 --> 00:28:45.538
+just had three buttons and it
+was just like how many times you
+
+bca7f366-78fe-4716-bdd7-3b85dfc5f87d-5
+00:28:45.538 --> 00:28:49.030
+click the button that determined
+what you wanted to do and then
+
+bca7f366-78fe-4716-bdd7-3b85dfc5f87d-6
+00:28:49.030 --> 00:28:52.249
+you click like save once you had
+it all sorted out, do you
+
+bca7f366-78fe-4716-bdd7-3b85dfc5f87d-7
+00:28:52.249 --> 00:28:54.650
+remember that or am I just
+picking that up?
+
+3e1609b5-f09f-4150-8a0c-619f1419e8d9-0
+00:28:57.320 --> 00:29:00.715
+I, I like, I remember talking
+about this and at like the level
+
+3e1609b5-f09f-4150-8a0c-619f1419e8d9-1
+00:29:00.715 --> 00:29:04.057
+of UI granularity, but I don't
+really remember the details of
+
+3e1609b5-f09f-4150-8a0c-619f1419e8d9-2
+00:29:04.057 --> 00:29:07.453
+what we decided or talked about
+the simplest implementation of
+
+3e1609b5-f09f-4150-8a0c-619f1419e8d9-3
+00:29:07.453 --> 00:29:10.957
+it. But if there's a, if anyone
+can think of anything easier on,
+
+3e1609b5-f09f-4150-8a0c-619f1419e8d9-4
+00:29:10.957 --> 00:29:14.461
+yeah, we can get to mark on the
+UI. I just wanna be sure that we
+
+3e1609b5-f09f-4150-8a0c-619f1419e8d9-5
+00:29:14.461 --> 00:29:17.533
+have all the right options. Do
+we need a neutral as well
+
+3e1609b5-f09f-4150-8a0c-619f1419e8d9-6
+00:29:17.533 --> 00:29:20.929
+because we've got bullish and
+bearish on here and do we need a
+
+3e1609b5-f09f-4150-8a0c-619f1419e8d9-7
+00:29:20.929 --> 00:29:24.325
+neutral also? Well, that would
+just be like the default is you
+
+3e1609b5-f09f-4150-8a0c-619f1419e8d9-8
+00:29:24.325 --> 00:29:26.320
+just don't have an opinion. So
+yeah.
+
+a86c411c-a4e8-4bd3-b7f4-1f3aad73b5dc-0
+00:29:27.250 --> 00:29:35.361
+I think we do need it. Yeah. OK
+Demark's taking notes because I
+
+a86c411c-a4e8-4bd3-b7f4-1f3aad73b5dc-1
+00:29:35.361 --> 00:29:43.346
+think you're right, Scott. It
+makes for a large right click if
+
+a86c411c-a4e8-4bd3-b7f4-1f3aad73b5dc-2
+00:29:43.346 --> 00:29:49.430
+you do something like that. It's
+not realistic.
+
+af369988-39a8-4e7b-ab48-4eabbbdfc880-0
+00:29:58.320 --> 00:30:03.949
+OK. So then based on your market
+opinion and that that market
+
+af369988-39a8-4e7b-ab48-4eabbbdfc880-1
+00:30:03.949 --> 00:30:09.670
+opinion will be based on that
+that instrument right or that or
+
+af369988-39a8-4e7b-ab48-4eabbbdfc880-2
+00:30:09.670 --> 00:30:15.300
+that product maybe changes to a
+product, right, it would be a
+
+af369988-39a8-4e7b-ab48-4eabbbdfc880-3
+00:30:15.300 --> 00:30:20.476
+product and contract date
+specific opinion. So I I don't
+
+af369988-39a8-4e7b-ab48-4eabbbdfc880-4
+00:30:20.476 --> 00:30:26.105
+know just to make sure everybody
+is what I'm talking about so
+
+af369988-39a8-4e7b-ab48-4eabbbdfc880-5
+00:30:26.105 --> 00:30:26.559
+like.
+
+45d035b0-5a8f-4385-ad49-e4e21a90efd5-0
+00:30:27.570 --> 00:30:32.866
+The corn regular options would
+be an example of the product and
+
+45d035b0-5a8f-4385-ad49-e4e21a90efd5-1
+00:30:32.866 --> 00:30:37.996
+then the December corn regular
+options would be an example of
+
+45d035b0-5a8f-4385-ad49-e4e21a90efd5-2
+00:30:37.996 --> 00:30:43.044
+the product contract date pair
+right. But is is that we were
+
+45d035b0-5a8f-4385-ad49-e4e21a90efd5-3
+00:30:43.044 --> 00:30:48.092
+talking last time that how fans
+instruments include contract
+
+45d035b0-5a8f-4385-ad49-e4e21a90efd5-4
+00:30:48.092 --> 00:30:52.643
+date. Yeah so it's a it's an
+opinion that crosses over
+
+45d035b0-5a8f-4385-ad49-e4e21a90efd5-5
+00:30:52.643 --> 00:30:54.050
+multiple strikes.
+
+b3d8cbd5-7f9e-4706-8abe-03270e1a7516-0
+00:30:55.420 --> 00:30:59.756
+But not across multiple contract
+dates. I mean, you could I guess
+
+b3d8cbd5-7f9e-4706-8abe-03270e1a7516-1
+00:30:59.756 --> 00:31:04.092
+have like be want to do a buy in
+all of the contract dates at the
+
+b3d8cbd5-7f9e-4706-8abe-03270e1a7516-2
+00:31:04.092 --> 00:31:08.034
+same time. But I'm with you.
+Yeah, I'm just putting that up
+
+b3d8cbd5-7f9e-4706-8abe-03270e1a7516-3
+00:31:08.034 --> 00:31:09.020
+here for later.
+
+94858cfa-65fc-41a3-829a-643215381c22-0
+00:31:26.530 --> 00:31:31.542
+I guess maybe I should just
+introduce a little bit of a
+
+94858cfa-65fc-41a3-829a-643215381c22-1
+00:31:31.542 --> 00:31:37.449
+hierarchy there. So usually when
+I talk about this kind of thing,
+
+94858cfa-65fc-41a3-829a-643215381c22-2
+00:31:37.449 --> 00:31:41.834
+there are two sort of
+hierarchies that you could
+
+94858cfa-65fc-41a3-829a-643215381c22-3
+00:31:41.834 --> 00:31:47.294
+conceivably look at. So one is
+kind of what we mostly talked
+
+94858cfa-65fc-41a3-829a-643215381c22-4
+00:31:47.294 --> 00:31:52.127
+about here, which is there's
+products and then within
+
+94858cfa-65fc-41a3-829a-643215381c22-5
+00:31:52.127 --> 00:31:55.170
+products you have contract
+dates.
+
+2c187d6f-d7b0-4252-b0c6-1eb1ba5ca58d-0
+00:31:56.030 --> 00:32:03.096
+Within each contract date you
+have strikes. Within each strike
+
+2c187d6f-d7b0-4252-b0c6-1eb1ba5ca58d-1
+00:32:03.096 --> 00:32:09.937
+you have rights, a right being
+either a call or a put. And I
+
+2c187d6f-d7b0-4252-b0c6-1eb1ba5ca58d-2
+00:32:09.937 --> 00:32:16.779
+would usually well. And then
+there's another hierarchy which
+
+2c187d6f-d7b0-4252-b0c6-1eb1ba5ca58d-3
+00:32:16.779 --> 00:32:23.733
+is product Group, one second.
+Let me get this one first here,
+
+2c187d6f-d7b0-4252-b0c6-1eb1ba5ca58d-4
+00:32:23.733 --> 00:32:24.070
+OK?
+
+1203281a-b504-4ab6-8cd9-e022d177f9ab-0
+00:32:50.570 --> 00:32:58.672
+And then the other hierarchy is
+product, group, tenor,
+
+1203281a-b504-4ab6-8cd9-e022d177f9ab-1
+00:32:58.672 --> 00:33:07.512
+expiration, strike, right? Tenor
+is sort of a made-up word.
+
+1203281a-b504-4ab6-8cd9-e022d177f9ab-2
+00:33:07.512 --> 00:33:16.940
+There's not a commonly accepted
+term for this as far as I know,
+
+1203281a-b504-4ab6-8cd9-e022d177f9ab-3
+00:33:16.940 --> 00:33:21.950
+but what it means is
+essentially.
+
+1566423f-aeba-4956-be4a-fcbd8a24c360-0
+00:33:22.690 --> 00:33:26.399
+What underlying are you looking
+at? So like the corn, corn
+
+1566423f-aeba-4956-be4a-fcbd8a24c360-1
+00:33:26.399 --> 00:33:30.423
+options, for instance, there's a
+number of different underlying
+
+1566423f-aeba-4956-be4a-fcbd8a24c360-2
+00:33:30.423 --> 00:33:34.383
+there could be a Dee's future,
+it could be a March future, you
+
+1566423f-aeba-4956-be4a-fcbd8a24c360-3
+00:33:34.383 --> 00:33:38.156
+know, whatever. And then the
+sort of screwy thing about the
+
+1566423f-aeba-4956-be4a-fcbd8a24c360-4
+00:33:38.156 --> 00:33:41.928
+way that they organize this
+stuff in the other hierarchy is
+
+1566423f-aeba-4956-be4a-fcbd8a24c360-5
+00:33:41.928 --> 00:33:45.889
+that you can have options that
+have the same underlying in two
+
+1566423f-aeba-4956-be4a-fcbd8a24c360-6
+00:33:45.889 --> 00:33:49.472
+different products. So for
+instance, a corn weekly and a
+
+1566423f-aeba-4956-be4a-fcbd8a24c360-7
+00:33:49.472 --> 00:33:50.290
+corn regular.
+
+711a0760-fd99-4097-8223-2ea2e8832f81-0
+00:33:51.410 --> 00:33:56.635
+Could have the same underlying.
+So it's sort of with one of
+
+711a0760-fd99-4097-8223-2ea2e8832f81-1
+00:33:56.635 --> 00:34:01.774
+those you use depends whether
+you're you're more concerned
+
+711a0760-fd99-4097-8223-2ea2e8832f81-2
+00:34:01.774 --> 00:34:06.913
+with like looking at products
+sort of as your sort of your
+
+711a0760-fd99-4097-8223-2ea2e8832f81-3
+00:34:06.913 --> 00:34:12.226
+your higher level split or like
+your underlying as your your
+
+711a0760-fd99-4097-8223-2ea2e8832f81-4
+00:34:12.226 --> 00:34:17.713
+higher level split. Is that only
+for future options? Yeah well
+
+711a0760-fd99-4097-8223-2ea2e8832f81-5
+00:34:17.713 --> 00:34:18.410
+sort of.
+
+c2bfa7ff-56f6-4627-a825-d52d8c738593-0
+00:34:20.660 --> 00:34:24.492
+So equity options don't
+generally do this because they
+
+c2bfa7ff-56f6-4627-a825-d52d8c738593-1
+00:34:24.492 --> 00:34:28.881
+don't have different different
+stocks or whatever, but indexes
+
+c2bfa7ff-56f6-4627-a825-d52d8c738593-2
+00:34:28.881 --> 00:34:32.922
+index options are more like
+futures options than they are
+
+c2bfa7ff-56f6-4627-a825-d52d8c738593-3
+00:34:32.922 --> 00:34:37.381
+like equity options, even though
+they seem, and even though the
+
+c2bfa7ff-56f6-4627-a825-d52d8c738593-4
+00:34:37.381 --> 00:34:41.283
+sort of similarity seems like it
+goes more in the other
+
+c2bfa7ff-56f6-4627-a825-d52d8c738593-5
+00:34:41.283 --> 00:34:41.980
+direction.
+
+303a8b7c-871a-4bba-896b-86e8a662a1db-0
+00:34:52.390 --> 00:34:58.124
+Quick question on the
+expiration, if I can. You
+
+303a8b7c-871a-4bba-896b-86e8a662a1db-1
+00:34:58.124 --> 00:35:05.412
+reference contract date and you
+reference to expiration, are
+
+303a8b7c-871a-4bba-896b-86e8a662a1db-2
+00:35:05.412 --> 00:35:12.820
+they interchangeable and which
+one should we use? So contract
+
+303a8b7c-871a-4bba-896b-86e8a662a1db-3
+00:35:12.820 --> 00:35:19.750
+date right yeah well so the IT
+depends a little bit what.
+
+53d6301a-fd6a-48ac-8c14-523a9073ddee-0
+00:35:21.750 --> 00:35:29.646
+Hierarchy you're working with.
+So if you're in hierarchy 1,
+
+53d6301a-fd6a-48ac-8c14-523a9073ddee-1
+00:35:29.646 --> 00:35:37.542
+expiration and contract date are
+equivalent. You can turn a
+
+53d6301a-fd6a-48ac-8c14-523a9073ddee-2
+00:35:37.542 --> 00:35:45.570
+expiration into a contract date,
+and vice versa if you're in
+
+53d6301a-fd6a-48ac-8c14-523a9073ddee-3
+00:35:45.570 --> 00:35:47.150
+hierarchy 2.
+
+a54774fc-16af-4efd-82a8-fec9687ce558-0
+00:35:49.960 --> 00:35:55.731
+You also need to know the tenor
+to translate between expiration
+
+a54774fc-16af-4efd-82a8-fec9687ce558-1
+00:35:55.731 --> 00:36:01.142
+and contract date. That's might
+not even be true. You need.
+
+a54774fc-16af-4efd-82a8-fec9687ce558-2
+00:36:01.142 --> 00:36:07.094
+Yeah, probably. Also there might
+in hierarchy too. There might be
+
+a54774fc-16af-4efd-82a8-fec9687ce558-3
+00:36:07.094 --> 00:36:12.325
+multiple expirations that have
+the same contract date but
+
+a54774fc-16af-4efd-82a8-fec9687ce558-4
+00:36:12.325 --> 00:36:14.760
+different expiration dates.
+
+28e57b21-ab0e-4622-bbff-b54bff3317a6-0
+00:36:28.350 --> 00:36:32.857
+But probably, yeah, I think
+expiration is probably the way
+
+28e57b21-ab0e-4622-bbff-b54bff3317a6-1
+00:36:32.857 --> 00:36:37.136
+to go. Like those market
+opinions we were talking about
+
+28e57b21-ab0e-4622-bbff-b54bff3317a6-2
+00:36:37.136 --> 00:36:41.950
+below, I was sort of conceiving
+them as being expiration level
+
+28e57b21-ab0e-4622-bbff-b54bff3317a6-3
+00:36:41.950 --> 00:36:46.534
+opinions. Whether you're in a
+hierarchy one or hierarchy 2,
+
+28e57b21-ab0e-4622-bbff-b54bff3317a6-4
+00:36:46.534 --> 00:36:51.118
+they're, they're, they're the
+same sort of once you hit the
+
+28e57b21-ab0e-4622-bbff-b54bff3317a6-5
+00:36:51.118 --> 00:36:54.709
+expiration level, they're the
+same non noness.
+
+9e072dfc-4394-4eae-945e-73fbde8b63e7-0
+00:37:06.350 --> 00:37:11.612
+So down here when we're talking
+about the hot trades, are we
+
+9e072dfc-4394-4eae-945e-73fbde8b63e7-1
+00:37:11.612 --> 00:37:16.874
+needing the product and the
+contract date or the product and
+
+9e072dfc-4394-4eae-945e-73fbde8b63e7-2
+00:37:16.874 --> 00:37:21.964
+the expiration. So I mean you
+really get both like I would
+
+9e072dfc-4394-4eae-945e-73fbde8b63e7-3
+00:37:21.964 --> 00:37:22.310
+say.
+
+6f008f81-68b9-4509-ac40-142ee7800a28-0
+00:37:23.240 --> 00:37:27.192
+I know. I think that picky, but
+the computer won't know the
+
+6f008f81-68b9-4509-ac40-142ee7800a28-1
+00:37:27.192 --> 00:37:30.946
+difference when we start to
+program it. Yeah, so we also
+
+6f008f81-68b9-4509-ac40-142ee7800a28-2
+00:37:30.946 --> 00:37:35.162
+have, we've also got some like
+overlapping terminology here. So
+
+6f008f81-68b9-4509-ac40-142ee7800a28-3
+00:37:35.162 --> 00:37:38.983
+like in one sense, you can talk
+about an expiration as an
+
+6f008f81-68b9-4509-ac40-142ee7800a28-4
+00:37:38.983 --> 00:37:43.264
+entity, which is sort of like a
+node in your relationship graph.
+
+6f008f81-68b9-4509-ac40-142ee7800a28-5
+00:37:43.264 --> 00:37:47.085
+You can also talk about an
+expiration date, which is like
+
+6f008f81-68b9-4509-ac40-142ee7800a28-6
+00:37:47.085 --> 00:37:49.720
+the actual date that an option
+expires.
+
+682acdf7-1d50-4703-a1e1-2f21d3b7ce0c-0
+00:37:50.580 --> 00:37:55.048
+Which would be a property of the
+expiration entity. And then you
+
+682acdf7-1d50-4703-a1e1-2f21d3b7ce0c-1
+00:37:55.048 --> 00:37:58.898
+can kind of like, if you're not
+being careful with your
+
+682acdf7-1d50-4703-a1e1-2f21d3b7ce0c-2
+00:37:58.898 --> 00:38:03.160
+language, you sort of have the
+same issue with contract date.
+
+682acdf7-1d50-4703-a1e1-2f21d3b7ce0c-3
+00:38:03.160 --> 00:38:07.354
+Like you could be talking about
+the contract date as sort of
+
+682acdf7-1d50-4703-a1e1-2f21d3b7ce0c-4
+00:38:07.354 --> 00:38:11.272
+describing the node in your
+hierarchy, or you could talk
+
+682acdf7-1d50-4703-a1e1-2f21d3b7ce0c-5
+00:38:11.272 --> 00:38:15.260
+about it as being the actual
+value itself, but expiration
+
+682acdf7-1d50-4703-a1e1-2f21d3b7ce0c-6
+00:38:15.260 --> 00:38:19.316
+node is probably the like the
+one that we're talking about
+
+682acdf7-1d50-4703-a1e1-2f21d3b7ce0c-7
+00:38:19.316 --> 00:38:19.660
+here.
+
+b78a963d-18c5-4bb1-9a18-1a4a6d0d661e-0
+00:38:21.000 --> 00:38:26.470
+And then once you have your
+expiration node, you'd be able
+
+b78a963d-18c5-4bb1-9a18-1a4a6d0d661e-1
+00:38:26.470 --> 00:38:32.033
+to have, you know, be able to
+sort of traverse the graph to
+
+b78a963d-18c5-4bb1-9a18-1a4a6d0d661e-2
+00:38:32.033 --> 00:38:37.875
+sort of figure out those other
+things. And then also you would
+
+b78a963d-18c5-4bb1-9a18-1a4a6d0d661e-3
+00:38:37.875 --> 00:38:43.716
+have both the contract date and
+the expiration date as part of
+
+b78a963d-18c5-4bb1-9a18-1a4a6d0d661e-4
+00:38:43.716 --> 00:38:48.723
+the properties of that
+expiration node. Randy Parker,
+
+b78a963d-18c5-4bb1-9a18-1a4a6d0d661e-5
+00:38:48.723 --> 00:38:51.320
+Scott, does that make sense?
+
+a73dd3f1-1993-4784-a929-e8e38debe8b9-0
+00:38:54.510 --> 00:39:00.449
+Yeah. One other thing I should
+have mentioned. Does everyone
+
+a73dd3f1-1993-4784-a929-e8e38debe8b9-1
+00:39:00.449 --> 00:39:06.000
+know what I what I'm talking
+about when I say a graph, a
+
+a73dd3f1-1993-4784-a929-e8e38debe8b9-2
+00:39:06.000 --> 00:39:12.232
+graph is in graph theory, not as
+in like a a plot of data graph
+
+a73dd3f1-1993-4784-a929-e8e38debe8b9-3
+00:39:12.232 --> 00:39:17.782
+database. Yeah. So Denise, I
+know I'm still struggling a
+
+a73dd3f1-1993-4784-a929-e8e38debe8b9-4
+00:39:17.782 --> 00:39:22.748
+little bit with the with the
+product and financial
+
+a73dd3f1-1993-4784-a929-e8e38debe8b9-5
+00:39:22.748 --> 00:39:27.520
+instrument, but I'm I'm
+comfortable enough that.
+
+5c2a0005-ab2d-4405-a985-5395edc56f9f-0
+00:39:30.420 --> 00:39:35.052
+I can release some notes and
+come back and we can speak that
+
+5c2a0005-ab2d-4405-a985-5395edc56f9f-1
+00:39:35.052 --> 00:39:39.837
+up. In other words, I wouldn't.
+I don't want to spend too much
+
+5c2a0005-ab2d-4405-a985-5395edc56f9f-2
+00:39:39.837 --> 00:39:44.622
+time on that if at the expense
+of some other stuff. No, I get,
+
+5c2a0005-ab2d-4405-a985-5395edc56f9f-3
+00:39:44.622 --> 00:39:49.330
+I get it. I just want to be sure
+that Scott, Randy and Parker
+
+5c2a0005-ab2d-4405-a985-5395edc56f9f-4
+00:39:49.330 --> 00:39:53.660
+were as well. So. But I think
+we're good. All right. So.
+
+a35435de-8605-4250-ad40-239a42f5d02f-0
+00:39:58.350 --> 00:40:15.946
+Post strategies, just talk about
+that in a bit. So here we're
+
+a35435de-8605-4250-ad40-239a42f5d02f-1
+00:40:15.946 --> 00:40:31.840
+talking about straddles and the
+whole like collars and.
+
+0419f89d-63b8-48b2-a83b-094454b369ce-0
+00:40:41.870 --> 00:40:47.442
+Michael, what do you, you
+mentioned if you a few
+
+0419f89d-63b8-48b2-a83b-094454b369ce-1
+00:40:47.442 --> 00:40:54.038
+strategies risk reverse, yeah,
+there's a straddle of risk
+
+0419f89d-63b8-48b2-a83b-094454b369ce-2
+00:40:54.038 --> 00:41:01.202
+reversal. There's a three-way
+embarrassed 3 way. I think those
+
+0419f89d-63b8-48b2-a83b-094454b369ce-3
+00:41:01.202 --> 00:41:07.230
+are the main ones we want to go
+with three-way what?
+
+12d20087-3150-48b7-bac5-d4e87c6dbf32-0
+00:41:09.340 --> 00:41:19.187
+Bullish 3 way, Embarrass 3 way.
+OK. And so those would be based
+
+12d20087-3150-48b7-bac5-d4e87c6dbf32-1
+00:41:19.187 --> 00:41:28.726
+on what they chose for their
+market opinion. It would propose
+
+12d20087-3150-48b7-bac5-d4e87c6dbf32-2
+00:41:28.726 --> 00:41:37.035
+strategies would be, I don't
+know, represented to the
+
+12d20087-3150-48b7-bac5-d4e87c6dbf32-3
+00:41:37.035 --> 00:41:38.420
+customer.
+
+3bd01051-78f5-4db5-a022-06fa1f4999fe-0
+00:41:43.670 --> 00:42:04.526
+Yep, yeah, I'll show it. I like
+the word contains here, but
+
+3bd01051-78f5-4db5-a022-06fa1f4999fe-1
+00:42:04.526 --> 00:42:09.740
+okay. And then.
+
+c425296f-46fd-4bbd-bb2e-bfc53a9a07dc-0
+00:42:15.040 --> 00:42:21.960
+Would that turn into or or the
+user could set up an alert? Is
+
+c425296f-46fd-4bbd-bb2e-bfc53a9a07dc-1
+00:42:21.960 --> 00:42:28.992
+that that's probably independent
+of the first strategy, right?
+
+c425296f-46fd-4bbd-bb2e-bfc53a9a07dc-2
+00:42:28.992 --> 00:42:35.801
+You broke up there, Mike. So
+when a user sets up an alert, a
+
+c425296f-46fd-4bbd-bb2e-bfc53a9a07dc-3
+00:42:35.801 --> 00:42:38.480
+trader sets up an alert.
+
+c54730c4-a47e-4cc5-a903-ffbcfb962e08-0
+00:42:42.270 --> 00:42:48.788
+Does that relate to the proposed
+strategy or is that just relate
+
+c54730c4-a47e-4cc5-a903-ffbcfb962e08-1
+00:42:48.788 --> 00:42:54.404
+to the volatility of what they
+selected in the original
+
+c54730c4-a47e-4cc5-a903-ffbcfb962e08-2
+00:42:54.404 --> 00:43:00.221
+question? And I would like to
+see if they put in an alert
+
+c54730c4-a47e-4cc5-a903-ffbcfb962e08-3
+00:43:00.221 --> 00:43:06.739
+based off like the price of the
+strategy, they could, they could
+
+c54730c4-a47e-4cc5-a903-ffbcfb962e08-4
+00:43:06.739 --> 00:43:10.349
+you know enable that as well,
+okay.
+
+835076bb-2de5-477d-82a1-4eb9634d4a4e-0
+00:43:12.200 --> 00:43:15.884
+Like, I didn't care. Not
+everyone thinks things in terms
+
+835076bb-2de5-477d-82a1-4eb9634d4a4e-1
+00:43:15.884 --> 00:43:20.150
+of vulnerability, a lot of thing
+in terms of rights. I think they
+
+835076bb-2de5-477d-82a1-4eb9634d4a4e-2
+00:43:20.150 --> 00:43:23.705
+could be independent though.
+Like just because you are
+
+835076bb-2de5-477d-82a1-4eb9634d4a4e-3
+00:43:23.705 --> 00:43:27.778
+interested in a alert when ball
+changes a certain amount, that
+
+835076bb-2de5-477d-82a1-4eb9634d4a4e-4
+00:43:27.778 --> 00:43:31.915
+doesn't necessarily mean you're
+interested in doing a straddle,
+
+835076bb-2de5-477d-82a1-4eb9634d4a4e-5
+00:43:31.915 --> 00:43:35.793
+OK? You may just want to know
+when something interesting is
+
+835076bb-2de5-477d-82a1-4eb9634d4a4e-6
+00:43:35.793 --> 00:43:36.440
+happening.
+
+0e4c864b-95e4-4bc1-afa5-5ba3166c8aa7-0
+00:44:22.550 --> 00:44:29.542
+With the proposed strategies
+also have some like default
+
+0e4c864b-95e4-4bc1-afa5-5ba3166c8aa7-1
+00:44:29.542 --> 00:44:36.534
+alerts. Mike that's a year
+question. I don't know how to
+
+0e4c864b-95e4-4bc1-afa5-5ba3166c8aa7-2
+00:44:36.534 --> 00:44:44.140
+answer that one. Yeah I would
+say like it's based off of ever
+
+0e4c864b-95e4-4bc1-afa5-5ba3166c8aa7-3
+00:44:44.140 --> 00:44:51.745
+level the. So there would be
+like a tech field that would say
+
+0e4c864b-95e4-4bc1-afa5-5ba3166c8aa7-4
+00:44:51.745 --> 00:44:52.850
+you know.
+
+3d880d8b-7f07-4365-95a0-b5a4f393018a-0
+00:44:53.170 --> 00:44:59.177
+Alert me at this level and
+whenever it gets to that side
+
+3d880d8b-7f07-4365-95a0-b5a4f393018a-1
+00:44:59.177 --> 00:45:05.184
+one way or the other, you get
+the alert. So Mike, do you
+
+3d880d8b-7f07-4365-95a0-b5a4f393018a-2
+00:45:05.184 --> 00:45:11.824
+envision having alerts on like
+the price of various strategies
+
+3d880d8b-7f07-4365-95a0-b5a4f393018a-3
+00:45:11.824 --> 00:45:18.042
+as well or just the, Yep, the
+yes. So that would almost be
+
+3d880d8b-7f07-4365-95a0-b5a4f393018a-4
+00:45:18.042 --> 00:45:24.260
+another category of alert.
+There's sort of an alert on the
+
+3d880d8b-7f07-4365-95a0-b5a4f393018a-5
+00:45:24.260 --> 00:45:26.789
+Vol underlying and skew.
+
+6b48e6c3-3ea9-4563-9f70-7df92724a229-0
+00:45:27.950 --> 00:45:38.103
+And then there's also alerts on
+strategy prices, correct. And
+
+6b48e6c3-3ea9-4563-9f70-7df92724a229-1
+00:45:38.103 --> 00:45:48.748
+then if the trader wanted to add
+another alert, they could still
+
+6b48e6c3-3ea9-4563-9f70-7df92724a229-2
+00:45:48.748 --> 00:45:57.100
+go ahead and do that. Yeah.
+Yeah. Okay. All right.
+
+672fcaa9-df2a-45cb-b383-a36310e7300a-0
+00:46:09.730 --> 00:46:16.112
+I'm wondering about moving
+proposed strategies that were
+
+672fcaa9-df2a-45cb-b383-a36310e7300a-1
+00:46:16.112 --> 00:46:23.054
+towards marketing, because the
+proposed strategy depends upon
+
+672fcaa9-df2a-45cb-b383-a36310e7300a-2
+00:46:23.054 --> 00:46:29.995
+the market opinion, right? Kind
+of like a a proposed strategy
+
+672fcaa9-df2a-45cb-b383-a36310e7300a-3
+00:46:29.995 --> 00:46:36.490
+sort of exists independently of
+a market opinion in that.
+
+70866026-5d03-4db6-ac79-700948c235d7-0
+00:46:38.300 --> 00:46:44.611
+Like the price of a straddle
+exists whether you care about it
+
+70866026-5d03-4db6-ac79-700948c235d7-1
+00:46:44.611 --> 00:46:51.229
+or not. And now whether we like
+actually compute that value, you
+
+70866026-5d03-4db6-ac79-700948c235d7-2
+00:46:51.229 --> 00:46:56.828
+know that's kind of an
+implementation detail. Maybe we
+
+70866026-5d03-4db6-ac79-700948c235d7-3
+00:46:56.828 --> 00:47:02.732
+compute all of the strategy
+price prices, maybe we don't,
+
+70866026-5d03-4db6-ac79-700948c235d7-4
+00:47:02.732 --> 00:47:03.140
+but.
+
+a210c3e5-a2f1-4059-8a11-b5b3c78e90fa-0
+00:47:06.470 --> 00:47:13.704
+You don't really need to have a
+market opinion to create a
+
+a210c3e5-a2f1-4059-8a11-b5b3c78e90fa-1
+00:47:13.704 --> 00:47:20.939
+strategy. Yeah, it's a little
+bit like your strategies and
+
+a210c3e5-a2f1-4059-8a11-b5b3c78e90fa-2
+00:47:20.939 --> 00:47:28.541
+then your proposed strategies.
+But that last one, Kevin Scott
+
+a210c3e5-a2f1-4059-8a11-b5b3c78e90fa-3
+00:47:28.541 --> 00:47:36.266
+just said you don't have to have
+a market opinion to propose a
+
+a210c3e5-a2f1-4059-8a11-b5b3c78e90fa-4
+00:47:36.266 --> 00:47:37.370
+strategy.
+
+0938818f-20ba-40e9-b75e-a3e167fe7d26-0
+00:47:37.930 --> 00:47:44.212
+No, I think, I think Kevin now
+that actually the A strategy say
+
+0938818f-20ba-40e9-b75e-a3e167fe7d26-1
+00:47:44.212 --> 00:47:50.102
+a straddle exists whether you
+have an opinion or not if the
+
+0938818f-20ba-40e9-b75e-a3e167fe7d26-2
+00:47:50.102 --> 00:47:56.483
+and then a market opinion tells
+you which of the strategies is a
+
+0938818f-20ba-40e9-b75e-a3e167fe7d26-3
+00:47:56.483 --> 00:47:58.250
+proposed strategy.
+
+11154925-0dfa-4e61-b3e3-ed4f531aafae-0
+00:48:26.750 --> 00:48:34.065
+I don't quite know how to
+describe that yet. All these
+
+11154925-0dfa-4e61-b3e3-ed4f531aafae-1
+00:48:34.065 --> 00:48:42.444
+generic letters things I'll say
+in forms. Yeah, I think if you
+
+11154925-0dfa-4e61-b3e3-ed4f531aafae-2
+00:48:42.444 --> 00:48:43.110
+take.
+
+7f725e07-8996-4609-9bf7-bf0d897fcf80-0
+00:48:46.780 --> 00:48:54.645
+A proposed strategy is a subset
+of all the strategies that are
+
+7f725e07-8996-4609-9bf7-bf0d897fcf80-1
+00:48:54.645 --> 00:48:59.140
+congruent with your market
+opinion.
+
+2b6b27c7-76f1-4d2f-b7bf-1677a154b8e3-0
+00:49:16.670 --> 00:49:21.358
+That's probably more like hot
+trades is essentially a list of
+
+2b6b27c7-76f1-4d2f-b7bf-1677a154b8e3-1
+00:49:21.358 --> 00:49:22.190
+strategies.
+
+ab892b4c-63f8-499d-a48c-4ddf55ac8bc1-0
+00:50:04.370 --> 00:50:10.083
+I mean a little trouble
+decoupling like like the core
+
+ab892b4c-63f8-499d-a48c-4ddf55ac8bc1-1
+00:50:10.083 --> 00:50:16.221
+entity relationship from the
+implementation. In my mind I
+
+ab892b4c-63f8-499d-a48c-4ddf55ac8bc1-2
+00:50:16.221 --> 00:50:22.887
+know like do you have a separate
+list of market opinions or is
+
+ab892b4c-63f8-499d-a48c-4ddf55ac8bc1-3
+00:50:22.887 --> 00:50:25.850
+and are is there a separate?
+
+2b72e31d-d5c3-4c6a-8728-5e5c7e9e54c2-0
+00:50:27.580 --> 00:50:31.442
+Way of adding strategies to your
+hot trades list. Other than
+
+2b72e31d-d5c3-4c6a-8728-5e5c7e9e54c2-1
+00:50:31.442 --> 00:50:35.432
+opinions I guess. I don't know.
+I guess. Well, the way I would
+
+2b72e31d-d5c3-4c6a-8728-5e5c7e9e54c2-2
+00:50:35.432 --> 00:50:39.485
+think about it, and maybe this
+is to implementation coupled, is
+
+2b72e31d-d5c3-4c6a-8728-5e5c7e9e54c2-3
+00:50:39.485 --> 00:50:43.221
+like your hot trades list
+contains strategies. They can be
+
+2b72e31d-d5c3-4c6a-8728-5e5c7e9e54c2-4
+00:50:43.221 --> 00:50:47.274
+any strategy whether you think
+it's a good one or not. But then
+
+2b72e31d-d5c3-4c6a-8728-5e5c7e9e54c2-5
+00:50:47.274 --> 00:50:51.390
+there's also some way of saying
+this is my opinion. Suggest me a
+
+2b72e31d-d5c3-4c6a-8728-5e5c7e9e54c2-6
+00:50:51.390 --> 00:50:55.380
+strategy if I'm interested in
+that strategy. Add it to the hot
+
+2b72e31d-d5c3-4c6a-8728-5e5c7e9e54c2-7
+00:50:55.380 --> 00:50:56.140
+trades list.
+
+3dadbf8a-0374-477d-8b20-8d94c61337cb-0
+00:51:01.940 --> 00:51:06.700
+Does that sound right, Mike?
+Yeah, the second thing that you
+
+3dadbf8a-0374-477d-8b20-8d94c61337cb-1
+00:51:06.700 --> 00:51:11.616
+said was the right thing. OK. So
+did you think of those as two
+
+3dadbf8a-0374-477d-8b20-8d94c61337cb-2
+00:51:11.616 --> 00:51:16.298
+different options? Because I
+thought of them as part of the
+
+3dadbf8a-0374-477d-8b20-8d94c61337cb-3
+00:51:16.298 --> 00:51:20.980
+same, same way you would have an
+opinion, it would generate
+
+3dadbf8a-0374-477d-8b20-8d94c61337cb-4
+00:51:20.980 --> 00:51:25.505
+strategies and then you could
+click on whether or not you
+
+3dadbf8a-0374-477d-8b20-8d94c61337cb-5
+00:51:25.505 --> 00:51:29.953
+wanted to or whether that
+strategy fit your opinion that
+
+3dadbf8a-0374-477d-8b20-8d94c61337cb-6
+00:51:29.953 --> 00:51:30.500
+that's.
+
+dcb6c770-428f-4c2a-8c83-eb6616bf5b18-0
+00:51:30.930 --> 00:51:35.669
+I'm repeating what you're
+saying. Is that correct? Kind of
+
+dcb6c770-428f-4c2a-8c83-eb6616bf5b18-1
+00:51:35.669 --> 00:51:40.729
+the way I was envisioning it is
+that sort of the hot trades is
+
+dcb6c770-428f-4c2a-8c83-eb6616bf5b18-2
+00:51:40.729 --> 00:51:45.870
+just a list of strategies that
+you want to keep track of, maybe
+
+dcb6c770-428f-4c2a-8c83-eb6616bf5b18-3
+00:51:45.870 --> 00:51:50.770
+generate alerts off of. And then
+there's some sort of market
+
+dcb6c770-428f-4c2a-8c83-eb6616bf5b18-4
+00:51:50.770 --> 00:51:55.992
+opinion tool which helps you add
+strategies to hot trades if you
+
+dcb6c770-428f-4c2a-8c83-eb6616bf5b18-5
+00:51:55.992 --> 00:52:00.410
+don't know what you want to put
+there by yourself, so.
+
+a83baba3-0561-4a3e-bfb7-712d599d8278-0
+00:52:00.880 --> 00:52:05.251
+Let me let me restate that
+Scott, in that it's almost like
+
+a83baba3-0561-4a3e-bfb7-712d599d8278-1
+00:52:05.251 --> 00:52:09.918
+you present a list of of of all
+strategies, at least ones that
+
+a83baba3-0561-4a3e-bfb7-712d599d8278-2
+00:52:09.918 --> 00:52:14.290
+are applicable, but the ones
+that are recommended float to
+
+a83baba3-0561-4a3e-bfb7-712d599d8278-3
+00:52:14.290 --> 00:52:18.957
+the top. You know it's it's kind
+of like when you're searching
+
+a83baba3-0561-4a3e-bfb7-712d599d8278-4
+00:52:18.957 --> 00:52:23.551
+for stuff on Amazon you'll get
+some Amazon recommended but we
+
+a83baba3-0561-4a3e-bfb7-712d599d8278-5
+00:52:23.551 --> 00:52:28.367
+also show a whole bunch of crap
+if you want it not quite so like
+
+a83baba3-0561-4a3e-bfb7-712d599d8278-6
+00:52:28.367 --> 00:52:28.960
+the the.
+
+30489253-e9c0-47f7-9c69-9e1e75922074-0
+00:52:29.630 --> 00:52:36.295
+The total universe of strategies
+is much larger than could fit on
+
+30489253-e9c0-47f7-9c69-9e1e75922074-1
+00:52:36.295 --> 00:52:42.456
+a single tool. So like we've
+kind of been talking about like
+
+30489253-e9c0-47f7-9c69-9e1e75922074-2
+00:52:42.456 --> 00:52:47.909
+a fairly basic set of
+strategies, but even that would
+
+30489253-e9c0-47f7-9c69-9e1e75922074-3
+00:52:47.909 --> 00:52:53.969
+be like what was it? I think 3
+to the third power, which is
+
+30489253-e9c0-47f7-9c69-9e1e75922074-4
+00:52:53.969 --> 00:52:58.110
+what, 27? So 27 possible
+strategies per.
+
+58386f07-61a2-462e-b580-bfab16763427-0
+00:52:59.730 --> 00:53:04.911
+Expiration, the expiration is
+going to be like at least, well
+
+58386f07-61a2-462e-b580-bfab16763427-1
+00:53:04.911 --> 00:53:09.926
+right now I think it's in the
+neighborhood of a hundred 120
+
+58386f07-61a2-462e-b580-bfab16763427-2
+00:53:09.926 --> 00:53:15.275
+different expirations. So we're
+not going to throw up a list of
+
+58386f07-61a2-462e-b580-bfab16763427-3
+00:53:15.275 --> 00:53:20.040
+2700 different strategies into
+people's hot trades list.
+
+58386f07-61a2-462e-b580-bfab16763427-4
+00:53:20.040 --> 00:53:25.472
+They're going to want to have a
+more focused list than that. But
+
+58386f07-61a2-462e-b580-bfab16763427-5
+00:53:25.472 --> 00:53:26.810
+so like one way.
+
+96292ac7-9255-48f9-b602-ed950cafbc25-0
+00:53:28.230 --> 00:53:32.050
+That something might end up in
+my hot trades list is I just
+
+96292ac7-9255-48f9-b602-ed950cafbc25-1
+00:53:32.050 --> 00:53:36.253
+know about it and I'm interested
+in it. So say I'm like mostly an
+
+96292ac7-9255-48f9-b602-ed950cafbc25-2
+00:53:36.253 --> 00:53:39.883
+underlying trader but I know
+what a straddle is. I don't
+
+96292ac7-9255-48f9-b602-ed950cafbc25-3
+00:53:39.883 --> 00:53:43.704
+really have an opinion on on
+whether the straddle is fairly
+
+96292ac7-9255-48f9-b602-ed950cafbc25-4
+00:53:43.704 --> 00:53:47.588
+priced or not, but it's just
+sort of a a useful thing for me
+
+96292ac7-9255-48f9-b602-ed950cafbc25-5
+00:53:47.588 --> 00:53:51.345
+to know for risk management
+purposes basically. So I put a
+
+96292ac7-9255-48f9-b602-ed950cafbc25-6
+00:53:51.345 --> 00:53:55.230
+straddle into my hot trades list
+and but how was it do that?
+
+8060974a-ec9d-4fc8-9cea-c6c8f5f72b19-0
+00:53:56.000 --> 00:54:02.784
+How would how would they, how
+would they find that straddle
+
+8060974a-ec9d-4fc8-9cea-c6c8f5f72b19-1
+00:54:02.784 --> 00:54:10.246
+like in like how would they work
+with the interface to add it? Or
+
+8060974a-ec9d-4fc8-9cea-c6c8f5f72b19-2
+00:54:10.246 --> 00:54:17.031
+how would they know that the
+straddle exists? And the first
+
+8060974a-ec9d-4fc8-9cea-c6c8f5f72b19-3
+00:54:17.031 --> 00:54:23.702
+how how would they work with the
+interface to add it? Yeah
+
+8060974a-ec9d-4fc8-9cea-c6c8f5f72b19-4
+00:54:23.702 --> 00:54:24.720
+probably.
+
+d397bfae-6b71-49db-8302-5623d738122f-0
+00:54:32.630 --> 00:54:41.199
+A dialogue box, pick your
+expiration, then pick your your
+
+d397bfae-6b71-49db-8302-5623d738122f-1
+00:54:41.199 --> 00:54:50.359
+strategy. So you would input. I
+mean, they'd still get to the
+
+d397bfae-6b71-49db-8302-5623d738122f-2
+00:54:50.359 --> 00:54:58.632
+couple 100, they'd still get
+that list of a couple 100,
+
+d397bfae-6b71-49db-8302-5623d738122f-3
+00:54:58.632 --> 00:55:00.110
+right? No.
+
+9cb4c007-08ac-4a5a-b24e-35d9ce0e1585-0
+00:55:00.410 --> 00:55:05.564
+So like the the first step of
+that is pick an expiration. The
+
+9cb4c007-08ac-4a5a-b24e-35d9ce0e1585-1
+00:55:05.564 --> 00:55:10.718
+way you pick an expiration is
+you pick an exchange, a product
+
+9cb4c007-08ac-4a5a-b24e-35d9ce0e1585-2
+00:55:10.718 --> 00:55:16.038
+code and a contract date through
+whatever kind of interface you
+
+9cb4c007-08ac-4a5a-b24e-35d9ce0e1585-3
+00:55:16.038 --> 00:55:20.860
+want to build around that. So
+pick up, pick an expiration
+
+9cb4c007-08ac-4a5a-b24e-35d9ce0e1585-4
+00:55:20.860 --> 00:55:26.097
+first, then the second step is
+pick a strategy. There are 2027
+
+9cb4c007-08ac-4a5a-b24e-35d9ce0e1585-5
+00:55:26.097 --> 00:55:28.010
+strategies in our list.
+
+130754d9-6c2c-4ce3-9f44-70757c284c12-0
+00:55:30.330 --> 00:55:35.195
+So you could just have that as a
+complete list there. I guess
+
+130754d9-6c2c-4ce3-9f44-70757c284c12-1
+00:55:35.195 --> 00:55:40.218
+maybe you skip it all and just
+if you want to add a trade, your
+
+130754d9-6c2c-4ce3-9f44-70757c284c12-2
+00:55:40.218 --> 00:55:45.163
+hot trade list, you just do the
+like you sort of have to do it
+
+130754d9-6c2c-4ce3-9f44-70757c284c12-3
+00:55:45.163 --> 00:55:50.107
+backwards. If you know you want
+a straddle then tell it you're
+
+130754d9-6c2c-4ce3-9f44-70757c284c12-4
+00:55:50.107 --> 00:55:54.581
+bullish on volatility and know
+that that'll give you a a
+
+130754d9-6c2c-4ce3-9f44-70757c284c12-5
+00:55:54.581 --> 00:55:59.289
+straddle. But it kind of seems
+like maybe we would want to.
+
+5fb6f8a6-1a35-46ba-ab92-7ac9b9ebd809-0
+00:56:00.520 --> 00:56:04.436
+Not link those two as hard. So
+what I think I'm hearing is
+
+5fb6f8a6-1a35-46ba-ab92-7ac9b9ebd809-1
+00:56:04.436 --> 00:56:08.286
+that, like, really, I think
+you're gonna be, you're gonna
+
+5fb6f8a6-1a35-46ba-ab92-7ac9b9ebd809-2
+00:56:08.286 --> 00:56:12.534
+have a strategy, whether that's
+a proposed strategy or not. You
+
+5fb6f8a6-1a35-46ba-ab92-7ac9b9ebd809-3
+00:56:12.534 --> 00:56:15.920
+kind of like as a UI, you don't
+really care. Yeah.
+
+3f622126-a396-4d26-99ce-d8a31009f680-0
+00:56:39.190 --> 00:56:43.416
+And then like sort of as you go
+going down the line, there's
+
+3f622126-a396-4d26-99ce-d8a31009f680-1
+00:56:43.416 --> 00:56:47.851
+like an even more infinite list
+of strategies. Like probably in
+
+3f622126-a396-4d26-99ce-d8a31009f680-2
+00:56:47.851 --> 00:56:52.078
+at the time being because of the
+way we're doing market data
+
+3f622126-a396-4d26-99ce-d8a31009f680-3
+00:56:52.078 --> 00:56:55.958
+right now, there's going to be a
+pretty limited list of
+
+3f622126-a396-4d26-99ce-d8a31009f680-4
+00:56:55.958 --> 00:56:59.908
+strategies. But in full
+generality, a strategy is just a
+
+3f622126-a396-4d26-99ce-d8a31009f680-5
+00:56:59.908 --> 00:57:01.710
+collection of instruments.
+
+ea69d472-a135-49a3-b42e-80522f5f0616-0
+00:57:04.490 --> 00:57:09.973
+And you can compute things like
+the current price on them. And
+
+ea69d472-a135-49a3-b42e-80522f5f0616-1
+00:57:09.973 --> 00:57:14.848
+so, you know, however many
+instruments there are in the
+
+ea69d472-a135-49a3-b42e-80522f5f0616-2
+00:57:14.848 --> 00:57:20.070
+future, you know, there's, you
+know, an infinite variety of
+
+ea69d472-a135-49a3-b42e-80522f5f0616-3
+00:57:20.070 --> 00:57:25.119
+strategies, just, you know,
+combine them up, combining up
+
+ea69d472-a135-49a3-b42e-80522f5f0616-4
+00:57:25.119 --> 00:57:30.690
+sets of instruments whatever way
+you want. But we don't have a.
+
+0bd219ad-bef0-4e6f-998d-3225310506ea-0
+00:57:32.890 --> 00:57:38.111
+Good enough market data source
+right now to support that. So
+
+0bd219ad-bef0-4e6f-998d-3225310506ea-1
+00:57:38.111 --> 00:57:43.419
+we're gonna constrain the list
+of strategies so that we don't
+
+0bd219ad-bef0-4e6f-998d-3225310506ea-2
+00:57:43.419 --> 00:57:48.470
+have to handle market data on
+any single instrument on or,
+
+0bd219ad-bef0-4e6f-998d-3225310506ea-3
+00:57:48.470 --> 00:57:52.579
+sorry, on every single
+instrument in the in the
+
+0bd219ad-bef0-4e6f-998d-3225310506ea-4
+00:57:52.579 --> 00:57:57.373
+universe at the same time,
+right? All right. Let me ask
+
+0bd219ad-bef0-4e6f-998d-3225310506ea-5
+00:57:57.373 --> 00:57:59.770
+easier questions. A traitor.
+
+e6f387ab-218b-4e2a-95a3-f2e370b16a2a-0
+00:58:00.080 --> 00:58:06.060
+And they set these things up
+that belongs to that particular
+
+e6f387ab-218b-4e2a-95a3-f2e370b16a2a-1
+00:58:06.060 --> 00:58:12.530
+person, right? It doesn't belong
+to a desk or anything like that.
+
+e6f387ab-218b-4e2a-95a3-f2e370b16a2a-2
+00:58:12.530 --> 00:58:18.511
+It belongs to a person. Correct.
+Okay. And these will all be
+
+e6f387ab-218b-4e2a-95a3-f2e370b16a2a-3
+00:58:18.511 --> 00:58:24.589
+emailed to them. Or we have like
+in app alerts. Yeah, e-mail,
+
+e6f387ab-218b-4e2a-95a3-f2e370b16a2a-4
+00:58:24.589 --> 00:58:25.080
+okay.
+
+563c6673-98b3-476b-b462-f470c1a4c4b2-0
+00:58:28.710 --> 00:58:38.031
+Will we set up some sort of
+alert preferences like Alert me
+
+563c6673-98b3-476b-b462-f470c1a4c4b2-1
+00:58:38.031 --> 00:58:47.508
+right away or consolidated end
+of day or things like that be
+
+563c6673-98b3-476b-b462-f470c1a4c4b2-2
+00:58:47.508 --> 00:58:50.149
+alert right away?
+
+2791354c-1c68-4f45-a2b6-22038374be48-0
+00:58:59.170 --> 00:59:08.655
+No, no text alerts right? Text.
+Yeah. No no text alerts. No no
+
+2791354c-1c68-4f45-a2b6-22038374be48-1
+00:59:08.655 --> 00:59:10.010
+no no no.
+
+8ac12b33-d3ab-4983-be54-91ed7886bcd4-0
+00:59:26.850 --> 00:59:33.787
+So there's not really any sort
+of preferences in terms of
+
+8ac12b33-d3ab-4983-be54-91ed7886bcd4-1
+00:59:33.787 --> 00:59:40.484
+alerts like overarching
+preferences. I'm just trying to
+
+8ac12b33-d3ab-4983-be54-91ed7886bcd4-2
+00:59:40.484 --> 00:59:47.661
+think of like Scott like this.
+If I'm assuming if users are
+
+8ac12b33-d3ab-4983-be54-91ed7886bcd4-3
+00:59:47.661 --> 00:59:55.196
+entering their own phone for a
+text alert they might put their
+
+8ac12b33-d3ab-4983-be54-91ed7886bcd4-4
+00:59:55.196 --> 01:00:01.893
+like personal cell phone and I
+don't not sure how their
+
+8ac12b33-d3ab-4983-be54-91ed7886bcd4-5
+01:00:01.893 --> 01:00:06.080
+employers are going to feel
+about.
+
+c2b0a572-f95a-4d35-b052-29eae86f2946-0
+01:00:06.500 --> 01:00:10.978
+There's just like like the that
+this communication would be seen
+
+c2b0a572-f95a-4d35-b052-29eae86f2946-1
+01:00:10.978 --> 01:00:15.318
+as like solicitation to trade
+and so it all kind of has to be.
+
+c2b0a572-f95a-4d35-b052-29eae86f2946-2
+01:00:15.318 --> 01:00:19.727
+I'm just trying to avoid these
+like pitfalls. So I think e-mail
+
+c2b0a572-f95a-4d35-b052-29eae86f2946-3
+01:00:19.727 --> 01:00:23.930
+the company e-mail would be
+best. So I'm not sure if you are
+
+c2b0a572-f95a-4d35-b052-29eae86f2946-4
+01:00:23.930 --> 01:00:28.339
+gonna put their personal emails
+into the as like a username for
+
+c2b0a572-f95a-4d35-b052-29eae86f2946-5
+01:00:28.339 --> 01:00:32.748
+a login. Yeah I would. I would
+sort of agree with you there and
+
+c2b0a572-f95a-4d35-b052-29eae86f2946-6
+01:00:32.748 --> 01:00:34.540
+I don't think there's the.
+
+6982059e-aa41-4d28-b8a1-e5536f599ab0-0
+01:00:36.130 --> 01:00:40.132
+Like a strong need to have the
+the text alerts, you know, I
+
+6982059e-aa41-4d28-b8a1-e5536f599ab0-1
+01:00:40.132 --> 01:00:44.467
+think probably most people have
+their e-mail up and we'll see an
+
+6982059e-aa41-4d28-b8a1-e5536f599ab0-2
+01:00:44.467 --> 01:00:48.803
+e-mail right away. We could add.
+And then a way to mitigate that
+
+6982059e-aa41-4d28-b8a1-e5536f599ab0-3
+01:00:48.803 --> 01:00:52.671
+would be to add like an in app
+alert if they want to keep
+
+6982059e-aa41-4d28-b8a1-e5536f599ab0-4
+01:00:52.671 --> 01:00:56.874
+their, you know, the web page up
+all the time or actually, you
+
+6982059e-aa41-4d28-b8a1-e5536f599ab0-5
+01:00:56.874 --> 01:01:01.276
+know, I actually don't know very
+much about in app alerts for web
+
+6982059e-aa41-4d28-b8a1-e5536f599ab0-6
+01:01:01.276 --> 01:01:02.009
+stuff, but.
+
+985fe971-c907-47d7-acce-4f4202849174-0
+01:01:02.530 --> 01:01:06.487
+I could could that solve the
+problem of like having a harder
+
+985fe971-c907-47d7-acce-4f4202849174-1
+01:01:06.487 --> 01:01:10.575
+to ignore alert than an e-mail?
+I don't know how many guys are
+
+985fe971-c907-47d7-acce-4f4202849174-2
+01:01:10.575 --> 01:01:14.662
+going to have our web page up
+all day. Maybe they will. I mean
+
+985fe971-c907-47d7-acce-4f4202849174-3
+01:01:14.662 --> 01:01:18.555
+it's matching success. They
+would if it's not and they just
+
+985fe971-c907-47d7-acce-4f4202849174-4
+01:01:18.555 --> 01:01:22.707
+see the alert like that might be
+fine too. Yeah. Do you have to
+
+985fe971-c907-47d7-acce-4f4202849174-5
+01:01:22.707 --> 01:01:26.794
+have the web page open to have
+an alert guys there is a method
+
+985fe971-c907-47d7-acce-4f4202849174-6
+01:01:26.794 --> 01:01:30.947
+to actually push notifications
+browser. You have to do a little
+
+985fe971-c907-47d7-acce-4f4202849174-7
+01:01:30.947 --> 01:01:32.050
+research into it.
+
+229e3595-f057-4214-b6b5-cb2f42776840-0
+01:01:32.520 --> 01:01:37.362
+We we haven't done it before,
+but there is a way to do that. I
+
+229e3595-f057-4214-b6b5-cb2f42776840-1
+01:01:37.362 --> 01:01:41.820
+was thinking a little more
+pedestrian in when you log in,
+
+229e3595-f057-4214-b6b5-cb2f42776840-2
+01:01:41.820 --> 01:01:46.586
+you can see your most recent
+alerts, which at least in theory
+
+229e3595-f057-4214-b6b5-cb2f42776840-3
+01:01:46.586 --> 01:01:51.428
+could be the same sort of thing
+with the trade confirm, right?
+
+229e3595-f057-4214-b6b5-cb2f42776840-4
+01:01:51.428 --> 01:01:55.963
+You could log in and see your
+trade confirms. It's kind of
+
+229e3595-f057-4214-b6b5-cb2f42776840-5
+01:01:55.963 --> 01:02:00.729
+like your your doc center or
+your alert center. Yeah, I think
+
+229e3595-f057-4214-b6b5-cb2f42776840-6
+01:02:00.729 --> 01:02:00.960
+my.
+
+7213cf0e-cb8e-4641-ab48-c859c605e99f-0
+01:02:01.750 --> 01:02:06.301
+My lien would be to start with
+just e-mail alerts and nothing
+
+7213cf0e-cb8e-4641-ab48-c859c605e99f-1
+01:02:06.301 --> 01:02:10.779
+else. And if we added other
+stuff later, whether it's like a
+
+7213cf0e-cb8e-4641-ab48-c859c605e99f-2
+01:02:10.779 --> 01:02:14.890
+message center in the app or an
+alert system or text or
+
+7213cf0e-cb8e-4641-ab48-c859c605e99f-3
+01:02:14.890 --> 01:02:19.441
+whatever, you know, we can, we
+should probably figure out the
+
+7213cf0e-cb8e-4641-ab48-c859c605e99f-4
+01:02:19.441 --> 01:02:23.698
+details of that based on
+customers feedback after we have
+
+7213cf0e-cb8e-4641-ab48-c859c605e99f-5
+01:02:23.698 --> 01:02:28.030
+like the, you know, the minimal
+working alert thing going.
+
+405229c7-e705-46bf-9e5b-85cdb7058ffd-0
+01:02:35.700 --> 01:02:42.199
+Okay, this is pretty good. Hey
+Kevin, you're you're sticking
+
+405229c7-e705-46bf-9e5b-85cdb7058ffd-1
+01:02:42.199 --> 01:02:48.486
+out for hot trades, can you, I
+think you mean Trader there
+
+405229c7-e705-46bf-9e5b-85cdb7058ffd-2
+01:02:48.486 --> 01:02:54.773
+instead of trade, right? I was
+looking back at it and got,
+
+405229c7-e705-46bf-9e5b-85cdb7058ffd-3
+01:02:54.773 --> 01:03:01.060
+yeah, financial products the
+trader is most interested in.
+
+489d2cb6-0867-4791-93dd-147738821f35-0
+01:03:06.060 --> 01:03:16.911
+Should I say in which not DAG,
+my car was full there. Yeah, so
+
+489d2cb6-0867-4791-93dd-147738821f35-1
+01:03:16.911 --> 01:03:27.591
+it's not a mouse. How do you
+spell that anyway? Home does not
+
+489d2cb6-0867-4791-93dd-147738821f35-2
+01:03:27.591 --> 01:03:33.620
+do what I want to do. Acts
+Finder.
+
+2c202bfd-f3f0-4bd6-9802-136691182e89-0
+01:03:34.830 --> 01:03:41.793
+I think we're good for X Finder
+right now. Anything else y'all
+
+2c202bfd-f3f0-4bd6-9802-136691182e89-1
+01:03:41.793 --> 01:03:48.978
+can think of that you want us to
+do, I would maybe readdress the
+
+2c202bfd-f3f0-4bd6-9802-136691182e89-2
+01:03:48.978 --> 01:03:56.052
+financial instrument aspect of
+it. Yeah, maybe all we have is a
+
+2c202bfd-f3f0-4bd6-9802-136691182e89-3
+01:03:56.052 --> 01:03:59.590
+little relates there relates to.
+
+822e56ea-59f9-44a6-958b-b9b7a2d9213b-0
+01:04:00.940 --> 01:04:05.777
+It's really like a strategy as a
+collection of financial
+
+822e56ea-59f9-44a6-958b-b9b7a2d9213b-1
+01:04:05.777 --> 01:04:10.954
+instruments. That's kind of what
+it actually is, although it
+
+822e56ea-59f9-44a6-958b-b9b7a2d9213b-2
+01:04:10.954 --> 01:04:15.792
+might also be a collection of
+financial instruments that
+
+822e56ea-59f9-44a6-958b-b9b7a2d9213b-3
+01:04:15.792 --> 01:04:20.884
+changes over time according to
+certain rules. It's like the
+
+822e56ea-59f9-44a6-958b-b9b7a2d9213b-4
+01:04:20.884 --> 01:04:25.976
+example of that would be a
+strategy is a strategical and at
+
+822e56ea-59f9-44a6-958b-b9b7a2d9213b-5
+01:04:25.976 --> 01:04:30.220
+the money call and put as the
+underlying changes.
+
+f3d217b5-3541-4b70-9e4b-c8d62baf46ed-0
+01:04:31.650 --> 01:04:37.652
+The exact instruments that make
+up the at the money straddle
+
+f3d217b5-3541-4b70-9e4b-c8d62baf46ed-1
+01:04:37.652 --> 01:04:43.950
+change as well. So you can kind
+of think about it really out of
+
+f3d217b5-3541-4b70-9e4b-c8d62baf46ed-2
+01:04:43.950 --> 01:04:50.248
+their way. You could have like
+floating strategies or you could
+
+f3d217b5-3541-4b70-9e4b-c8d62baf46ed-3
+01:04:50.248 --> 01:04:55.758
+have like sort of fixed
+strategies. So are you thinking
+
+f3d217b5-3541-4b70-9e4b-c8d62baf46ed-4
+01:04:55.758 --> 01:04:59.990
+of like connecting this up to
+there? Yeah.
+
+2217dacc-09b5-4b08-abdb-67368e5aaa82-0
+01:05:08.000 --> 01:05:13.040
+And possibly building the
+relates to a from hot trades
+
+2217dacc-09b5-4b08-abdb-67368e5aaa82-1
+01:05:13.040 --> 01:05:18.263
+because it or at least it
+relates to many, well, I think
+
+2217dacc-09b5-4b08-abdb-67368e5aaa82-2
+01:05:18.263 --> 01:05:24.220
+when they come in they're going
+to look at a listing of you know
+
+2217dacc-09b5-4b08-abdb-67368e5aaa82-3
+01:05:24.220 --> 01:05:30.084
+products and this goes back to
+hierarchy we had up up top right
+
+2217dacc-09b5-4b08-abdb-67368e5aaa82-4
+01:05:30.084 --> 01:05:35.400
+that they're going to say I want
+October 22 corn options.
+
+72b93d14-6f25-40e8-b341-ea2a9008b85b-0
+01:05:40.610 --> 01:05:46.644
+Yeah. So that's not, that's not
+a financial instrument though,
+
+72b93d14-6f25-40e8-b341-ea2a9008b85b-1
+01:05:46.644 --> 01:05:52.870
+that's an expiration. Yeah, I'm,
+I'm, I'm agreeing with you. I'm
+
+72b93d14-6f25-40e8-b341-ea2a9008b85b-2
+01:05:52.870 --> 01:05:58.904
+wondering if you want to spend
+all the time on that. Right now
+
+72b93d14-6f25-40e8-b341-ea2a9008b85b-3
+01:05:58.904 --> 01:06:04.651
+it's kind of like this, right?
+I, I basically have too many
+
+72b93d14-6f25-40e8-b341-ea2a9008b85b-4
+01:06:04.651 --> 01:06:10.111
+questions. I would probably
+spend like a couple hours on
+
+72b93d14-6f25-40e8-b341-ea2a9008b85b-5
+01:06:10.111 --> 01:06:10.590
+this.
+
+d0a9e9a0-740d-426f-9df0-939ff5f78005-0
+01:06:13.150 --> 01:06:21.869
+But let's see. So it's kind of
+like, should we call it, we
+
+d0a9e9a0-740d-426f-9df0-939ff5f78005-1
+01:06:21.869 --> 01:06:28.667
+somewhere call it back
+expirations or product
+
+d0a9e9a0-740d-426f-9df0-939ff5f78005-2
+01:06:28.667 --> 01:06:37.091
+expirations? Expirations is
+usually what I call it. Yep,
+
+d0a9e9a0-740d-426f-9df0-939ff5f78005-3
+01:06:37.091 --> 01:06:41.230
+format painter, no, nothing.
+
+4d8f24ad-957a-4eb7-81b2-0b00784d26e5-0
+01:06:58.160 --> 01:07:22.150
+And then strategies. Yeah, yeah,
+I see that. I see your second.
+
+5aa14183-1db4-4da5-8f30-209b82199ae5-0
+01:07:32.980 --> 01:07:40.258
+Yeah, this is actually pretty
+good. We don't usually get this
+
+5aa14183-1db4-4da5-8f30-209b82199ae5-1
+01:07:40.258 --> 01:07:46.833
+in depth with a lot of our
+clients because a lot of the
+
+5aa14183-1db4-4da5-8f30-209b82199ae5-2
+01:07:46.833 --> 01:07:54.112
+times that the domain modeling
+was lost a little bit on them,
+
+5aa14183-1db4-4da5-8f30-209b82199ae5-3
+01:07:54.112 --> 01:08:01.743
+the nuances of it. OK. So we got
+another product. You know what,
+
+5aa14183-1db4-4da5-8f30-209b82199ae5-4
+01:08:01.743 --> 01:08:05.500
+I'm going to request a 2 minute.
+
+4d9d252c-3a19-4680-8c54-65bbb31bf40d-0
+01:08:06.960 --> 01:08:11.943
+Biobreak, that's right. You
+guys, for the next product, we
+
+4d9d252c-3a19-4680-8c54-65bbb31bf40d-1
+01:08:11.943 --> 01:08:17.348
+can think what prior to want to
+do next. Margin Optimizer, risk
+
+4d9d252c-3a19-4680-8c54-65bbb31bf40d-2
+01:08:17.348 --> 01:08:22.500
+manager, VPM, we're not going to
+do VPM right now, but think
+
+4d9d252c-3a19-4680-8c54-65bbb31bf40d-3
+01:08:22.500 --> 01:08:27.736
+about optim, margin optimizer,
+risk management. I'll be right
+
+4d9d252c-3a19-4680-8c54-65bbb31bf40d-4
+01:08:27.736 --> 01:08:32.297
+back. 3 minutes and we'll
+regroup. Couple minutes and
+
+4d9d252c-3a19-4680-8c54-65bbb31bf40d-5
+01:08:32.297 --> 01:08:34.240
+we'll regroup. Awesome.
+
+660c1e80-116f-4ede-8cfb-9d2e97baa461-0
+01:08:36.780 --> 01:08:39.380
+Akshay Kumars, Akshay Kumar.
+
+d6f92e28-a93d-4716-877e-1bb7a01edc51-0
+01:10:42.780 --> 01:10:48.320
+SMS Akshay.
+
+24457bb4-386d-4f9e-8f4e-673878fcb012-0
+01:11:23.030 --> 01:11:23.550
+SMS srikanth.
+
+e372b151-9792-4117-90c1-a068466d1e81-0
+01:11:57.220 --> 01:12:03.060
+I'm gonna try the video. If it
+seems like that's messing up my
+
+e372b151-9792-4117-90c1-a068466d1e81-1
+01:12:03.060 --> 01:12:08.715
+audio, let me know, guys. OK.
+Yeah. Scott. Yep. Can you take
+
+e372b151-9792-4117-90c1-a068466d1e81-2
+01:12:08.715 --> 01:12:14.648
+the lead on on explaining margin
+optimizer? I guess we're gonna
+
+e372b151-9792-4117-90c1-a068466d1e81-3
+01:12:14.648 --> 01:12:20.488
+go with. OK, Kevin, you're just
+making it worse by opening the
+
+e372b151-9792-4117-90c1-a068466d1e81-4
+01:12:20.488 --> 01:12:24.660
+Annex Coke. You realize that,
+right? I know.
+
+7c625c30-899c-4630-8881-b7232b0b789d-0
+01:12:25.430 --> 01:12:32.439
+Hey, I'm glad it wasn't the only
+one. Nope, you weren't. There's
+
+7c625c30-899c-4630-8881-b7232b0b789d-1
+01:12:32.439 --> 01:12:39.017
+a lot of people in that men's
+room right there. So hey guys,
+
+7c625c30-899c-4630-8881-b7232b0b789d-2
+01:12:39.017 --> 01:12:45.164
+I'm sorry I got a hard stop in
+about 25 minutes or so. I
+
+7c625c30-899c-4630-8881-b7232b0b789d-3
+01:12:45.164 --> 01:12:51.742
+dealing with some family stuff
+over here. Sure. So just adds
+
+7c625c30-899c-4630-8881-b7232b0b789d-4
+01:12:51.742 --> 01:12:55.839
+up. The five pop out just got
+jumped.
+
+10f110bc-e2fd-4618-b82b-2336ffab8ba1-0
+01:12:57.990 --> 01:13:03.417
+We were planning to wrap up at
+noon anyway, so we can just, you
+
+10f110bc-e2fd-4618-b82b-2336ffab8ba1-1
+01:13:03.417 --> 01:13:08.760
+know, that's close enough. Yep.
+Yep. Great. Thanks. All right.
+
+10f110bc-e2fd-4618-b82b-2336ffab8ba1-2
+01:13:08.760 --> 01:13:14.103
+Customer uploads position and
+receives trade structures. Okay.
+
+10f110bc-e2fd-4618-b82b-2336ffab8ba1-3
+01:13:14.103 --> 01:13:19.700
+So and Andrew, we have more time
+on the calendar later this week,
+
+10f110bc-e2fd-4618-b82b-2336ffab8ba1-4
+01:13:19.700 --> 01:13:21.990
+don't we? Yes. Okay, great.
+
+faff56bc-4f80-47c5-9bb9-2a47f4ac6db0-0
+01:13:33.610 --> 01:13:38.488
+So I'm gonna guess we're gonna
+have a trader. Nice. Is there a
+
+faff56bc-4f80-47c5-9bb9-2a47f4ac6db0-1
+01:13:38.488 --> 01:13:43.599
+hotkey to copy something? You're
+on a Mac, aren't you? I I always
+
+faff56bc-4f80-47c5-9bb9-2a47f4ac6db0-2
+01:13:43.599 --> 01:13:48.556
+just click on the arrow and get
+get it down below it. You don't
+
+faff56bc-4f80-47c5-9bb9-2a47f4ac6db0-3
+01:13:48.556 --> 01:13:53.047
+have a control C because you're
+on a Mac, right? I have a
+
+faff56bc-4f80-47c5-9bb9-2a47f4ac6db0-4
+01:13:53.047 --> 01:13:56.610
+control C like if I want to copy
+this though.
+
+53fd7dcc-c451-41d0-b6be-6fdb727d1957-0
+01:13:57.020 --> 01:14:02.908
+You normally just do a command
+and drag. If you click on the
+
+53fd7dcc-c451-41d0-b6be-6fdb727d1957-1
+01:14:02.908 --> 01:14:08.700
+arrow underneath, like if you
+highlight Trader and click on
+
+53fd7dcc-c451-41d0-b6be-6fdb727d1957-2
+01:14:08.700 --> 01:14:14.589
+the arrow underneath it, you'll
+get one right underneath it.
+
+53fd7dcc-c451-41d0-b6be-6fdb727d1957-3
+01:14:14.589 --> 01:14:20.092
+Yeah, then get the get the
+straight lines at the. Or you
+
+53fd7dcc-c451-41d0-b6be-6fdb727d1957-4
+01:14:20.092 --> 01:14:26.077
+can click and drag underneath it
+and it'll give you a rounded
+
+53fd7dcc-c451-41d0-b6be-6fdb727d1957-5
+01:14:26.077 --> 01:14:26.560
+line.
+
+405e8971-c2a7-4c8d-ac76-0019fe9f29c3-0
+01:14:29.750 --> 01:14:40.416
+Oh, yeah, she might like better.
+I do like better. You gotta give
+
+405e8971-c2a7-4c8d-ac76-0019fe9f29c3-1
+01:14:40.416 --> 01:14:49.789
+it the old. Give it the English.
+All right. So gotta have
+
+405e8971-c2a7-4c8d-ac76-0019fe9f29c3-2
+01:14:49.789 --> 01:14:57.870
+options. We're back in. Is
+everyone here? Jeremy.
+
+4e93c135-a6af-45c5-94ff-76033b601e0a-0
+01:15:00.280 --> 01:15:05.809
+Hang on, let me let Jeremy so
+you can hear me. Go ahead
+
+4e93c135-a6af-45c5-94ff-76033b601e0a-1
+01:15:05.809 --> 01:15:11.240
+though, without him. How about
+Parker? Oh, he's there.
+
+607aa5bb-d52f-4e16-a822-f82d63cc66c2-0
+01:15:29.740 --> 01:15:44.429
+It's actually kind of helpful.
+Oh, it's also a picture like
+
+607aa5bb-d52f-4e16-a822-f82d63cc66c2-1
+01:15:44.429 --> 01:15:50.060
+this copy. There we go.
+
+029a6cad-3256-409b-ba16-c41ec83d18f2-0
+01:16:25.860 --> 01:16:36.265
+Word wrap. All right, I'll deal
+with that later. OK. So we've
+
+029a6cad-3256-409b-ba16-c41ec83d18f2-1
+01:16:36.265 --> 01:16:45.664
+got a trader. Is that the
+customer? The trader? Yep. OK
+
+029a6cad-3256-409b-ba16-c41ec83d18f2-2
+01:16:45.664 --> 01:16:49.860
+and they have physicians.
+
+3e868b25-4544-4beb-aa30-10a72825dca9-0
+01:16:54.870 --> 01:17:04.112
+This this will be their own
+spreadsheet of positions, right?
+
+3e868b25-4544-4beb-aa30-10a72825dca9-1
+01:17:04.112 --> 01:17:12.295
+It's not like these are
+positions in the system, it's
+
+3e868b25-4544-4beb-aa30-10a72825dca9-2
+01:17:12.295 --> 01:17:21.234
+their own, their own Excel
+spreadsheet. And then are these
+
+3e868b25-4544-4beb-aa30-10a72825dca9-3
+01:17:21.234 --> 01:17:22.750
+positions?
+
+46394771-aab4-4375-b73c-d92c6437012f-0
+01:17:24.890 --> 01:17:33.723
+I guess it was certain template,
+right? We have an Excel template
+
+46394771-aab4-4375-b73c-d92c6437012f-1
+01:17:33.723 --> 01:17:42.289
+gonna be well potentially like
+standardizing whatever they have
+
+46394771-aab4-4375-b73c-d92c6437012f-2
+01:17:42.289 --> 01:17:50.988
+to a standard template. Yeah, my
+guess would be we'll we'll want
+
+46394771-aab4-4375-b73c-d92c6437012f-3
+01:17:50.988 --> 01:17:58.350
+to build different importing
+like different importers.
+
+13c7b340-d9b8-4fc3-8b4a-3b00b3598ab1-0
+01:17:58.850 --> 01:18:04.855
+Like, like there's a lot of,
+there's a lot of firms that have
+
+13c7b340-d9b8-4fc3-8b4a-3b00b3598ab1-1
+01:18:04.855 --> 01:18:10.666
+the same clearing firm, first of
+all, and then a lot of the
+
+13c7b340-d9b8-4fc3-8b4a-3b00b3598ab1-2
+01:18:10.666 --> 01:18:16.090
+clearing firms use the same
+accounting software. So the
+
+13c7b340-d9b8-4fc3-8b4a-3b00b3598ab1-3
+01:18:16.090 --> 01:18:22.386
+easiest way for the customer is
+probably going to be to upload a
+
+13c7b340-d9b8-4fc3-8b4a-3b00b3598ab1-4
+01:18:22.386 --> 01:18:27.810
+file that they already have. And
+I think it's probably.
+
+7959a4de-424f-4f5a-b1f8-43925cc5f208-0
+01:18:29.710 --> 01:18:35.733
+Somewhat doable to support at
+least like the major use cases
+
+7959a4de-424f-4f5a-b1f8-43925cc5f208-1
+01:18:35.733 --> 01:18:42.152
+there, so that I think would be
+the best UX if it's if it's like
+
+7959a4de-424f-4f5a-b1f8-43925cc5f208-2
+01:18:42.152 --> 01:18:48.373
+possible, it's just to support
+whatever file they already have
+
+7959a4de-424f-4f5a-b1f8-43925cc5f208-3
+01:18:48.373 --> 01:18:54.397
+and those would be like the
+position files from the clearing
+
+7959a4de-424f-4f5a-b1f8-43925cc5f208-4
+01:18:54.397 --> 01:18:54.990
+firms.
+
+ce232112-27ca-441b-a5d3-0082cc3bff67-0
+01:19:00.300 --> 01:19:10.931
+They don't change those files
+too often, do they? I mean,
+
+ce232112-27ca-441b-a5d3-0082cc3bff67-1
+01:19:10.931 --> 01:19:22.480
+okay. Yeah, not data wise. Okay.
+Yeah. Cool Denise, I like it.
+
+290bacf1-e0c2-4776-8af6-c5d501a1fb0f-0
+01:19:47.770 --> 01:19:51.832
+And then Mike, were you were you
+sort of thinking about this as a
+
+290bacf1-e0c2-4776-8af6-c5d501a1fb0f-1
+01:19:51.832 --> 01:19:55.648
+fancy guess and check tool like
+we we had at white Pines, are
+
+290bacf1-e0c2-4776-8af6-c5d501a1fb0f-2
+01:19:55.648 --> 01:19:59.095
+you thinking of like an actual
+optimizer here an actual
+
+290bacf1-e0c2-4776-8af6-c5d501a1fb0f-3
+01:19:59.095 --> 01:20:02.849
+optimizer like you would you
+would like I mean we just have.
+
+443e514a-c74c-4e9d-8ac2-27710db1422f-0
+01:20:03.470 --> 01:20:07.666
+A bunch of like precanned like
+trade inputs basically or we'd
+
+443e514a-c74c-4e9d-8ac2-27710db1422f-1
+01:20:07.666 --> 01:20:11.997
+start with that. That would be
+like merger one of this and just
+
+443e514a-c74c-4e9d-8ac2-27710db1422f-2
+01:20:11.997 --> 01:20:16.193
+like you know if you're if the
+scenario is like down extreme,
+
+443e514a-c74c-4e9d-8ac2-27710db1422f-3
+01:20:16.193 --> 01:20:20.254
+oh hey if you bought like X
+number of puts or whatever that
+
+443e514a-c74c-4e9d-8ac2-27710db1422f-4
+01:20:20.254 --> 01:20:24.585
+is how much your margin would be
+reduced, OK. I'm not sure it'd
+
+443e514a-c74c-4e9d-8ac2-27710db1422f-5
+01:20:24.585 --> 01:20:28.916
+be a total like solver for like
+this is the optimal thing to do
+
+443e514a-c74c-4e9d-8ac2-27710db1422f-6
+01:20:28.916 --> 01:20:32.910
+10 trades to get your margin
+down to whatever right, yeah.
+
+44b9c412-0038-4bf0-9e8b-f35e36d8cdbe-0
+01:20:35.960 --> 01:20:41.130
+Some more of a heuristic
+approach than a true numerical
+
+44b9c412-0038-4bf0-9e8b-f35e36d8cdbe-1
+01:20:41.130 --> 01:20:46.762
+minimization or whatever. Yeah.
+I just, I think you're gonna
+
+44b9c412-0038-4bf0-9e8b-f35e36d8cdbe-2
+01:20:46.762 --> 01:20:52.487
+get, I don't know, 80% of the
+way there with 20% of the work.
+
+44b9c412-0038-4bf0-9e8b-f35e36d8cdbe-3
+01:20:52.487 --> 01:20:58.027
+Yeah. Do you want do you want
+the guessing check too? Yeah,
+
+44b9c412-0038-4bf0-9e8b-f35e36d8cdbe-4
+01:20:58.027 --> 01:20:59.320
+yeah. Yep. OK.
+
+fbc7f592-82e6-4624-9519-281910450d02-0
+01:21:00.240 --> 01:21:05.481
+Okay, some background info here.
+Just so margins is essentially
+
+fbc7f592-82e6-4624-9519-281910450d02-1
+01:21:05.481 --> 01:21:10.641
+the amount of capital that you
+have to have in your account in
+
+fbc7f592-82e6-4624-9519-281910450d02-2
+01:21:10.641 --> 01:21:15.556
+order for the clearing firm to
+not start blowing you out of
+
+fbc7f592-82e6-4624-9519-281910450d02-3
+01:21:15.556 --> 01:21:20.880
+your positions. It's also called
+performance bond. You might see
+
+fbc7f592-82e6-4624-9519-281910450d02-4
+01:21:20.880 --> 01:21:25.466
+that term some places, but
+probably most people call it
+
+fbc7f592-82e6-4624-9519-281910450d02-5
+01:21:25.466 --> 01:21:26.040
+margin.
+
+c0e1256d-261e-45ef-8900-575811acb5bf-0
+01:21:28.680 --> 01:21:37.107
+Span SPAN, all caps is the CME
+groups system for calculating
+
+c0e1256d-261e-45ef-8900-575811acb5bf-1
+01:21:37.107 --> 01:21:45.259
+what that margin is, and it's
+actually used by a number of
+
+c0e1256d-261e-45ef-8900-575811acb5bf-2
+01:21:45.259 --> 01:21:54.239
+other exchanges too, but I don't
+think we're going to care about
+
+c0e1256d-261e-45ef-8900-575811acb5bf-3
+01:21:54.239 --> 01:21:57.970
+many of them, so maybe mjx.
+
+1c6c0d8b-21e9-493a-9811-e7d7d0e9e1d9-0
+01:22:03.830 --> 01:22:08.532
+So it's a bar, it's a bar
+calculation. No, it's not a bar
+
+1c6c0d8b-21e9-493a-9811-e7d7d0e9e1d9-1
+01:22:08.532 --> 01:22:12.910
+calculation. They like to call
+it that, but it's very
+
+1c6c0d8b-21e9-493a-9811-e7d7d0e9e1d9-2
+01:22:12.910 --> 01:22:18.018
+different. It's it's a scenario
+analysis. Basically do a bunch
+
+1c6c0d8b-21e9-493a-9811-e7d7d0e9e1d9-3
+01:22:18.018 --> 01:22:21.910
+of what if scenarios choose the
+biggest number.
+
+38dbcd8f-7832-42a7-80b4-249b6d81ba62-0
+01:22:30.240 --> 01:22:34.595
+Say again what the the clearing
+firm would do if you don't have
+
+38dbcd8f-7832-42a7-80b4-249b6d81ba62-1
+01:22:34.595 --> 01:22:39.088
+enough margin? That's the amount
+of capital. First they would ask
+
+38dbcd8f-7832-42a7-80b4-249b6d81ba62-2
+01:22:39.088 --> 01:22:43.443
+you to send them more money, and
+then if you don't do that long
+
+38dbcd8f-7832-42a7-80b4-249b6d81ba62-3
+01:22:43.443 --> 01:22:47.595
+enough, then they will start
+selling parts of your portfolio
+
+38dbcd8f-7832-42a7-80b4-249b6d81ba62-4
+01:22:47.595 --> 01:22:51.815
+to get your margin down to how
+much your capital can actually
+
+38dbcd8f-7832-42a7-80b4-249b6d81ba62-5
+01:22:51.815 --> 01:22:52.360
+support.
+
+73823826-d634-4aea-a053-c14daef380fd-0
+01:23:06.750 --> 01:23:13.334
+OK, so we loaded the data, we
+got the positions, and then
+
+73823826-d634-4aea-a053-c14daef380fd-1
+01:23:13.334 --> 01:23:19.352
+we're going to run it through
+the calculator. So the
+
+73823826-d634-4aea-a053-c14daef380fd-2
+01:23:19.352 --> 01:23:25.936
+optimizer, Yep, I get to show
+that process here. But what
+
+73823826-d634-4aea-a053-c14daef380fd-3
+01:23:25.936 --> 01:23:31.613
+would the optimizer it would
+come back with? What
+
+73823826-d634-4aea-a053-c14daef380fd-4
+01:23:31.613 --> 01:23:33.430
+recommendations.
+
+09a3fe71-a706-41ca-91f0-f05d43351217-0
+01:23:34.910 --> 01:24:01.120
+A set of recommended trades.
+What did I just do?
+
+e4d1b7ed-15ba-429b-a0d8-811a11fd961c-0
+01:24:11.760 --> 01:24:19.435
+All right. Someone can take care
+of that for me. I'll get it. No,
+
+e4d1b7ed-15ba-429b-a0d8-811a11fd961c-1
+01:24:19.435 --> 01:24:25.600
+I can't get out of it now. Come
+on. Oh, there it is.
+
+0f1d4b8b-a548-45f7-aad8-444fd2c755c2-0
+01:25:01.810 --> 01:25:03.610
+I definitely would call it the
+optimizer.
+
+077eaef3-5ac2-4e3b-806b-8156028621c5-0
+01:25:25.130 --> 01:25:33.539
+Talking about persistency when I
+load in my position spreadsheet,
+
+077eaef3-5ac2-4e3b-806b-8156028621c5-1
+01:25:33.539 --> 01:25:41.821
+if I come back tomorrow, is that
+still there or is it transient?
+
+077eaef3-5ac2-4e3b-806b-8156028621c5-2
+01:25:41.821 --> 01:25:44.370
+I would probably be.
+
+96ea7e15-5f8a-4cf9-a169-7d8a1dfcc015-0
+01:25:45.670 --> 01:25:49.990
+Willing to make that transient
+to make the implementation
+
+96ea7e15-5f8a-4cf9-a169-7d8a1dfcc015-1
+01:25:49.990 --> 01:25:54.607
+easier. I don't know what you
+think about that, Mike. Yeah, I
+
+96ea7e15-5f8a-4cf9-a169-7d8a1dfcc015-2
+01:25:54.607 --> 01:25:59.076
+kind of agree with you. So if
+it's transient, you might not
+
+96ea7e15-5f8a-4cf9-a169-7d8a1dfcc015-3
+01:25:59.076 --> 01:26:03.843
+even need a trainer to log in.
+We're gonna want it guarded by a
+
+96ea7e15-5f8a-4cf9-a169-7d8a1dfcc015-4
+01:26:03.843 --> 01:26:07.270
+login just to keep randoms out
+of our system.
+
+637fd8d6-63ba-465c-b17e-1470daa4b4da-0
+01:26:22.590 --> 01:26:26.960
+It's pretty. So to a certain
+extent, it's transient anyway.
+
+637fd8d6-63ba-465c-b17e-1470daa4b4da-1
+01:26:26.960 --> 01:26:31.185
+Like like your position is
+probably going to be different
+
+637fd8d6-63ba-465c-b17e-1470daa4b4da-2
+01:26:31.185 --> 01:26:35.556
+tomorrow. Yeah, I guess maybe
+that's not true of all of our
+
+637fd8d6-63ba-465c-b17e-1470daa4b4da-3
+01:26:35.556 --> 01:26:40.218
+clients, but is there a need to
+see what that was when you made
+
+637fd8d6-63ba-465c-b17e-1470daa4b4da-4
+01:26:40.218 --> 01:26:44.443
+the trade, see what that
+information was, what that trade
+
+637fd8d6-63ba-465c-b17e-1470daa4b4da-5
+01:26:44.443 --> 01:26:45.389
+was based on?
+
+0a6dfaa4-4d67-4706-af9c-0d7cbf13dddb-0
+01:26:47.660 --> 01:26:52.494
+Yeah, I mean I think it's, it
+would be kind of like a nice to
+
+0a6dfaa4-4d67-4706-af9c-0d7cbf13dddb-1
+01:26:52.494 --> 01:26:56.705
+have to have some history, but I
+don't think the core
+
+0a6dfaa4-4d67-4706-af9c-0d7cbf13dddb-2
+01:26:56.705 --> 01:27:01.618
+functionality that we definitely
+need. OK. So we'll start with
+
+0a6dfaa4-4d67-4706-af9c-0d7cbf13dddb-3
+01:27:01.618 --> 01:27:06.531
+the transient, but Randy, Scott
+Parker, we may need to keep in
+
+0a6dfaa4-4d67-4706-af9c-0d7cbf13dddb-4
+01:27:06.531 --> 01:27:11.054
+mind that we may need to
+preserve it down the road. Yeah.
+
+0a6dfaa4-4d67-4706-af9c-0d7cbf13dddb-5
+01:27:11.054 --> 01:27:13.939
+So then basically like when you
+get.
+
+43718747-aa84-40a9-b2d0-8931361464a2-0
+01:27:19.890 --> 01:27:28.787
+You have starting positions, you
+add recommended trades and then
+
+43718747-aa84-40a9-b2d0-8931361464a2-1
+01:27:28.787 --> 01:27:36.864
+you get a new position. So
+should we put in a something in
+
+43718747-aa84-40a9-b2d0-8931361464a2-2
+01:27:36.864 --> 01:27:40.150
+the middle here of like?
+
+675d67f1-9e79-4c35-8431-427d2ef2e383-0
+01:27:50.880 --> 01:27:56.347
+Portfolio calculations. So what
+I'm thinking is you can load in
+
+675d67f1-9e79-4c35-8431-427d2ef2e383-1
+01:27:56.347 --> 01:28:01.644
+your spreadsheet and and you
+could run the span calculations,
+
+675d67f1-9e79-4c35-8431-427d2ef2e383-2
+01:28:01.644 --> 01:28:06.941
+see what the the span number is,
+right? Yeah. The way I would
+
+675d67f1-9e79-4c35-8431-427d2ef2e383-3
+01:28:06.941 --> 01:28:12.067
+think about it is that you have
+some kind of positions data
+
+675d67f1-9e79-4c35-8431-427d2ef2e383-4
+01:28:12.067 --> 01:28:17.363
+structure. You can run your, I
+guess like an analysis tool on
+
+675d67f1-9e79-4c35-8431-427d2ef2e383-5
+01:28:17.363 --> 01:28:18.559
+it which will.
+
+049ee94e-83bf-459d-87e1-66295d599ede-0
+01:28:22.310 --> 01:28:29.324
+Show you sort of more detailed
+information than just like the
+
+049ee94e-83bf-459d-87e1-66295d599ede-1
+01:28:29.324 --> 01:28:36.564
+final number, and then you can
+get a position by either loading
+
+049ee94e-83bf-459d-87e1-66295d599ede-2
+01:28:36.564 --> 01:28:43.465
+it from a clearing from file,
+maybe loading it from our sort
+
+049ee94e-83bf-459d-87e1-66295d599ede-3
+01:28:43.465 --> 01:28:50.819
+of custom template, or starting
+with another position and adding
+
+049ee94e-83bf-459d-87e1-66295d599ede-4
+01:28:50.819 --> 01:28:52.290
+trades to it.
+
+302171ee-6d1e-4cca-8a19-36a58e1bb8aa-0
+01:28:57.620 --> 01:29:02.798
+So user could enter their own
+manual trades. There's yeah,
+
+302171ee-6d1e-4cca-8a19-36a58e1bb8aa-1
+01:29:02.798 --> 01:29:08.065
+yeah, and then there's the.
+Essentially there's there's two
+
+302171ee-6d1e-4cca-8a19-36a58e1bb8aa-2
+01:29:08.065 --> 01:29:13.770
+operations that can be done on a
+on a position. One is calculate
+
+302171ee-6d1e-4cca-8a19-36a58e1bb8aa-3
+01:29:13.770 --> 01:29:19.300
+recommended trades and the other
+is show me, show me analysis.
+
+4ac1c083-06dd-47f9-a061-936953fe33f0-0
+01:29:26.550 --> 01:29:26.870
+Right.
+
+380da62a-eddd-4b38-b265-5f24679a3971-0
+01:30:24.510 --> 01:30:31.883
+User entered positions, what the
+position being? Well, where if
+
+380da62a-eddd-4b38-b265-5f24679a3971-1
+01:30:31.883 --> 01:30:38.911
+they increase their position to
+something, yeah, I mean it's
+
+380da62a-eddd-4b38-b265-5f24679a3971-2
+01:30:38.911 --> 01:30:43.750
+it's a little bit arbitrary I
+guess like.
+
+8fd26da5-04ac-4c71-a06a-493cbe124082-0
+01:30:44.670 --> 01:30:48.975
+At the end of the day, the
+analysis and the recommendation
+
+8fd26da5-04ac-4c71-a06a-493cbe124082-1
+01:30:48.975 --> 01:30:53.718
+like algorithms are going to run
+on a position regardless of how
+
+8fd26da5-04ac-4c71-a06a-493cbe124082-2
+01:30:53.718 --> 01:30:58.388
+that position got created. You
+can create a position by loading
+
+8fd26da5-04ac-4c71-a06a-493cbe124082-3
+01:30:58.388 --> 01:31:02.620
+a file or by whatever kind of
+tools we want to provide to
+
+8fd26da5-04ac-4c71-a06a-493cbe124082-4
+01:31:02.620 --> 01:31:07.144
+modify it in the tool. So one of
+those would probably just be
+
+8fd26da5-04ac-4c71-a06a-493cbe124082-5
+01:31:07.144 --> 01:31:11.669
+like a one click add this trade
+to my recommended position or
+
+8fd26da5-04ac-4c71-a06a-493cbe124082-6
+01:31:11.669 --> 01:31:14.149
+add this recommended trade to
+my.
+
+35630d2d-cb7d-44d1-9797-62cbde433c7c-0
+01:31:14.960 --> 01:31:19.128
+Position from like the analysis
+tool. Another way might be just
+
+35630d2d-cb7d-44d1-9797-62cbde433c7c-1
+01:31:19.128 --> 01:31:22.971
+a total free form enter trades
+system. We could also maybe
+
+35630d2d-cb7d-44d1-9797-62cbde433c7c-2
+01:31:22.971 --> 01:31:27.010
+build like a, you know, like
+more of an edit tool or like you
+
+35630d2d-cb7d-44d1-9797-62cbde433c7c-3
+01:31:27.010 --> 01:31:30.787
+sort of show the existing
+positions and then can like you
+
+35630d2d-cb7d-44d1-9797-62cbde433c7c-4
+01:31:30.787 --> 01:31:34.826
+know adjust the number of each
+line on it or add new lines to
+
+35630d2d-cb7d-44d1-9797-62cbde433c7c-5
+01:31:34.826 --> 01:31:38.799
+it. But really that's kind of a,
+I guess what I would call a
+
+35630d2d-cb7d-44d1-9797-62cbde433c7c-6
+01:31:38.799 --> 01:31:42.968
+little bit of an implementation
+detail as far as how do you get
+
+35630d2d-cb7d-44d1-9797-62cbde433c7c-7
+01:31:42.968 --> 01:31:43.879
+that position.
+
+ce16522c-744b-4fb4-aa56-a5591544c847-0
+01:31:46.180 --> 01:31:51.162
+Yeah, how I'm imagining it is,
+once those recommended trades,
+
+ce16522c-744b-4fb4-aa56-a5591544c847-1
+01:31:51.162 --> 01:31:54.858
+once those trades, the
+recommended trades are
+
+ce16522c-744b-4fb4-aa56-a5591544c847-2
+01:31:54.858 --> 01:31:59.438
+recommended, then the user would
+be able to go ahead and
+
+ce16522c-744b-4fb4-aa56-a5591544c847-3
+01:31:59.438 --> 01:32:04.340
+implement that recommendation if
+they want. Maybe, as you're
+
+ce16522c-744b-4fb4-aa56-a5591544c847-4
+01:32:04.340 --> 01:32:08.357
+describing me, making some
+changes to it and then
+
+ce16522c-744b-4fb4-aa56-a5591544c847-5
+01:32:08.357 --> 01:32:13.340
+finalizing it. Yeah, it's not
+like a what if scenario, right?
+
+54e964df-1760-401c-ab49-e9db6c9320b9-0
+01:32:14.430 --> 01:32:19.104
+Yep, that's exactly what it is.
+The place I'm trying to
+
+54e964df-1760-401c-ab49-e9db6c9320b9-1
+01:32:19.104 --> 01:32:23.945
+reconcile my head is the the
+disconnect between trade and
+
+54e964df-1760-401c-ab49-e9db6c9320b9-2
+01:32:23.945 --> 01:32:28.703
+positions. You know, if you
+enter a trade on a financial
+
+54e964df-1760-401c-ab49-e9db6c9320b9-3
+01:32:28.703 --> 01:32:34.128
+instrument that you don't have,
+that trade is a position. If you
+
+54e964df-1760-401c-ab49-e9db6c9320b9-4
+01:32:34.128 --> 01:32:39.553
+enter a trade that increases or
+decreases your current position,
+
+54e964df-1760-401c-ab49-e9db6c9320b9-5
+01:32:39.553 --> 01:32:43.310
+there's some addition
+subtractions to go on.
+
+d0babc09-41d7-42df-9671-51332f9c8c35-0
+01:32:45.950 --> 01:32:51.132
+I think we can figure that out
+in our heads. I don't need to
+
+d0babc09-41d7-42df-9671-51332f9c8c35-1
+01:32:51.132 --> 01:32:56.569
+model that here, but clear that
+up at some point. Yeah, there's
+
+d0babc09-41d7-42df-9671-51332f9c8c35-2
+01:32:56.569 --> 01:33:01.751
+basically like a anything of
+positions as an object. There's
+
+d0babc09-41d7-42df-9671-51332f9c8c35-3
+01:33:01.751 --> 01:33:07.018
+going to be an add trades method
+to it that does exactly what
+
+d0babc09-41d7-42df-9671-51332f9c8c35-4
+01:33:07.018 --> 01:33:12.370
+you're talking about. If it's a
+totally new instrument, adds a
+
+d0babc09-41d7-42df-9671-51332f9c8c35-5
+01:33:12.370 --> 01:33:12.709
+new.
+
+95fb3332-8e74-4200-8f1e-16e35bec4b61-0
+01:33:13.190 --> 01:33:18.349
+Record sort of line. If it's
+modifications to existing then
+
+95fb3332-8e74-4200-8f1e-16e35bec4b61-1
+01:33:18.349 --> 01:33:23.766
+you modify the quantity of the
+existing records. A position is
+
+95fb3332-8e74-4200-8f1e-16e35bec4b61-2
+01:33:23.766 --> 01:33:29.355
+a collection of trades, is that
+no fair to say no, no a position
+
+95fb3332-8e74-4200-8f1e-16e35bec4b61-3
+01:33:29.355 --> 01:33:34.256
+is, well I guess what I was
+gonna say is a position is a
+
+95fb3332-8e74-4200-8f1e-16e35bec4b61-4
+01:33:34.256 --> 01:33:39.158
+collection of positions, but
+that's not very helpful. So
+
+95fb3332-8e74-4200-8f1e-16e35bec4b61-5
+01:33:39.158 --> 01:33:40.190
+essentially.
+
+071a6ef5-da61-4cce-8827-b3a4789f5c09-0
+01:33:41.230 --> 01:33:46.662
+A portfolio is a collection of
+positions, OK. Yeah. So maybe we
+
+071a6ef5-da61-4cce-8827-b3a4789f5c09-1
+01:33:46.662 --> 01:33:51.245
+should call it a portfolio.
+Yeah. So a portfolio is a
+
+071a6ef5-da61-4cce-8827-b3a4789f5c09-2
+01:33:51.245 --> 01:33:55.574
+collection of positions. A
+position is a financial
+
+071a6ef5-da61-4cce-8827-b3a4789f5c09-3
+01:33:55.574 --> 01:34:00.922
+instrument and the quantity that
+you have on that. And you can
+
+071a6ef5-da61-4cce-8827-b3a4789f5c09-4
+01:34:00.922 --> 01:34:06.015
+either do that as a signed
+quantity or you could do it as a
+
+071a6ef5-da61-4cce-8827-b3a4789f5c09-5
+01:34:06.015 --> 01:34:09.750
+side and a quantity that's
+always positive.
+
+8672686f-7eaf-40ce-9475-96c0e10e849c-0
+01:34:13.490 --> 01:34:18.342
+I kind of like to do signed
+quantities, but it seems like a
+
+8672686f-7eaf-40ce-9475-96c0e10e849c-1
+01:34:18.342 --> 01:34:23.114
+lot of people in the industry
+prefer quantities, always be
+
+8672686f-7eaf-40ce-9475-96c0e10e849c-2
+01:34:23.114 --> 01:34:28.209
+positive, then have a side to
+it. But you get to that quantity
+
+8672686f-7eaf-40ce-9475-96c0e10e849c-3
+01:34:28.209 --> 01:34:33.385
+through X number of trades over
+time, right? Yeah, OK. And then
+
+8672686f-7eaf-40ce-9475-96c0e10e849c-4
+01:34:33.385 --> 01:34:38.642
+I made a main thing that makes a
+trade different from a position
+
+8672686f-7eaf-40ce-9475-96c0e10e849c-5
+01:34:38.642 --> 01:34:39.289
+is that.
+
+b658c8df-4aec-44e0-9712-7ca09613bd96-0
+01:34:39.740 --> 01:34:45.514
+A trade has a price at which it
+was done. Are you
+
+b658c8df-4aec-44e0-9712-7ca09613bd96-1
+01:34:45.514 --> 01:34:52.674
+differentiating trade? Because
+really it's, it's the leg that
+
+b658c8df-4aec-44e0-9712-7ca09613bd96-2
+01:34:52.674 --> 01:34:59.718
+you have like in a in a, in a
+raw equity market or even bond
+
+b658c8df-4aec-44e0-9712-7ca09613bd96-3
+01:34:59.718 --> 01:35:05.954
+market, your collection of
+trades, your position is a
+
+b658c8df-4aec-44e0-9712-7ca09613bd96-4
+01:35:05.954 --> 01:35:08.379
+collection of trades.
+
+d1c765cb-2fa7-42e8-a24c-1fbf758db7c4-0
+01:35:11.100 --> 01:35:16.131
+It's it's not exactly a
+collection of trades. The like
+
+d1c765cb-2fa7-42e8-a24c-1fbf758db7c4-1
+01:35:16.131 --> 01:35:21.802
+the the position is built up
+over time by trades, but there's
+
+d1c765cb-2fa7-42e8-a24c-1fbf758db7c4-2
+01:35:21.802 --> 01:35:27.565
+sort of like an information loss
+there, right? Like if you buy
+
+d1c765cb-2fa7-42e8-a24c-1fbf758db7c4-3
+01:35:27.565 --> 01:35:32.504
+one, buy 2, sell 3, your
+position is 0. It's not that
+
+d1c765cb-2fa7-42e8-a24c-1fbf758db7c4-4
+01:35:32.504 --> 01:35:34.700
+whole history of trades.
+
+1e50b8b7-99a0-4b88-b557-972f7a4f7c4c-0
+01:35:46.380 --> 01:35:52.156
+I think for our purposes on Day
+12 we're OK with positions being
+
+1e50b8b7-99a0-4b88-b557-972f7a4f7c4c-1
+01:35:52.156 --> 01:35:57.755
+a client of checks for now. We
+can get in the nuances a little
+
+1e50b8b7-99a0-4b88-b557-972f7a4f7c4c-2
+01:35:57.755 --> 01:36:03.620
+bit later. If you actually do it
+that way in the code, it's going
+
+1e50b8b7-99a0-4b88-b557-972f7a4f7c4c-3
+01:36:03.620 --> 01:36:07.620
+to make your implementation
+pretty nasty OK.
+
+3dc72c1d-cae4-44e2-b63c-d4e79894e594-0
+01:36:12.500 --> 01:36:19.145
+Yeah, Kevin, Scott, Scott's
+right on this. Oh, I don't doubt
+
+3dc72c1d-cae4-44e2-b63c-d4e79894e594-1
+01:36:19.145 --> 01:36:26.118
+it. I'm just trying not to. Our
+team needs to know it. Our team
+
+3dc72c1d-cae4-44e2-b63c-d4e79894e594-2
+01:36:26.118 --> 01:36:32.655
+might not need to that right
+this minute. So I'm saying OK,
+
+3dc72c1d-cae4-44e2-b63c-d4e79894e594-3
+01:36:32.655 --> 01:36:37.340
+Plus we need here. Oh, I need to
+put some.
+
+fb5daf14-aca7-4a61-8db1-9cf2f8218ead-0
+01:36:38.500 --> 01:36:44.510
+Notes where we have these
+recommended trades, are these
+
+fb5daf14-aca7-4a61-8db1-9cf2f8218ead-1
+01:36:44.510 --> 01:36:51.271
+recommended trades the same ones
+that we may want to then turn
+
+fb5daf14-aca7-4a61-8db1-9cf2f8218ead-2
+01:36:51.271 --> 01:36:57.925
+into hot trades that we have in
+the axe binder? Probably not.
+
+fb5daf14-aca7-4a61-8db1-9cf2f8218ead-3
+01:36:57.925 --> 01:37:02.540
+They're sort of pretty different
+purposes.
+
+8ae9ba83-fd7c-4076-939f-c6b16519fc70-0
+01:37:07.620 --> 01:37:11.155
+I thought they were different
+purposes. I just want to make
+
+8ae9ba83-fd7c-4076-939f-c6b16519fc70-1
+01:37:11.155 --> 01:37:14.748
+sure that we didn't have a need
+to tie the two together. You
+
+8ae9ba83-fd7c-4076-939f-c6b16519fc70-2
+01:37:14.748 --> 01:37:18.637
+don't have the need. But I guess
+like in the perfect world, yeah,
+
+8ae9ba83-fd7c-4076-939f-c6b16519fc70-3
+01:37:18.637 --> 01:37:22.525
+you just have one hot trades and
+say, oh, I'm foolish, but I also
+
+8ae9ba83-fd7c-4076-939f-c6b16519fc70-4
+01:37:22.525 --> 01:37:26.119
+need to get this done by the end
+of the day to to, you know,
+
+8ae9ba83-fd7c-4076-939f-c6b16519fc70-5
+01:37:26.119 --> 01:37:29.478
+close out some of my, My
+Portfolio. So they're probably,
+
+8ae9ba83-fd7c-4076-939f-c6b16519fc70-6
+01:37:29.478 --> 01:37:33.130
+and that might not have been a
+good example. I guess what I'm
+
+8ae9ba83-fd7c-4076-939f-c6b16519fc70-7
+01:37:33.130 --> 01:37:35.900
+really getting at is do we have
+a need to tie?
+
+2f074144-9423-4768-95e9-47cc430929d7-0
+01:37:36.950 --> 01:37:41.870
+The two applications together,
+the Act Finder and the margin
+
+2f074144-9423-4768-95e9-47cc430929d7-1
+01:37:41.870 --> 01:37:47.032
+optimizer together. Or do they
+really serve different customers
+
+2f074144-9423-4768-95e9-47cc430929d7-2
+01:37:47.032 --> 01:37:51.872
+different purposes? They would
+serve the same customers but
+
+2f074144-9423-4768-95e9-47cc430929d7-3
+01:37:51.872 --> 01:37:56.954
+different purposes in like an
+ideal world. Long term like like
+
+2f074144-9423-4768-95e9-47cc430929d7-4
+01:37:56.954 --> 01:38:02.036
+an option on recommended trades
+in the margin tool send to hot
+
+2f074144-9423-4768-95e9-47cc430929d7-5
+01:38:02.036 --> 01:38:06.150
+trades would be like that would
+be a good feature.
+
+fcbaf62e-0e2a-4cde-8bf6-689faf09fc49-0
+01:38:07.610 --> 01:38:12.460
+But I don't think we want to
+build it that way initially. The
+
+fcbaf62e-0e2a-4cde-8bf6-689faf09fc49-1
+01:38:12.460 --> 01:38:17.311
+sort of for technical reasons
+based on how the market data is
+
+fcbaf62e-0e2a-4cde-8bf6-689faf09fc49-2
+01:38:17.311 --> 01:38:22.005
+being done, we're not going to
+be able to support arbitrary
+
+fcbaf62e-0e2a-4cde-8bf6-689faf09fc49-3
+01:38:22.005 --> 01:38:26.699
+trades in the hot trades. It's
+going to have to be like us,
+
+fcbaf62e-0e2a-4cde-8bf6-689faf09fc49-4
+01:38:26.699 --> 01:38:31.159
+like one of our sort of set
+canned options, whereas this
+
+fcbaf62e-0e2a-4cde-8bf6-689faf09fc49-5
+01:38:31.159 --> 01:38:36.010
+this tool is going to be is not
+going to constrain itself to.
+
+694508de-5303-4fa5-b739-13cb3fadda98-0
+01:38:38.290 --> 01:38:42.890
+Like those preset options. So
+initially we would want them to
+
+694508de-5303-4fa5-b739-13cb3fadda98-1
+01:38:42.890 --> 01:38:47.566
+log in and see do I want to go
+into xfinder or do I want to go
+
+694508de-5303-4fa5-b739-13cb3fadda98-2
+01:38:47.566 --> 01:38:52.167
+into margin optimizer and keep
+them separated like that but a
+
+694508de-5303-4fa5-b739-13cb3fadda98-3
+01:38:52.167 --> 01:38:56.768
+single log in? Yeah. Mmhmm. OK.
+Sorry, Kevin, keep going. You
+
+694508de-5303-4fa5-b739-13cb3fadda98-4
+01:38:56.768 --> 01:39:01.220
+were gonna make some notes for
+position spreadsheet. Should
+
+694508de-5303-4fa5-b739-13cb3fadda98-5
+01:39:01.220 --> 01:39:05.673
+this be a portfolio? I mean,
+logically it's the same thing,
+
+694508de-5303-4fa5-b739-13cb3fadda98-6
+01:39:05.673 --> 01:39:05.969
+but.
+
+39862735-6a44-4437-a7bc-47c913726354-0
+01:39:08.120 --> 01:39:12.529
+You know, if you think of your
+marketing material, would you
+
+39862735-6a44-4437-a7bc-47c913726354-1
+01:39:12.529 --> 01:39:16.793
+tell your users to update,
+upload your positions or upload
+
+39862735-6a44-4437-a7bc-47c913726354-2
+01:39:16.793 --> 01:39:21.419
+your portfolio. So I feel like
+in the like the way I've usually
+
+39862735-6a44-4437-a7bc-47c913726354-3
+01:39:21.419 --> 01:39:26.045
+talked about it in the past, I
+would have called it upload your
+
+39862735-6a44-4437-a7bc-47c913726354-4
+01:39:26.045 --> 01:39:30.092
+positions, but it kind of makes
+more sense to call it a
+
+39862735-6a44-4437-a7bc-47c913726354-5
+01:39:30.092 --> 01:39:34.429
+portfolio just to give different
+names to a portfolio and a
+
+39862735-6a44-4437-a7bc-47c913726354-6
+01:39:34.429 --> 01:39:35.079
+position.
+
+940e53c9-8c71-4b07-90f1-a4319cd0e51e-0
+01:39:38.100 --> 01:39:43.443
+But I don't know how much we
+care about that, but I think
+
+940e53c9-8c71-4b07-90f1-a4319cd0e51e-1
+01:39:43.443 --> 01:39:49.062
+sort of what we talked about
+before, if we make a portfolio,
+
+940e53c9-8c71-4b07-90f1-a4319cd0e51e-2
+01:39:49.062 --> 01:39:54.589
+a collection of positions, then
+you would want to call that
+
+940e53c9-8c71-4b07-90f1-a4319cd0e51e-3
+01:39:54.589 --> 01:40:00.485
+portfolio. Well what what I was
+thinking about was representing
+
+940e53c9-8c71-4b07-90f1-a4319cd0e51e-4
+01:40:00.485 --> 01:40:02.420
+with physicians here.
+
+2e9adfb8-df5e-4458-a32f-af3e2177ddab-0
+01:40:22.950 --> 01:40:23.670
+What?
+
+94df92ee-994e-4688-9b19-3d5707f39f87-0
+01:40:56.470 --> 01:41:01.339
+So now work with me for a
+second. I was thinking about
+
+94df92ee-994e-4688-9b19-3d5707f39f87-1
+01:41:01.339 --> 01:41:06.385
+having these are really like
+uploaded positions and then
+
+94df92ee-994e-4688-9b19-3d5707f39f87-2
+01:41:06.385 --> 01:41:11.521
+recommended trades and user
+entered trades. Would it make
+
+94df92ee-994e-4688-9b19-3d5707f39f87-3
+01:41:11.521 --> 01:41:16.744
+sense to put them all at the
+same level like this that the
+
+94df92ee-994e-4688-9b19-3d5707f39f87-4
+01:41:16.744 --> 01:41:17.630
+portfolio?
+
+77274b0a-bbd2-4af8-8c44-924fb3488b85-0
+01:41:20.540 --> 01:41:26.368
+In fact, that shouldn't even
+call it portfolio spreadsheet. I
+
+77274b0a-bbd2-4af8-8c44-924fb3488b85-1
+01:41:26.368 --> 01:41:32.008
+should call it portfolio. I
+think you might want to reverse
+
+77274b0a-bbd2-4af8-8c44-924fb3488b85-2
+01:41:32.008 --> 01:41:37.649
+the order of portfolio and
+positions there because like the
+
+77274b0a-bbd2-4af8-8c44-924fb3488b85-3
+01:41:37.649 --> 01:41:43.101
+recommended trades in the
+analysis are operations done to
+
+77274b0a-bbd2-4af8-8c44-924fb3488b85-4
+01:41:43.101 --> 01:41:47.049
+a portfolio and then user ended
+and then.
+
+e2f5b029-06d3-4f2e-a85c-b4288a496726-0
+01:41:48.590 --> 01:41:53.915
+Adding trades to a portfolio to
+yield a new portfolio is like an
+
+e2f5b029-06d3-4f2e-a85c-b4288a496726-1
+01:41:53.915 --> 01:41:58.995
+operation you can do and then
+sending your recommended trades
+
+e2f5b029-06d3-4f2e-a85c-b4288a496726-2
+01:41:58.995 --> 01:42:03.911
+into an existing portfolio is
+another operation you can do.
+
+e2f5b029-06d3-4f2e-a85c-b4288a496726-3
+01:42:03.911 --> 01:42:08.828
+Yeah. But we're at this point, I
+think we're just doing the
+
+e2f5b029-06d3-4f2e-a85c-b4288a496726-4
+01:42:08.828 --> 01:42:13.990
+entities, not the actions. OK,
+then I I would probably delete.
+
+47704e7e-8dd8-4ef5-ad57-9bd05f51b9d7-0
+01:42:19.180 --> 01:42:29.268
+Recommended trades and I guess
+maybe delete portfolio if we
+
+47704e7e-8dd8-4ef5-ad57-9bd05f51b9d7-1
+01:42:29.268 --> 01:42:39.861
+just want to talk about it as
+collection of positions and then
+
+47704e7e-8dd8-4ef5-ad57-9bd05f51b9d7-2
+01:42:39.861 --> 01:42:47.260
+maybe we don't even need the
+trades either.
+
+55dc2025-e342-44b4-a40d-c6c61672cc8c-0
+01:42:50.980 --> 01:42:58.466
+It's just a a modification to a
+positions, right? But if if we
+
+55dc2025-e342-44b4-a40d-c6c61672cc8c-1
+01:42:58.466 --> 01:43:05.834
+look at this port Phillip being
+a collection of positions and
+
+55dc2025-e342-44b4-a40d-c6c61672cc8c-2
+01:43:05.834 --> 01:43:12.488
+just working for a second, we
+can undo it if we have to
+
+55dc2025-e342-44b4-a40d-c6c61672cc8c-3
+01:43:12.488 --> 01:43:17.480
+uploaded positions and then we
+have that.
+
+e58d56fb-f8a4-4094-b7de-a34266174794-0
+01:43:27.410 --> 01:43:35.090
+I'm not sure where to put this
+right this second, but portfolio
+
+e58d56fb-f8a4-4094-b7de-a34266174794-1
+01:43:35.090 --> 01:43:42.410
+can contain these three things
+and then we do an analysis on
+
+e58d56fb-f8a4-4094-b7de-a34266174794-2
+01:43:42.410 --> 01:43:50.210
+the portfolio and that analysis
+comes back with data, right. And
+
+e58d56fb-f8a4-4094-b7de-a34266174794-3
+01:43:50.210 --> 01:43:54.770
+that's if we think of like an
+object.
+
+fa4d5fba-d527-486a-a1d2-eacf8d6a873b-0
+01:43:58.010 --> 01:44:04.866
+Well, that that analysis is,
+does the portfolio analysis
+
+fa4d5fba-d527-486a-a1d2-eacf8d6a873b-1
+01:44:04.866 --> 01:44:12.445
+create the recommended trades?
+No. I would think about them as
+
+fa4d5fba-d527-486a-a1d2-eacf8d6a873b-2
+01:44:12.445 --> 01:44:19.542
+two different operations.
+They're probably the recommended
+
+fa4d5fba-d527-486a-a1d2-eacf8d6a873b-3
+01:44:19.542 --> 01:44:26.880
+trades will use the portfolio
+analysis under the hood, yeah.
+
+2dd5a736-175a-40ef-b6e0-8ca349faf2be-0
+01:44:33.140 --> 01:44:35.180
+I'm going to do that with a nice
+dotted line here.
+
+cc92316b-8a86-4ca3-ad6c-64d37f6029fe-0
+01:45:14.510 --> 01:45:18.991
+We think, Scott. Sure. I mean I
+wouldn't really make recommended
+
+cc92316b-8a86-4ca3-ad6c-64d37f6029fe-1
+01:45:18.991 --> 01:45:23.266
+trades and user entered trades
+different objects or different
+
+cc92316b-8a86-4ca3-ad6c-64d37f6029fe-2
+01:45:23.266 --> 01:45:27.471
+entities, they did the same
+thing really. It's just a matter
+
+cc92316b-8a86-4ca3-ad6c-64d37f6029fe-3
+01:45:27.471 --> 01:45:31.884
+of how do you build them up. One
+is generated programmatically,
+
+cc92316b-8a86-4ca3-ad6c-64d37f6029fe-4
+01:45:31.884 --> 01:45:35.952
+one is hand entered, yeah,
+that's what you're saying, then
+
+cc92316b-8a86-4ca3-ad6c-64d37f6029fe-5
+01:45:35.952 --> 01:45:38.710
+we can use one of these little
+section.
+
+b943ae30-907f-435a-97d2-c0cccf34ad73-0
+01:45:40.290 --> 01:45:50.294
+The entity, the entity is going
+to be the same, Kevin. It's just
+
+b943ae30-907f-435a-97d2-c0cccf34ad73-1
+01:45:50.294 --> 01:45:59.838
+the action of how we enter it.
+I'm totally with you. Can I do
+
+b943ae30-907f-435a-97d2-c0cccf34ad73-2
+01:45:59.838 --> 01:46:03.840
+align to this? I can ****.
+
+31fd4748-f6df-4fd4-98b8-1b76ee70413f-0
+01:46:32.130 --> 01:46:36.434
+Better or worse, like the eye
+doctor. Yeah, I mean I still
+
+31fd4748-f6df-4fd4-98b8-1b76ee70413f-1
+01:46:36.434 --> 01:46:40.520
+think you've got, you know,
+duplication there, like the
+
+31fd4748-f6df-4fd4-98b8-1b76ee70413f-2
+01:46:40.520 --> 01:46:45.044
+recommended trades. And these
+are entered trades. They're not
+
+31fd4748-f6df-4fd4-98b8-1b76ee70413f-3
+01:46:45.044 --> 01:46:49.641
+different entities, they're just
+different methods for popular
+
+31fd4748-f6df-4fd4-98b8-1b76ee70413f-4
+01:46:49.641 --> 01:46:53.727
+for creating an entity and
+upload positions really to a
+
+31fd4748-f6df-4fd4-98b8-1b76ee70413f-5
+01:46:53.727 --> 01:46:55.770
+certain extent the same way.
+
+6e92cc2a-0115-43af-8216-8ef78836a464-0
+01:47:01.130 --> 01:47:04.749
+Like, let's just take, you know,
+take a file, turn it into a
+
+6e92cc2a-0115-43af-8216-8ef78836a464-1
+01:47:04.749 --> 01:47:08.250
+portfolio. Yeah, I'm, I'm
+agreeing what you're saying. I'm
+
+6e92cc2a-0115-43af-8216-8ef78836a464-2
+01:47:08.250 --> 01:47:12.047
+trying to represent it well. But
+like, operations aren't really
+
+6e92cc2a-0115-43af-8216-8ef78836a464-3
+01:47:12.047 --> 01:47:15.845
+supposed to be on this, right?
+Right. That's correct. It should
+
+6e92cc2a-0115-43af-8216-8ef78836a464-4
+01:47:15.845 --> 01:47:19.464
+just be entities. That's why I'm
+having a hard time with the
+
+6e92cc2a-0115-43af-8216-8ef78836a464-5
+01:47:19.464 --> 01:47:23.143
+portfolio analysis too. So I
+know, as Scott said a while ago,
+
+6e92cc2a-0115-43af-8216-8ef78836a464-6
+01:47:23.143 --> 01:47:27.000
+there's two things you can do on
+a portfolio, right? You can see
+
+6e92cc2a-0115-43af-8216-8ef78836a464-7
+01:47:27.000 --> 01:47:29.730
+recommended trades. You can see
+the analysis.
+
+9396f798-d7fa-4524-a35d-046d3a3f18da-0
+01:47:30.280 --> 01:47:35.882
+It's definitely sound like use
+cases, but I I do still feel
+
+9396f798-d7fa-4524-a35d-046d3a3f18da-1
+01:47:35.882 --> 01:47:41.205
+like we need some kind of
+representation of a trade here
+
+9396f798-d7fa-4524-a35d-046d3a3f18da-2
+01:47:41.205 --> 01:47:46.808
+as an entity and just whatever
+type of trade is that can be
+
+9396f798-d7fa-4524-a35d-046d3a3f18da-3
+01:47:46.808 --> 01:47:52.224
+that's can be defined later,
+well then it really would be
+
+9396f798-d7fa-4524-a35d-046d3a3f18da-4
+01:47:52.224 --> 01:47:56.520
+positions and then these two
+kind of go away.
+
+7b1e7a21-a8ef-480f-a175-bc7625bab61b-0
+01:47:59.470 --> 01:48:06.759
+Don't you still need one of
+them? Well, these are
+
+7b1e7a21-a8ef-480f-a175-bc7625bab61b-1
+01:48:06.759 --> 01:48:15.798
+effectively positions and so I
+mean if we want to jury rigs a
+
+7b1e7a21-a8ef-480f-a175-bc7625bab61b-2
+01:48:15.798 --> 01:48:24.254
+little bit, I mean like we
+could, we could, we could make
+
+7b1e7a21-a8ef-480f-a175-bc7625bab61b-3
+01:48:24.254 --> 01:48:26.150
+it like that.
+
+f4b2df94-d5a6-4f37-886b-cad4c14b53cd-0
+01:48:28.790 --> 01:48:36.052
+I don't know, that's just that
+seems like cheating. I guess
+
+f4b2df94-d5a6-4f37-886b-cad4c14b53cd-1
+01:48:36.052 --> 01:48:43.556
+I'm, I'm still not completely
+understanding why we don't just
+
+f4b2df94-d5a6-4f37-886b-cad4c14b53cd-2
+01:48:43.556 --> 01:48:50.940
+have portfolio and trades or
+maybe positions and or position
+
+f4b2df94-d5a6-4f37-886b-cad4c14b53cd-3
+01:48:50.940 --> 01:48:57.839
+and trade because we don't need,
+we don't need different
+
+f4b2df94-d5a6-4f37-886b-cad4c14b53cd-4
+01:48:57.839 --> 01:49:05.343
+different entities for a thing
+and a collection of the thing,
+
+f4b2df94-d5a6-4f37-886b-cad4c14b53cd-5
+01:49:05.343 --> 01:49:06.070
+right?
+
+d4670a66-3a50-4543-b346-8f8ab9e7ccda-0
+01:49:07.070 --> 01:49:13.032
+Do we, so you're saying a
+portfolio just being a is is
+
+d4670a66-3a50-4543-b346-8f8ab9e7ccda-1
+01:49:13.032 --> 01:49:19.646
+almost like a it should, it's a
+virtual construct. Yeah, you
+
+d4670a66-3a50-4543-b346-8f8ab9e7ccda-2
+01:49:19.646 --> 01:49:25.392
+mentioned earlier about
+positions as a collection of
+
+d4670a66-3a50-4543-b346-8f8ab9e7ccda-3
+01:49:25.392 --> 01:49:31.463
+positions which sounded
+redundant, but that sounds like
+
+d4670a66-3a50-4543-b346-8f8ab9e7ccda-4
+01:49:31.463 --> 01:49:35.800
+what we're getting back to
+almost here.
+
+548a11ff-5ed7-4c05-94e9-651f08b7bcda-0
+01:49:45.480 --> 01:49:57.226
+So Scotty thinking that really
+they're uploading positions and
+
+548a11ff-5ed7-4c05-94e9-651f08b7bcda-1
+01:49:57.226 --> 01:50:08.600
+then you could we could also say
+that a trader manly enters.
+
+ea2489e6-7e85-469e-a58c-40277fccc135-0
+01:50:14.790 --> 01:50:22.840
+Yeah. And then portfolio
+analysis informs recommends,
+
+ea2489e6-7e85-469e-a58c-40277fccc135-1
+01:50:22.840 --> 01:50:31.637
+yeah, I kind of like that. We
+want to talk about portfolio
+
+ea2489e6-7e85-469e-a58c-40277fccc135-2
+01:50:31.637 --> 01:50:40.433
+analysis a little bit. So it's
+it's not just an operation,
+
+ea2489e6-7e85-469e-a58c-40277fccc135-3
+01:50:40.433 --> 01:50:42.669
+there's like a.
+
+e26a15f3-421c-4780-8d24-fdaf7179f4d4-0
+01:50:44.500 --> 01:50:58.316
+Like a data set almost, but like
+it would be things like a list
+
+e26a15f3-421c-4780-8d24-fdaf7179f4d4-1
+01:50:58.316 --> 01:51:11.052
+of your products sorted by
+impact on margin. A list of all
+
+e26a15f3-421c-4780-8d24-fdaf7179f4d4-2
+01:51:11.052 --> 01:51:12.780
+of your.
+
+9ed8cbca-c920-4186-b5c1-117f0b8cc540-0
+01:51:14.580 --> 01:51:20.435
+Positions with a like indication
+of how much of your margin is
+
+9ed8cbca-c920-4186-b5c1-117f0b8cc540-1
+01:51:20.435 --> 01:51:26.291
+being caused by that position be
+a breakdown of which which of
+
+9ed8cbca-c920-4186-b5c1-117f0b8cc540-2
+01:51:26.291 --> 01:51:32.425
+your spreads are offsetting your
+sort of basic margin anyway like
+
+9ed8cbca-c920-4186-b5c1-117f0b8cc540-3
+01:51:32.425 --> 01:51:38.374
+getting into the details of what
+exactly the portfolio analysis
+
+9ed8cbca-c920-4186-b5c1-117f0b8cc540-4
+01:51:38.374 --> 01:51:40.139
+is is going to get.
+
+7c601bbc-41ed-4dcf-b4e6-443668d22e51-0
+01:51:40.790 --> 01:51:45.093
+Like take us way into the weeds
+of what is span and how is it
+
+7c601bbc-41ed-4dcf-b4e6-443668d22e51-1
+01:51:45.093 --> 01:51:49.326
+calculated. But you basically
+think about it as like the the
+
+7c601bbc-41ed-4dcf-b4e6-443668d22e51-2
+01:51:49.326 --> 01:51:52.727
+results of intermediate
+calculations in the span
+
+7c601bbc-41ed-4dcf-b4e6-443668d22e51-3
+01:51:52.727 --> 01:51:57.099
+calculation process. That sort
+of help you understand how it's
+
+7c601bbc-41ed-4dcf-b4e6-443668d22e51-4
+01:51:57.099 --> 01:52:01.402
+happening and you know how you
+would be able to change it. So
+
+7c601bbc-41ed-4dcf-b4e6-443668d22e51-5
+01:52:01.402 --> 01:52:04.803
+it does have like a a
+manifestation as like a an
+
+7c601bbc-41ed-4dcf-b4e6-443668d22e51-6
+01:52:04.803 --> 01:52:08.690
+object or a collection of
+objects that would show up in
+
+7c601bbc-41ed-4dcf-b4e6-443668d22e51-7
+01:52:08.690 --> 01:52:09.870
+your application.
+
+36f7fe5b-d3f4-4ce9-bc02-f6e479dadaec-0
+01:52:11.470 --> 01:52:16.021
+And it's pretty complicated.
+It's just not. But it's not just
+
+36f7fe5b-d3f4-4ce9-bc02-f6e479dadaec-1
+01:52:16.021 --> 01:52:20.572
+an operation. It really does
+have it. It's like the output of
+
+36f7fe5b-d3f4-4ce9-bc02-f6e479dadaec-2
+01:52:20.572 --> 01:52:25.270
+the analysis process is going to
+be an entity with those from a
+
+36f7fe5b-d3f4-4ce9-bc02-f6e479dadaec-3
+01:52:25.270 --> 01:52:29.895
+simplistic standpoint with those
+with the output be attributes
+
+36f7fe5b-d3f4-4ce9-bc02-f6e479dadaec-4
+01:52:29.895 --> 01:52:34.520
+for each position. Or does it
+also do like correlations across
+
+36f7fe5b-d3f4-4ce9-bc02-f6e479dadaec-5
+01:52:34.520 --> 01:52:37.749
+positions? It's really, really
+complicated.
+
+61bcd863-b841-4292-aba2-4c3d5869fa29-0
+01:52:41.380 --> 01:52:47.795
+Like hundreds of pages of PDF's,
+complicated, okay, I don't want
+
+61bcd863-b841-4292-aba2-4c3d5869fa29-1
+01:52:47.795 --> 01:52:53.816
+to cut anybody off, but we are a
+minute over time. I want to
+
+61bcd863-b841-4292-aba2-4c3d5869fa29-2
+01:52:53.816 --> 01:52:59.443
+respect everybody's time. So I
+think we made really good
+
+61bcd863-b841-4292-aba2-4c3d5869fa29-3
+01:52:59.443 --> 01:53:05.167
+progress and probably need to
+spend more time in the next
+
+61bcd863-b841-4292-aba2-4c3d5869fa29-4
+01:53:05.167 --> 01:53:08.820
+session getting through the rest
+of.
+
+3804aaa8-b64b-4cf8-8608-d2842390e8d3-0
+01:53:09.540 --> 01:53:12.414
+The rest of the apps. So I think
+we'll plan on repurposing
+
+3804aaa8-b64b-4cf8-8608-d2842390e8d3-1
+01:53:12.414 --> 01:53:15.436
+probably the next one, but we'll
+put some thought into it and
+
+3804aaa8-b64b-4cf8-8608-d2842390e8d3-2
+01:53:15.436 --> 01:53:18.116
+I'll send something out to
+everybody just so everybody
+
+3804aaa8-b64b-4cf8-8608-d2842390e8d3-3
+01:53:18.116 --> 01:53:20.942
+knows what to expect on the next
+session. I think it's on
+
+3804aaa8-b64b-4cf8-8608-d2842390e8d3-4
+01:53:20.942 --> 01:53:23.866
+Wednesday as well, all right.
+Yeah Andrew, I think, I think
+
+3804aaa8-b64b-4cf8-8608-d2842390e8d3-5
+01:53:23.866 --> 01:53:27.033
+we're, I mean even though we're
+not fully completely with margin
+
+3804aaa8-b64b-4cf8-8608-d2842390e8d3-6
+01:53:27.033 --> 01:53:30.005
+optimizer, I think we're, you
+know we have a good ideas what
+
+3804aaa8-b64b-4cf8-8608-d2842390e8d3-7
+01:53:30.005 --> 01:53:33.027
+that is. I think we actually are
+done, we are done. OK, good.
+
+3804aaa8-b64b-4cf8-8608-d2842390e8d3-8
+01:53:33.027 --> 01:53:36.243
+Yeah. And then acts Finder seems
+sort of thing I think that we do
+
+3804aaa8-b64b-4cf8-8608-d2842390e8d3-9
+01:53:36.243 --> 01:53:37.900
+a decent job on that. I mean I
+I.
+
+ac1064d1-bab7-4d03-b800-1693441d267b-0
+01:53:38.520 --> 01:53:43.283
+If I can envision in my habit
+what it is, I think we're in
+
+ac1064d1-bab7-4d03-b800-1693441d267b-1
+01:53:43.283 --> 01:53:48.207
+good shape. So. So we probably
+just work on risk manager and
+
+ac1064d1-bab7-4d03-b800-1693441d267b-2
+01:53:48.207 --> 01:53:53.132
+then VPN afterwards. Yep. I
+agree. OK, excellent. We'll pick
+
+ac1064d1-bab7-4d03-b800-1693441d267b-3
+01:53:53.132 --> 01:53:57.653
+those up next time. Cool. All
+right. Thank you. Thanks.
+
+ac1064d1-bab7-4d03-b800-1693441d267b-4
+01:53:57.653 --> 01:54:00.559
+Thanks, everybody. See you.
+Thanks.

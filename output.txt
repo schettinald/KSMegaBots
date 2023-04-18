@@ -1,0 +1,2239 @@
+Blob Feature Function Sizing (1).pptx content:
+The Kingsmen Way: Program
+Feature / Function Sizing
+May 2019
+
+Goals
+
+How to communicate the scope of a function at a high level without getting into details
+Provide enough information for business to prioritize so we’re executing against the most valuable thing
+Required: Domain Model, Use Case Diagram, Feature Map
+
+
+Agenda
+Function Review – First and Second Pass
+First Pass Size
+Second Pass Size
+Questions & Where to find information
+
+
+Functions
+High-level implementation statement that describes a business function that the product will perform
+Break-down of feature into increments that will provide business value on its own. Can be delivered within a release
+Technical functions may also be required as enablers to business functions
+
+First Pass
+
+High level implementation statement that describes the business function the product will perform.
+May be the technical function required to enable a business function.
+Only enough detail to enable technical lead to estimate size relative to other functions.
+T-shirt size is documented
+Generally done during Planning
+
+Syntax:
+As a <type of user>I want <some goal> So that <some reason>
+
+I know I’m done <when>Out of scope items
+
+Second Pass
+
+Expand description based on updates since first pass.
+Include details sufficient to meet definition of ready including:
+Definition – Update if needed
+Requirements – Potential user stories; usability, reliability, performance and supportability requirements
+Considerations – Design, implementation, interface and physical considerations
+Risks – Known or potential risks
+Dependencies – Dependencies and who is managing/tracking the dependency
+Out of Scope Items – Update if needed
+T-shirt size is verified/updated
+
+© Kingsmen Software 2019
+Function Elaboration
+
+Description Syntax
+
+As a <type of user>I want <some goal> So that <some reason>
+
+I know I’m done <when>Out of scope items
+
+First Pass Size
+
+Technical lead will give t-shirt sized estimate based on complexity relative to other functions
+© Kingsmen Software 2019
+Function Elaboration – First Pass
+Function – First Pass
+Title
+Sit those on same team together
+
+Description
+As a Kingsmen team
+We want to have those working on the same delivery team sitting near each other
+So that they can collaborate easily
+
+We know we’re done when those who work together most often are sitting in close proximity
+
+Out of Scope Items:
+Purchasing new furniture
+
+Feature/Function Sizing
+Product Owner/Product Advocate cover high level functionality and answer any questions about expectations
+Each team member contributing to the work item gives an estimate based on complexity relative to other features/functions
+Estimate should be in points (teams starting out should assume each point is roughly a person day of work)
+Discuss any outliers until all can agree on an approximate size
+XS feature/function is 20 points, ~20 days
+XXL feature/function is 200+ points, ~200 days
+This should be broken down to smaller features/functions
+XL feature/function is 130 points, ~130 days
+S feature/function is 30 points, ~30 days
+L feature/function is 80 points, ~80 days
+M feature/function is 50 points, ~50 days
+XS
+20
+S
+30
+M
+50
+L
+80
+XL
+130
+XXL
+200+
+Function Elaboration – Second Pass
+Expand the Description based on updates since first pass
+Definition – Update if needed
+Requirements – Potential user stories; usability, reliability, performance and supportability requirements
+Considerations – Design, implementation, interface and physical considerations
+Risks – Known or potential risks
+Dependencies – Dependencies and who is managing/tracking the dependency
+Out of Scope Items – Update if needed
+Function – Second Pass
+Title
+Sit those on the same team together
+
+Description
+As a Kingsmen team
+We want to have those working on the same delivery team sitting near each other
+So that they can collaborate easily
+
+We know we’re done when those who work together most often are sitting in close proximity
+
+Requirements 
+Functional Requirements:
+Create a seating chart
+Communication of moves
+Move from one location to another
+Relocate phones
+Usability (UX) Requirements:
+Consideration for light tolerance, standing desks
+Reliability Requirements:
+N/A
+Performance Requirements:
+N/A
+Supportability Requirements:
+N/A
+Considerations
+Design Considerations:
+Need to look at optimization of space in both buildings
+Implementation Considerations:
+When phones move, do we need to update directories?
+Interface Considerations:
+Are network jacks in the correct locations for those with desktop computers
+Physical Considerations: 
+N/A
+
+Risks
+N/A
+
+Dependencies 
+The location you’re moving to has to be available before you move – domino effect.
+
+Out of Scope Items
+Purchasing new furniture. If we can reasonably move what we have, we will.
+Feature/Function Sizing
+Product Owner/Product Advocate cover high level functionality and answer any questions about expectations
+Each team member contributing to the work item gives an estimate based on complexity relative to other features/functions
+Estimate should be in points (teams starting out should assume each point is roughly a person day of work)
+Discuss any outliers until all can agree on an approximate size
+XS feature/function is 20 points, ~20 days
+XXL feature/function is 200+ points, ~200 days
+This should be broken down to smaller features/functions
+XL feature/function is 130 points, ~130 days
+S feature/function is 30 points, ~30 days
+L feature/function is 80 points, ~80 days
+M feature/function is 50 points, ~50 days
+XS
+20
+S
+30
+M
+50
+L
+80
+XL
+130
+XXL
+200+
+ 
+
+What happens if we’re off on the size?Either too low or too high
+We won’t finish the work according to the roadmap and 5-iteration plan communicated to the customer, and likely further within their organization
+
+Calls into question accuracy of other estimates
+
+If too high we may not have other work elaborated for upcoming iterations
+
+If too high we may have to have this work wait for dependent teams, causing us to revisit it later
+
+If too low teams dependent on this work will be delayed
+If too low we won’t have enough points to cover the work of this function so other functions won’t get completed
+Kingsmen Program on SharePoint: https://devellocusllc.sharepoint.com/sites/KingsmenProgram
+Questions?
+Appendix
+Domain Model – Example with Attributes
+
+First Name
+Middle Name
+Last Name
+Employee ID
+Address Line 1
+Address Line 2
+City
+State
+Zip
+Country
+Mobile Phone
+Home Phone
+Period Start
+Period End
+Date
+Time Start
+Time End
+Name
+Company ID
+Title
+Position ID
+Name
+Company
+Use Case Model – Example
+
+Feature Map - Example
+Capability
+Feature
+Function
+
+Blob Function Elaboration 5-Iteration Planning.pptx content:
+The Kingsmen Way: Program
+Function Elaboration & 5-Iteration Planning
+April 2019
+
+
+Agenda
+Agile Concepts – quick level set from Kelley’s Agile 101
+Function Elaboration – First and Second Pass
+5-Iteration Planning
+Questions & Where to find information
+
+Planning Across Three Layers
+3
+Product owner, product advocate, delivery team
+Repeatable delivery process for each story included in the iteration
+Happens continually on a two week cycle
+
+
+Iteration 
+Work is continuously prioritized and planned flowing to the delivery team for elaboration and execution. The process has feedback loops to ensure adjustments can be made based on what provides the most business value.
+Continuous Planning
+Architecture Runway/ 
+Platform Improvements
+Continuous Strategic 
+Planning/Rationalization
+Business/ Customer 
+Metrics and Feedback
+Operating Committee
+Function Elaboration
+5 Iteration Planning
+Story elaboration
+Iteration Planning
+Daily Stand Up
+Story Acceptance
+Demo/Retro
+Deploy
+Product Leaders invested in a successful implementation
+Review/Prioritization of functions leveraging Weighted Shortest Job First (WSJF)
+Meet Monthly
+Product owners, product advocates, team leads, UX, and architecture
+Break down features into functions, discuss business cases, process flows and requirements for functions. Size functions to inform prioritization and planning.
+Meet every other week
+Product advocate, team leads and UX
+Plan out functions by release based on sizing, team capacity, and dependencies
+Meet every other week (non-iteration start/end week)
+Our focus today
+Monthly Meeting Calendar – Program & Team
+Guidelines
+Allocate team capacity to include these planning routines
+Limit total meeting time to 5 hours per week for Team layer leaders
+Whenever possible, create “no meeting” blocks by stacking & consolidating team routines
+
+Notes & Recommendations
+Allow “always on” Function Intake via Product Owner during Op Committee off-weeks
+Hold Operating Committee 2x per month while getting established
+Replace 5-Iteration Planning with PI Planning 1x per quarter
+
+Routines not shown, each 1x per quarter:
+Portfolio Steering Committee
+Release Planning
+Release Retro
+
+
+Functions
+High-level implementation statement that describes a business function that the product will perform
+Break-down of feature into increments that will provide business value on its own. Can be delivered within a release
+Technical functions may also be required as enablers to business functions
+Function Elaboration
+
+Function Elaboration further defines the features for a particular release:
+Brings entire team together to break down features into functions
+Allows the team an opportunity to discuss business cases, process flows and requirements
+Size functions to further refine (and validate) the size of the feature
+Recommend two passes per function: A first to high-level size for prioritization; a second to validate all assumptions when team is ready to begin
+Recommend the team meets weekly
+Function Elaboration Sample Agenda
+Working from a backlog
+The Release Backlog contains all the work, at a function level, a team needs to do
+Prioritized list of work to be completed over multiple releases
+Priority is based on:
+Function priority
+Dependencies on other teams
+Owned and prioritized by the Operating Committee
+Includes all types of functions
+Business 
+Enabler - Infrastructure, technology foundation
+Functions for the next release will be more detailed than those in later releases
+
+First Pass
+
+High level implementation statement that describes the business function the product will perform.
+May be the technical function required to enable a business function.
+Only enough detail to enable technical lead to estimate size relative to other functions.
+T-shirt size is documented
+Generally done during Planning
+
+Syntax:
+As a <type of user>I want <some goal> So that <some reason>
+
+I know I’m done <when>Out of scope items
+
+Second Pass
+
+Expand description based on updates since first pass.
+Include details sufficient to meet definition of ready including:
+Definition – Update if needed
+Requirements – Potential user stories; usability, reliability, performance and supportability requirements
+Considerations – Design, implementation, interface and physical considerations
+Risks – Known or potential risks
+Dependencies – Dependencies and who is managing/tracking the dependency
+Out of Scope Items – Update if needed
+T-shirt size is verified/updated
+
+© Kingsmen Software 2019
+Function Elaboration
+Title
+
+Brief Title to define the function within it’s feature
+
+Description
+
+Gives clarity as to who will be the primary user of the function
+Defines the business value being provided by the function
+Gives a high-level, a definition of done
+Outlines any out of scope items
+
+First Pass Size
+
+Provides a t-shirt size for this function, relative to other work this team has done
+© Kingsmen Software 2019
+Function Elaboration – First Pass
+A high-level description and size to allow for prioritization
+
+Description Syntax
+
+As a <type of user>I want <some goal> So that <some reason>
+
+I know I’m done <when>Out of scope items
+
+First Pass Size
+
+Technical lead will give t-shirt sized estimate based on complexity relative to other functions
+© Kingsmen Software 2019
+Function Elaboration – First Pass cont.
+Function Example
+Title
+Manage Sales Contacts
+
+Description
+As a Sales Professional
+I want to manage the contacts I interact with
+So that I have a central location for this information
+
+I know I’m done I can add, edit and delete contact information for individuals
+
+Out of Scope Items:
+Updates to Clients in the existing client management system
+Interactions/Meetings with the contacts are in a different function
+
+Function Elaboration – Second Pass
+Expand the Description based on updates since first pass
+Definition – Update if needed
+Requirements – Potential user stories; usability, reliability, performance and supportability requirements
+Considerations – Design, implementation, interface and physical considerations
+Risks – Known or potential risks
+Dependencies – Dependencies and who is managing/tracking the dependency
+Out of Scope Items – Update if needed
+Function Example
+Title
+Manage Sales Contacts
+
+Description
+As a Sales Professional
+I want to manage the contacts I interact with
+So that I have a central location for this information
+
+I know I’m done I can add, edit and delete contact information for individuals
+
+Requirements 
+Functional Requirements:
+Add new contact
+Update contact information
+Delete contact
+View list of contacts
+Usability (UX) Requirements:
+Needs to visually align with the client management system.
+Reliability Requirements:
+Available according to standard SLAs
+Performance Requirements:
+Cannot adversely impact performance on existing application
+Supportability Requirements:
+Nothing specific to this function
+Considerations
+Design Considerations:
+There is a future function to align activity with these contacts so should be designed to show relationship of activity to contact
+Implementation Considerations:
+Will be implemented within the existing client management system
+Interface Considerations:
+Most sales people are mobile and will access on their mobile devices
+Physical Considerations: 
+N/A
+
+Risks
+Additional volume being added to the client management system
+
+Dependencies 
+N/A
+
+Out of Scope Items
+Updates to Clients in the existing client management system
+Interactions/Meetings with the contacts are in a different function
+Import of any existing contact information will be in a separate function
+Feature/Function Sizing
+Product Owner/Product Advocate cover high level functionality and answer any questions about expectations
+Each team member contributing to the work item gives an estimate based on complexity relative to other features/functions
+Estimate should be in points (teams starting out should assume each point is roughly a person day of work)
+Discuss any outliers until all can agree on an approximate size
+XS feature/function is 20 points, ~20 days
+XXL feature/function is 200+ points, ~200 days
+This should be broken down to smaller features/functions
+XL feature/function is 130 points, ~130 days
+S feature/function is 30 points, ~30 days
+L feature/function is 80 points, ~80 days
+M feature/function is 50 points, ~50 days
+XS
+20
+S
+30
+M
+50
+L
+80
+XL
+130
+XXL
+200+
+Feature/Function Sizing
+Each Function has descriptions and assumptions that determine its sizing. 
+The combination of functions comprising a feature determine the feature’s size.
+
+Definition of Ready
+Criteria, as agreed on by the team, that determines when a work item is ready to be started. Required for a function to be brought into a release.
+
+Examples:
+Function is in system of record and traced back to the feature
+Acceptance Criteria defined
+Second Pass sizing is complete
+Design is sufficiently ready
+Team understands the function
+Small enough to be completed in a release, including testing
+Business Value is understood
+
+Definition of Done
+Criteria, as agreed on by the team, that determines when a work item is complete. Required for a function to be released.
+
+Examples:
+All stories accepted
+Meets all Acceptance Criteria
+Demoed and accepted by Product Owner
+Dependencies are all complete
+System of record is fully updated
+Meets all relevant Non-Functional Requirements (NFRs)
+
+
+
+5 Iteration Planning
+Maps the functions that will be worked on in the next 5 (or so) iterations
+Includes all functions including business and tech enablers
+Accounts for any significant velocity impacts
+Must consider dependencies – both predecessors and successors
+
+Five Iteration Planning
+
+“Five” Iteration Planning maps out the functions that will be worked on in the next 5 (or so) iterations:
+Brings entire team together to align prioritized functions
+Allows the teams an opportunity to review dependencies across teams
+Plan about how many iterations it will take to complete a function
+The team meets every other week on non-planning weeks
+
+5 Iteration PlanningWhy
+© Kingsmen Software 2019
+Impacts
+Any changes to priority, size, external dependencies, UX, architecture or velocity will require updates to the 5-Iteration plan.
+Review the plan for changes since the last session and update accordingly.
+
+
+
+
+
+
+5 Iteration Planning Sample Agenda
+Five Iteration Plan - Example
+Sample template is on SharePoint Program site: LINK
+Kingsmen Program on SharePoint: https://devellocusllc.sharepoint.com/sites/KingsmenProgram
+Questions?
+
+Blob Function Elaboration.pptx content:
+Functions
+
+
+
+High-level implementation statement that describes a business function that the product will perform
+Break-down of feature into increments that will provide business value on its own. Can be delivered within a release
+Technical functions may also be required as enablers to business functions
+
+Function Elaboration – First Pass
+A high-level description and size to allow for prioritization
+Title
+Brief Title to define the function within its feature
+
+Description
+Gives clarity as to who will be the primary user of the function
+Defines the business value being provided by the function
+Gives a high-level, a definition of done
+Outlines any out-of-scope items
+
+First Pass Size
+Provides a t-shirt size for this function, relative to other work this team has done
+
+Function Elaboration – First Pass cont.
+
+Description Syntax
+
+As a <type of user>I want <some goal> So that <some reason>
+
+I know I’m done <when>Out of scope items
+
+First Pass Size
+
+Technical lead will give t-shirt sized estimate based on complexity relative to other functions
+Function Example
+Title
+Manage Sales Contacts
+
+Description
+As a Sales Professional
+I want to manage the contacts I interact with
+So that I have a central location for this information
+
+I know I’m done when I can add, edit and delete contact information for individuals
+
+Out of Scope Items:
+Updates to Clients in the existing client management system
+Interactions/Meetings with the contacts are in a different function
+
+Function Elaboration – Second Pass
+Expand the Description based on updates since first pass
+Definition – Update if needed
+Risks – Known or potential risks
+Dependencies – Dependencies and who is managing/tracking the dependency
+Out of Scope Items – Update if needed
+Requirements – Potential user stories; usability, reliability, performance and supportability requirements
+Considerations – Design, implementation, interface and physical considerations
+Security – Authentication, authorization
+Disaster Recovery – Implementation, testing requirements, RTO
+
+Function Example
+Title
+Manage Sales Contacts
+Description
+As a Sales Professional
+I want to manage the contacts I interact with
+So that I have a central location for this information
+I know I’m done when I can add, edit and delete contact information for individuals
+Risks
+Additional volume being added to the client management system
+Dependencies 
+N/A
+Out of Scope Items
+Updates to Clients in the existing client management system
+Interactions/Meetings with the contacts are in a different function
+Import of any existing contact information
+Requirements 
+Functional Requirements:
+Add new contact
+Update contact information
+Delete contact
+View list of contacts
+Usability (UX) Requirements:
+Needs to visually align with the client management system.
+Reliability Requirements:
+Available according to standard SLAs
+Performance Requirements:
+Cannot adversely impact performance on existing application
+Supportability Requirements:
+Nothing specific to this function 
+Considerations
+Design Considerations:
+There is a future function to align activity with these contacts so should be designed to show relationship of activity to contact
+Implementation Considerations:
+Will be implemented within the existing client management system
+Interface Considerations:
+Most salespeople are mobile and will access on their mobile devices
+Physical Considerations: 
+N/A
+Security
+Authentication:
+Nothing specific to this function 
+Authorization:
+Nothing specific to this function 
+Disaster Recovery
+Nothing specific to this function 
+Feature/Function Sizing
+Product Owner/Analyst cover high-level functionality and answer any questions about expectations
+Each team member contributing to the work item gives an estimate based on complexity relative to other features/functions
+Estimate should be in points (a team that is starting out should assume each point is roughly a person day of work)
+Discuss any outliers until all can agree on an approximate size
+XS feature/function is 20 points, ~20 days
+XXL feature/function is 200+ points, ~200 days
+XL feature/function is 130 points, ~130 days
+S feature/function is 30 points, ~30 days
+L feature/function is 80 points, ~80 days
+M feature/function is 50 points, ~50 days
+XS
+20
+S
+30
+M
+50
+L
+80
+XL
+130
+XXL
+200+
+These should be broken down to smaller features/functions
+What’s the Point
+How we size work
+Function T-Shirt Size
+Unit that measures complexity, uncertainty, risk and effort of a function
+Follows Fibonacci sequence, times 10: 10, 20, 30, 50, 80, 130…
+Provided by the team doing the work
+XXS Function ~ 1 iteration of work
+
+Story Point
+Unit that measures complexity, uncertainty, risk and effort of a story
+Follows Fibonacci sequence: 1, 2, 3, 5, 8, 13…
+Provided by the team doing the work
+One point ~ 1 day of work
+
+
+XXS function is 10 points, ~10 days
+Example: CRUD Operations – List, Add, Update and Delete functionality
+M function is 50 points, ~50 days
+Example: Establish a database schema and setup repository classes
+XL feature/function is 130 points, ~130 days
+Example: Setup cloud infrastructure and CI/CD pipelines (break this down into smaller functions)
+Feature/Function Sizing
+Each Function has descriptions and assumptions that determine its sizing. 
+The combination of functions comprising a feature determine the feature’s size.
+Definition of Ready
+Criteria, as agreed on by the team, that determines when a work item is ready to be started. Required for a function to be brought into a release.
+
+Examples:
+Function is in system of record and traced back to the feature
+Acceptance Criteria defined
+Second Pass sizing is complete
+Design is sufficiently ready
+Team understands the function
+Small enough to be completed in a release, including testing
+Business Value is understood
+Definition of Done
+Criteria, as agreed on by the team, that determines when a work item is complete. Required for a function to be released.
+
+Examples:
+All stories accepted
+Meets all Acceptance Criteria
+Demoed and accepted by Product Owner
+Dependencies are all complete
+System of record is fully updated
+Meets all relevant Non-Functional Requirements (NFRs)
+
+Function Elaboration
+Function Elaboration further defines the features for a particular release:
+Brings entire team together to break down features into functions
+Allows the team an opportunity to discuss business cases, process flows and requirements
+Size functions to further refine (and validate) the size of the feature
+Recommend two passes per function: A first to high-level size for prioritization; a second to validate all assumptions when team is ready to begin
+Recommend the team meets weekly
+Function Elaboration
+
+First Pass
+
+High level implementation statement that describes the business function the product will perform.
+May be the technical function required to enable a business function.
+Only enough detail to enable technical lead to estimate size relative to other functions.
+T-shirt size is documented
+Generally done during Discovery
+
+Syntax:
+As a <type of user>I want <some goal> So that <some reason>
+
+I know I’m done <when>Out of scope items
+
+Second Pass
+
+Expand description based on updates since first pass.
+Include details sufficient to meet definition of ready including:
+Definition – Update if needed
+Risks – Known or potential risks
+Dependencies – Dependencies and who is managing/tracking the dependency
+Out of Scope Items – Update if needed
+Requirements – Potential user stories; usability, reliability, performance and supportability requirements
+Considerations – Design, implementation, interface and physical considerations
+Security – Authentication, authorization
+Disaster Recovery – Implementation, testing requirements, RTO
+T-shirt size is verified/updated
+
+
+Blob KS_Microservices_101.pptx content:
+Microservices 101
+
+February 2020
+
+Microservices Definitions
+Monoliths vs Microservices
+Driving Forces
+Pyramid of Needs
+12 Factor Application
+Service Principles
+Monitoring/Tracing
+DevOps
+CI/CD
+Beware of Dragons
+Summary
+Overview
+What we are talking about?
+
+
+
+Bound Context 1
+Bound Context 3
+Bound Context 2
+Micro-service
+Micro-service
+Micro-service
+Micro-service
+Micro-service
+Micro-service
+Micro-service
+Micro-service
+Micro-service
+Micro-service
+Micro-service
+Micro-service
+
+
+
+API Gateway
+“Loosely coupled service-oriented architecture with bounded contexts”
+Starting a new microservice? https://www.jhipster.tech/
+
+Monolith vs Microservice
+
+Driving Forces
+
+Time to Market
+Tech Stack
+DigitalTransformation
+Governance
+
+Connected devices
+API Economy
+Cloud based deployments
+
+Centralized release management pain
+Decentralized governance
+Empowered teams
+Quick decisions
+Short development cycles for greater agility
+Continuous delivery
+Reduced size and risk of changes
+0% downtime
+Right technology for a problem
+Evolutionary Architecture
+Simplified testing
+Reduced code complexity
+Failure isolation
+Independent component scalability
+Experiment in PROD environment
+Pyramid of Needs
+Cannot implement microservices without a plan
+Need to have basic needs such as “CI/CD” satisfied before self healing
+Need for change in technology and in processes
+
+12 Factor Applications Methodology
+Single codebase in VCS, many deployments (One Binary Image – many deployments)
+Explicitly declare and isolate dependencies
+Store config separately from code
+Treat backing services as attached resources
+Strict segregation of build and run stages
+Execute the app as one or many stateless processes
+Export services via port binding
+Scale out via the process model 
+Maximize robustness with fast startup and graceful shutdown
+Keep dev/staging/prod as similar as possible
+Treat logs as event streams
+Run admin/management tasks as one-off processes
+Service Principles
+Environment is instable. Everything crashes. Embrace it and adapt to it
+Monitoring is a key 
+Should be resilient when communicating (Circuit breaker, timeouts, retries, cache optimization, rate limitation)
+No cascading failures
+New releases should not impact production
+Mean time to recover should approach zero
+Security should be a first-class citizen
+Policies to eliminate unexpected usage
+[Obvious] One storage
+[Less Obvious] Minimal code sharing
+Monitoring/Tracing
+Tracing
+Goal understand how requests are handled
+Need to see how services talk to each other
+Find broken pieces and trace it down to JVM/Node
+Find correlantionId and see all services in 1 request
+AWS X-Ray
+
+Monitoring
+Goal Understand the health of the system
+Work Metrics Throughput/Success/Error/Performance)
+Resource Metrics Saturation/Error/Availability
+Events Code changes/Alerts/Scaling event
+
+
+DevOps
+DevOps: This is a role, not a person 
+“I developed it, I run it” mentality
+CI/CD
+Automation
+Configuration as a code
+Infrastructure as a code
+Security as a code
+Tests as a code
+Monitoring
+Operations: AWS, Kubernetes, Docker
+CI/CD
+No manual steps (approval is the only exception)
+Regression and smoke testing is embedded
+Automated Quality Control gates (testing automation, Sonar, etc)
+Compiled once, deployed everywhere
+Configuration is decoupled from code
+Full traceability and integration with program management dashboards
+Docker is a delivery mechanism
+Lambda is a delivery mechanism
+Beware of Dragons
+Everything comes with a price…
+Additional complexity of a distributed system: Traceability, Observability
+Operational complexity: DevOps, Automation
+Distributed monoliths (independent delivery): Minimal sharing, API-first, Static contracts, CI/CD 
+Additional efforts to be resilient: Hystrix, Ribbon, Eureka, Exception Handling
+Devs on-call: Organizational changes, scheduling
+Testing automation: Tests to be a part of “Definition of Done”
+Chaos engineering: Just do it
+
+Microservices is not only about technology, but about culture as well
+There’s a specific set of preparation steps we need to take to adopt microservices
+12 principles allowing us to deliver flexible, scalable solutions
+Don’t forget about real world where every component can be broken at any time
+Keep configuration data independently from the code
+Service observability will allow you to fix a problem when everything goes south
+DevOps is a role, we monitor what we deliver
+CI/CD is a cornerstone of ability to adjust
+Beware of dragons
+
+
+Thank you!
+
+
+
+
+Denis Demichev
+denis.demichev@kingsmensoftware.com
+919.807.1521
+
+Blob Kingsbook for Analysts.docx content:
+Kingsbook – Analyst Instructions
+
+Initial Setup 
+
+Create a Reusable (and Consistent) Query from SOR   Need to include defects as well
+At a minimum, query must contain fields mappable to the following (field names in file can be anything)
+
+
+
+
+
+
+
+
+
+
+
+
+Export the Query to Excel and Update to the Correct Format 
+Run query(ies) and export to Excel.  Combine into one worksheet with multiple tabs, one tab for each: Features, Stories, and Tasks.  Name the tabs something that identify the team, e.g. ‘6M$ Phoenix – Features’ 
+
+NOTE: File name must match naming convention of three-character-client-prefix_three-digit-project-number_teamnamewithnospaces_date.xlsx. The team name is not case sensitive but does have to match the team name in the system without spaces. Example:
+
+Client: Truist
+Client Prefix: TRU
+Project: Structured Equities
+Project Number: 019
+Team: All the Kings Horses
+
+So file name would be ‘TRU_019_AlltheKingsHorses_20220227.xlsx’.  The date extension is flexible, so you can add letters/numbers at the end as you are correcting files and uploading new ones for the same date, e.g. ‘TRU_019_AlltheKingsHorses_20220227_abc.xlsx’. 
+
+Check that every required field has a value.  If there are missing values, the file will fail to upload, validate, or import.  
+Features must have someone in the ‘Assigned To’ field.
+For features without sizes you can put ‘Unsized’ and ‘0’ points. 
+If you have a feature with a first-pass T-shirt size, but no second-pass size, put the points from the estimate into the ‘Size’ field. 
+If you have null pointed stories, make them ‘0’.  
+Ensure all stories and tasks have parents. 
+If you have new team members on the file who have not been added to Kingsbook, you will need to assign them an Employee ID under ‘Employees’ in Kingsbook – choose the correct client, and input the name EXACTLY as it appears on the file, e.g. Frank Wanicka <frank.wanicka@kingsmensoftware.com>
+
+
+Ensure Kingsbook is Configured
+Navigate to Job Definition in Kingsbook.  Add a Job Definition, and include the required fields.  Naming convention can be something like ‘AzDO Slytherin Import’.
+
+Prior to uploading the Excel file, go to Employees and check that each individual has an Employee ID defined that matches what is in the Excel file.  Different clients may have different conventions (see below):
+
+
+First Day of Iteration
+
+Confirm current iteration exists under Team Iterations
+
+
+If Iteration doesn’t exist, click on the ‘Copy’ icon 
+
+
+Screen will pre-populate – update fields needing changes:
+Confirm Expected Velocity – this should normally only change with HYC or contract changes
+Confirm Expected Capacity (Expected velocity * 6)
+Enter Actual Capacity (sum of all team member's available capacity) – future enhancement to auto calc this
+Enter Committed Story Points
+
+The iteration path name must match what is in the file EXACTLY.
+
+
+Navigate to each Team Member Iteration screen and update Available Capacity if different than default
+
+
+
+End of Iteration
+
+Manually enter carryover points
+Navigate to the Team Iteration that just ended and manually enter the point total that will carry over if applicable, otherwise leave it as 0 (zero).
+
+
+
+Upload the File 
+Navigate to the Job Definition you added, and click on ‘Upload File’ – browse for the file you want to upload.  
+
+
+
+Map the Data
+Once the file has been successfully uploaded, click on ‘Start Mapping’, and then ‘Add Mapping’ on the next screen.  Select which Worksheet and which Import Entity (repeat this for Feature, Story and Task).  
+
+
+
+Click ‘Save’ after each one, and then click ‘Map’ to map the Current Mappings to the Available File Fields.  
+Do this for all the required fields for features, stories and tasks.  
+
+
+
+
+In order to map, simply click on one of the fields and then it’s corresponding field, and continue this until complete.
+
+
+Validate the Data
+Once mapping is complete, return to Job Definition Details, and click on ‘Validate/Import’.  
+Choose ‘Validate Only’ for the system to check basic validations for the data at the feature, story and task level.  
+
+
+
+
+
+
+
+
+If Validation fails, click on that row to see where the errors are.  
+
+
+Fix the errors in the file, change the file name, and upload the file again.  Repeat until validation is successful.  
+
+
+
+Import all Data
+Once validation is successful, click on ‘Validate/Import’ again.  If the file fails import, click on that row and go to Event Log.  Start typing in ‘Error’ in the Type field to see what errors exist.  
+
+
+
+Fix the errors, and go through the process again until everything is corrected and file successfully imports.  
+
+
+Blob Kingsmen Way Overview.pptx content:
+The Kingsmen Way
+Program Overview - Team
+July 2021
+The Kingsmen Way
+The Kingsmen Way enables our teams to grow quality software and deliver in an iterative manner, crafting a solution that works best for our customers. Instrumental in this is the refinement, product management and business analysis that leads to the solution. We start with a customer's vision and elaborate additional levels of detail until we understand enough to complete daily tasks.
+Levels and Work Item
+Vision – Capability
+1
+Road Map – Feature
+2
+Release – Function
+3
+Iteration – User Story
+4
+Daily – Task
+5
+
+
+
+
+
+Additional Taxonomies
+Capability
+Epic
+Feature
+Story
+Task
+AzDO
+Theme
+Epic
+Feature
+Story
+Task
+AvidXchange
+Continuous Planning
+Product owner and delivery team
+Repeatable delivery process for each story included in the iteration
+Happens continually on a two-week cycle
+
+
+Iteration 
+Architecture Runway/ 
+Platform Improvements
+Continuous Strategic 
+Planning/Rationalization
+Business/ Customer 
+Metrics and Feedback
+Operating Committee
+Function Elaboration
+5 Iteration Planning
+Daily Stand Up
+Demo/Retro
+Deploy
+Product Leaders invested in a successful implementation
+Review/Prioritization of functions leveraging Weighted Shortest Job First (WSJF)
+Meet Monthly
+Product owners, analyst, team leads, UX, and architecture
+Break down features into functions, discuss business cases, process flows and requirements for functions. Size functions to inform prioritization and planning.
+Meet every other week
+Analyst, team leads and UX
+Plan out functions by release based on sizing, team capacity, and dependencies
+Meet every other week (non-iteration start/end week)
+Work is continuously prioritized and planned flowing to the delivery team for elaboration and execution. The process has feedback loops to ensure adjustments can be made based on what provides the most business value.
+Story Elaboration
+Iteration Planning
+Story Acceptance
+Monthly Ceremony Calendar – Program & Team
+Guidelines
+Allocate team capacity to include these planning routines
+Limit total meeting time to 5 hours per week for Team layer leaders
+Whenever possible, create “no meeting” blocks by stacking & consolidating team routines
+
+Notes & Recommendations
+Allow “always on” Function Intake via Product Owner during Op Committee off-weeks
+Hold Operating Committee 2x per month while getting established
+Replace 5-Iteration Planning with PI Planning 1x per quarter
+
+Routines not shown, each 1x per quarter:
+Portfolio Steering Committee
+Release Planning
+Release Retro
+5 Iteration Planning
+What to do
+“Five” Iteration Planning maps out the functions that will be worked on in the next 5 (or so) iterations:
+Brings team together to align prioritized functions
+Allows the teams an opportunity to review dependencies across teams
+Plan about how many iterations it will take to complete a function
+Plan which functions will be worked on in which iterations
+Inclusive of all functions – business, tech enablers, architecturally significant, etc.
+Prioritization Discussion
+Release Planning
+
+
+5 Iteration Planning
+What not to do
+In “Five” Iteration Planning Don’t:
+Elaborate 5 iterations of stories
+Plan all functions to start in the first iteration and extend through 5 iterations
+Forget about predecessors and their lead time
+Forget about Tech Debt, Release Hardening, Architectural Runway
+5 Iteration Planning
+Who, When & Where
+When
+Every other week:
+Recommended every other week on non-Iteration planning weeks. Giving the team an opportunity to close out functions from the prior iteration and assess progress, dependencies, etc. in current iteration
+Technology
+Feature Team:
+Senior Analyst – Generally will lead the discussion
+Master Craftsman – Generally will provide input into velocity and number of iterations each function will require
+
+Architecture:
+Provides input to any architecturally significant impacts
+Needs awareness for lead-time if there are predecessors to consider
+
+User Experience:
+Provides input to any UX significant impacts
+Needs awareness for lead-time if there are predecessors to consider
+
+External Dependent Teams:
+Provides input to any significant impacts
+Needs awareness for lead-time if there are predecessors to consider
+
+Business
+Does not need to be included:
+While the business may be invited, this is a technical meeting around what can / cannot be completed within specific iterations. Input on velocity, release timing, etc. should not influence this planning
+Where
+Anywhere:
+Azure DevOps if the team is using that as the system of record. If not, there is an Excel template on the Kingsmen Program Sharepoint site. A wall with taped off iterations is where it all began…make it work!
+5 Iteration Planning
+How
+Function Elaboration
+Function Elaboration further defines the features for a particular release:
+Brings entire team together to break down features into functions
+Allows the team an opportunity to discuss business cases, process flows and requirements
+Size functions to further refine (and validate) the size of the feature
+Recommend two passes per function: A first to high-level size for prioritization; a second to validate all assumptions when team is ready to begin
+Recommend the team meets weekly
+Function Elaboration
+First and Second Pass
+First Pass
+
+High level implementation statement that describes the business function the product will perform.
+May be the technical function required to enable a business function.
+Only enough detail to enable technical lead to estimate size relative to other functions.
+T-shirt size is documented
+Generally done during Planning
+
+Syntax:
+As a <type of user>I want <some goal> So that <some reason>
+
+I know I’m done <when>Out of scope items
+
+Second Pass
+
+Expand description based on updates since first pass.
+Include details sufficient to meet definition of ready including:
+Definition – Update if needed
+Requirements – Potential user stories; usability, reliability, performance and supportability requirements
+Considerations – Design, implementation, interface and physical considerations
+Risks – Known or potential risks
+Dependencies – Dependencies and who is managing/tracking the dependency
+Out of Scope Items – Update if needed
+T-shirt size is verified/updated
+
+Story Elaboration
+Story Elaboration further defines the functions for a particular iteration:
+Brings entire team together to break down functions into stories
+Allows the team an opportunity to discuss business cases, process flows and requirements
+Size stories so they are of a size that they can be completed – development, testing and acceptance – in a two-week iteration
+Recommend the team meets twice a week for ½ an hour
+Progressive Story Elaboration
+
+
+
+Story Title
+Story Description
+Acceptance Criteria
+One line with a brief description of the story
+As a <role>
+I want to <goal>
+So I can <why>
+
+Role – who needs this functionality
+Goal – what does the user what to accomplish
+Why – why is this functionality important
+Presented as scenarios that are testable:
+
+Scenario
+Given <preconditions>
+When I <take_an_action>
+Then <expected_results>
+
+Scenario Outline
+Given I have <start> dollars
+When I <earn> dollars 
+Then I have <end> dollars
+
+Examples:
+| start | earn | end |
+| 10 | 20 | 30 |
+| 15| 20 | 35 |
+Definition of Ready / Definition of Done
+Definition of Ready = Criteria, as agreed on by the team, that determines when a work item is ready to be started. Required for a story to be brought into an iteration.
+
+Definition of Done = Criteria, as agreed on by the team, that determines when a work item is complete. Required for a story to be accepted and a function to be released.
+Story Sizing
+1 pt
+2 pts
+3 pts
+8 pts
+5 pts
+13 pts
+
+Consider breaking these into smaller stories
+Stories are sized to be completed in one iteration. If the story cannot be completed in a single iteration, it is broken into multiple stories.
+Sizes are based on the Fibonacci Sequence: 1,2,3,5,8,13…
+Iteration Planning
+Iteration Planning determines the stories from the backlog that will be brought into the next iteration:
+Brings entire team together to determine velocity and capacity of iteration
+Allows the team an opportunity to validate story size and the stories ready for iteration
+Commit to completing stories in next iteration
+The team meets the first day of each iteration
+Capacity Planning
+Capacity is the time, in hours, team members can commit to an iteration. Items to consider include:
+Focus factor for a full day should be 6 hours given a 5x8 work-week (7.5 given a 4x10 work-week)
+Don’t include time for vacations or holidays
+Don’t include time for work being done for other initiatives
+Sample Capacity:
+Tasking
+Tasking stories allows the team to identify the daily tasks that must be completed to meet the definition of done for a story
+Each team member that will contribute to completing the story enters that tasks required
+Includes development, testing, automated testing
+Tasks should not be more than 6 hours
+Tasks include the hours it takes to complete
+Daily Stand Up
+Daily Stand Up is a quick pull up with the entire team to review the iteration:
+Each team member should indicate what they did yesterday, what is planned for today and any impediments
+Limited to 15 minutes a day
+The team meets daily throughout the iteration (not Iteration planning day)
+
+Blob Story Writing.pptx content:
+The Kingsmen Way
+Story Writing & Gherkin Overview
+July 2020
+
+Story Writing and Gherkin Overview
+How do I start
+What is/isn’t included
+How much is too much
+Common stumbles
+Your story needs to have a description with the syntax:
+As a <user>
+I want <some goal>
+So that <some reason>
+Your story needs to have acceptance criteria with scenario(s) in the syntax:
+Scenario: Some determinable scenario
+Given some precondition      And some other precondition   When some action by the actor
+      And some other action      And yet another action   Then some testable outcome is achieved      And something else we can check happens too
+There is NO wrong way to write the story
+There is NO wrong answer to this
+Have fun, be creative and don’t over-think it
+Please send them just to me. I’ll use some of them as examples and don’t want others “copying” off your paper!!! They will remain anonymous
+Story: A single load of laundry…dirty clothes and they need to be clean and put away
+I’ll be your Product Owner so feel free to ask me questions up to the end of the day on Wednesday, July 1st
+Your story needs to be sent to me by noon on Thursday, July 2nd
+Story Writing & Gherkin Syntax Prework
+Scenario: Dirty Clothes to the Laundry Room
+Given clothes on the floor or in the clothes laundry basket
+When I pick up the clothes 
+  And I place them in the laundry basket
+  And I take the hamper to the laundry room
+Then I take the clothes out of the laundry basket
+  And sort the clothes by <color> in a pile on the floor
+  
+Example:
+| Color | 
+| Light Colored Clothes |
+| Dark Colored Clothes |
+Scenario: Turn on dryer
+Given a dryer machine has been loaded and appropriate washing cycle and temperature selectedWhen I turn on dryer Then I go take a nap
+As a fashionista
+I want to wash my new shirt
+So that I can wear my new shirt tomorrow
+Scenario:
+Given I have clean clothes that need to be dried
+And the dryer is not in use
+When I load them into the dryer
+And add a single dryer sheet
+And hit the start button
+Then the clothes will be dry when the alarm goes off
+Scenario:  Pre-treat Stains
+Given dirty clothes
+   And clothes with food stains
+   And laundry stain remover
+When I put the stain remover on the stain
+ Then the stain is pretreated
+   And ready to be washed
+Scenario: Place Clean Laundry in Hamper
+Given I am being lazy
+When I put clean clothes into hamperAnd I leave gum in pocketsAnd Mom finds out
+Then I get lecturedAnd I have to do my own laundry for a week 
+Scenario Outline:  Fold/sort Clothes
+Given dry clothes from the dryer
+    And a laundry basket
+    And clothes hangers
+When I take <clothing type> from the laundry basket
+    And <action>
+ Then I have unwrinkled clothes ready to be put away
+ 
+Examples:
+| clothing type | action |
+| shirt | place on hanger |
+| pants | fold |
+| pajamas | fold |
+| underwear | fold |
+| socks | match and fold |
+Scenario 4: Putting Away Clothes
+Given clean folded clothes
+When I put <clothing type> away in <location>
+Then I have clean clothes to wear 
+  And I can go have a Manhattan
+ 
+| clothing type | location |
+| t-shirts | right-side of middle drawer |
+| boxers | left-side of top drawer|
+| shorts | middle of lower drawer |
+| pants | left-side of lower drawer |
+| socks | middle of top drawer |
+| dress shirts | armoire |
+Always ask…
+Who – are the users? Normally you’re working with a single product owner but there may be others who will use the system
+
+What – is our definition of done so we know we’re successful?
+
+Where – is the work being done? Are there platform considerations?
+
+When – does this need to be done? Are there any regulatory, audit, etc. requirements that necessitate this being done by a specific date?
+
+Why – are we doing this? Delivering value, 10,000 points and counting!
+
+How – nope, not going to go there. We do want to document any design considerations but we’re not making decisions on how to implement.
+
+A good story is…
+Attainable – must be achievable in order to deliver the requested business value
+Cohesive – expresses (as a set) the behavior of the software; resolved any gaps and overlaps
+Complete – fully describes the functionality and/or behavior that results in the business need; all supporting artifacts are available
+Independent – should articulate a single need or attributes so it can be addressed independently
+Maintainable – can be changed without the need to update other requirements
+Traceable – while independent, it is related to the other processes within the solution
+Verifiable – can be tested to ascertain that the request has been met
+Necessary – should record a capability that is needed or specify compliance with a standard
+Estimate-able – written so it can be sized as a function of complexity, uncertainty, risk and effort
+Using ambiguous language
+Using subjective / judgmental language (Better, Good, Allowable)
+Using generalizations (All the time, Never, Everyone, Always)
+Including observed behavior that is not directly related to the story currently under consideration
+Acceptance Criteria
+Things to Avoid
+Title
+
+Brief Title to define the story within its function
+
+Description
+
+Gives clarity as to why a story is useful
+Can influence how a story should function and be developed
+Can give you ideas for other stories that support the users goal
+
+Acceptance Criteria
+
+Acceptance Criteria define the  boundaries of a user story and are used to confirm when a story is completed and working as intended.
+It is readable and understandable by the team
+Doesn’t detail how to implement a solution
+Enables behavior driven development
+Can be automated from a testing perspective
+Multiple scenarios can be included in a single story
+© Kingsmen Software 2020
+User Story
+A concise, written description of a piece of functionality that will be valuable to a user of the software
+
+Acceptance Criteria
+Notes:
+What did you learn about the functionality through asking questions
+Keep asking questions until everyone fully understands.
+
+Background:
+What information is known and will apply to EVERY scenario that will be written
+
+Scenarios: 
+Start with a list of the things that need to be done to accomplish the goal
+Initial list may be 1 – n items long – you’ll break it up later
+Is there anything you are specifically NOT going to include
+
+
+Stay within the scope of the function. If grooming is taking you outside the scope of the story’s function, note this for future discussion.
+
+© Kingsmen Software 2020
+User Story – Getting Started
+Notes first
+Description
+Users:
+Who is going to be using this / Who is going to benefit from the functionality
+Consider: 
+Customer
+Auditor
+Regulatory/Compliance
+Marketing
+Technology
+
+A system is NOT a user
+An application is NOT a user
+
+Goal:
+What is the primary goal we’re going to accomplish
+
+Reason:
+Why are we doing this
+What business value will be realized
+
+If we can’t define the business value, should we be doing it?
+
+Acceptance Criteria
+Notes:
+You are going to do a single load of laundry…you’ve got dirty clothes and they need to be clean and put away.
+I’ll be your Product Owner so feel free to ask me questions up to the end of the day on Wednesday, July 1st
+Your story needs to be sent to me by noon on Thursday, July 2nd
+Would this laundry be done in public laundry room or the laundry room in unit? – Laundry would be done at my house.
+
+Background:
+Given I own clothes
+    And I have access to a washer and dryer
+
+
+Scenarios: 
+Wash Clothes
+Dry Clothes
+Fold Clothes
+Put Away Clothes
+Select the Water Temperature & Select the Load Size – Top Loading Semi-Automatic Washing Machine
+
+© Kingsmen Software 2020
+User Story – Getting Started
+Notes first
+Description
+Users:
+responsible member of my household 
+Launderess for the house
+OCD person / control freak
+Fashionista
+As a human who lives in 2020
+parent
+
+Goal:
+do a single load of laundry
+to get our clothes cleaned properly
+to wash, dry and put away my clothes 
+wash my dirty clothes myself
+to wash my new shirt
+
+Reason:
+So that my clothes are not comingled with others and I have control over how the clothes are folded and put away
+So that some very important member of my household have clean clothes So that they don’t smell And don’t shrink And maintain the original color
+So that I have clean clothes to wear
+So that I can wear my new shirt tomorrow
+
+Description Syntax
+
+As a <type of user>I want <some goal> So that <some reason>
+Acceptance Criteria Syntax
+
+Scenario: Executable, Testable Specification
+Given <precondition>When <action> 
+Then <result>
+
+
+
+
+
+
+Scenario: Executable, Testable Specification
+Given
+      And 
+When
+      And       And  Then      And 
+      And 
+      But 
+
+© Kingsmen Software 2020
+User Story – Gherkin Syntax
+A concise, written description of a piece of functionality that will be valuable to a user of the software
+Title
+
+Brief Title to define the story within its function
+
+
+Acceptance Criteria Syntax
+
+Scenario Outline: Washing laundry with Examples  Given there are <start> loads of laundry  When I wash <wash> loads of laundry  Then I should have <left> loads of laundry  Examples:    | start | wash | left |    |  12   |  5  |  7   |    |  20   |  5  |  15  |
+© Kingsmen Software 2020
+User Story – Gherkin Syntax
+A concise, written description of a piece of functionality that will be valuable to a user of the software
+From https://github.com/cucumber/cucumber/wiki/Scenario-Outlines
+Acceptance Criteria Syntax
+
+Background:
+   Given a pre-condition that applies to all scenarios
+      And some other pre-condition
+
+Scenario: Some determinable business scenario
+Given some precondition      And some other precondition   When some action by the actor
+      And some other action      And yet another action   Then some testable outcome is achieved      And something else we can check happens too
+      But something else does not happen
+Scenario
+
+Scenario: Wash LaundryGiven a load of laundry
+  And the laundry is dirty
+When I put the laundry in the washer
+  And I add detergent
+  And select the speedwash cycle
+  And press start
+  And the washer completes its cycle
+Then the laundry is washed
+
+Scenario: Dry LaundryGiven a load of laundry
+  And the laundry is washed
+When I put the laundry in the dryer
+  And I add a dryer sheet
+  And select the easycare cycle
+  And press start
+  And the dryer completes its cycle
+Then the laundry is dry
+Scenario Outline
+
+Scenario Outline: Wash / Dry Laundry
+Given a load of laundry
+  And the laundry is <start>
+When I put the laundry in the <machine>
+  And I add <addition>
+  And select the <cycle> cycle
+  And press start
+  And the <machine> completes its cycle
+Then the laundry is <finished>
+ 
+Examples
+| start | machine | addition | cycle | finished |
+| dirty | washer | detergent | speedwash | washed |
+| washed | dryer | dryer sheet | easycare | dry |
+
+Gherkin Syntax
+Scenario vs. Scenario Outline
+User Story Example
+Title
+Add New Contact
+
+Description
+As a member of the sales team
+I want to add a new contact
+So that I have a central location for this information
+
+Acceptance Criteria
+Background
+Given access to the client management system
+    and role allowed to add contacts
+    and an authenticated user with that role
+
+Scenario: Add Contact Information
+Given the contact list in the client management system
+When I select the Add New Contact option
+    and I have a Contact Details page
+ Then I must enter a contact name, company and phone number
+   and I can enter additional contact details
+   and the information will be displayed according to the UX model
+
+Scenario: Save Contact Information
+Given …
+© Kingsmen Software 2020
+Additional Story Writing Considerations
+Where we struggle
+Ask questions – there’s often something we didn’t consider
+Write scenarios for the what – don’t include the how
+Not all stories are written by an analyst…it’s OK for the engineers to write stories
+Are there too many scenarios in one story – if the scenario requires lots of scrolling, break it up
+Scenarios should not contradict each other
+Can the story reasonably be developed, tested and accepted, to the definition of done, within an iteration
+If there may be too much in a story, ASK the team – it’s OK to put everything in one story for review/completeness during elaboration and then break it up as part of elaboration
+© Kingsmen Software 2020
+Additional Gherkin Syntax Considerations
+Where we struggle
+Then as the action – this should be the “When” of a new scenario
+When I open the lid on the dryer
+   And the clothes are dry
+Then I fold the clothes that I take out of the dryer
+Documenting complex interfaces / examples in a story – reference another document or UX model
+Given…
+When…
+Then the clothes are put away according to the  Clothes Matrix
+Or as a keyword – this is another scenario
+Given …
+When I fold the clothes
+   Or I put the clothes on hangars
+Then …
+Do the scenarios pass the reasonability test – 6+ And statements within Given, When or Then
+Given dirty clothes
+   And the clothes are pretreated
+   And an empty washing machine
+   And laundry detergent
+   And hot water
+   And time to do laundry
+   And I’m not being lazy
+   And my favorite TV show is not on
+
+Scenario 1: Wash Clothes
+Given a Sunday evening
+  And dirty clothes  -- not a problem by Sunday evening
+  And an empty washing machine  -- Joan! Sunday nights is the *only* time each week I need the washer!
+When I put all the clothes into the washer   -- real men don’t sort!
+  And I put in a cap-full of unscented laundry detergent
+  And I set the washer to <cycle>
+  And I clothes [sic] the lid
+  And I press the Start button
+Then the washer will clean my clothes
+ 
+| cycle |
+| normal | 
+| sports gear| 
+| towels| 
+ 
+
+© Kingsmen Software 2020
+Scenario 2: Dry Clothes
+Given clean wet clothes
+   And an empty dryer
+When I put the clothes into the dryer
+  And I set the dryer to Normal Dry
+  And I close the door
+  And I press the Start button
+Then the dryer will dry my clothes
+
+Scenario 3: Fold Clothes
+Given dry unfolded clothes
+  And a flat surface
+When I fold the <clothing type> in <folding method>
+Then I have a nice pile of clean clothes
+ 
+| clothing type | folding method |
+| t-shirts | a square |
+| boxers | half |
+| shorts | half |
+| pants | thirds |
+| socks | a ball |
+| dress shirts | hanger |
+ Scenario 4: Putting Away Clothes
+Given clean folded clothes
+When I put <clothing type> away in <location>
+Then I have clean clothes to wear 
+  And I can go have a Manhattan
+ 
+| clothing type | location |
+| t-shirts | right-side of middle drawer |
+| boxers | left-side of top drawer|
+| shorts | middle of lower drawer |
+| pants | left-side of lower drawer |
+| socks | middle of top drawer |
+| dress shirts | armoire |
+ 
+Alternate Scenario: Washer Becomes Unlevel
+As an OCD person / control freak
+I want to wash my dirty clothes myself
+So that my clothes are not comingled with others
+  And I have control over how the clothes are folded and put away
+
+Scenario: Load the washing machine with matching clothes by color
+Given a pile of dirty clothes   And a mix of colored and non-colored clothing itemsWhen I decide which clothes to put into the washing machine Then I separate colored and non-colored clothes    And load the matching load into the washing machine
+     And select appropriate washing cycle and temperature based on the type of clothes
+ 
+Scenario: Turn on washing machine
+Given a washing machine has been loaded and appropriate washing cycle and temperature selectedWhen I turn on washing machine Then I go make myself a cup of coffee and watch Netflix for a while
+
+© Kingsmen Software 2020
+Scenario: Unload washing machine and Load dryer
+Given a washing machine has completed washing cycle 
+   And it played a nice chime song to alert me that it is doneWhen I unload washed clothes from washing machine Then I load them into the dryer
+   And select appropriate drying cycle and temperature based on the type of clothes
+      
+Scenario: Turn on dryer
+Given a dryer machine has been loaded and appropriate washing cycle and temperature selectedWhen I turn on dryer Then I go take a nap
+
+Scenario: Unload dryer and fold clothes
+Given a dryer has completed drying cycle 
+   And it played a nice chime song to alert me that it is doneWhen I unload dried clothes from dryer Then I sort and fold them
+   And put them away into the closet
+As a responsible member of my household
+I want do a single load of laundry
+So that some very important member of my household have clean clothes to wear
+
+Scenario: Place Dirty Laundry in Hamper
+Given Laundry has been worn
+When laundry is dirtyAnd I have emptied pockets
+Then I put it into the hamper 
+ 
+Scenario: Place Clean Laundry in Hamper
+Given I am being lazy
+When I put clean clothes into hamperAnd I leave gum in pocketsAnd Mom finds out
+Then I get lecturedAnd I have to do my own laundry for a week 
+© Kingsmen Software 2020
+Scenario Properly Sort the Laundry 
+Given I have a large pile of laundry  When I load the washer by <Type> <Value>And I only put like Colors together
+And I only put like weight items together
+Then my colors won’t bleed
+And my clothes won’t be battered
+ 
+|Type     |     |Value   ||Weight|     |Towels ||Colors  |     |RED      |
+|Colors  |     |Darks   |
+|Colors  |     |Whites |
+
+Scenario Do Not sort Laundry Properly
+Given I have a large pile of laundry  When I load the washerAnd I put all types into the same load
+Then my colors will blendAnd my sweaters will pill
+And my Mom will lecture me for being lazy
+And I have to do my own laundry for a week
+Scenario Starting the Machine with correct amount of soap and correct size load
+Given I have loaded the washing machine properlyAnd I measure the soapWhen I start the washerThen my clothes will be washedAnd the soap will get rinsed 
+And the machine won’t leakAnd the machine won’t make noise
+
+As a Launderess for the house
+I want to get our clothes cleaned properly
+So that they don’t smell And don’t shrink And maintain the original color
+
+Scenario: Dirty Clothes to the Laundry Room
+Given clothes on the floor or in the clothes laundry basket
+When I pick up the clothes 
+  And I place them in the laundry basket
+  And I take the hamper to the laundry room
+Then I take the clothes out of the laundry basket
+  And sort the clothes by <color> in a pile on the floor
+  
+Example:
+| Color | 
+| Light Colored Clothes |
+| Dark Colored Clothes |
+ 
+© Kingsmen Software 2020
+Scenario Outline: Select the Water Temperature & Select the Load Size – Top Loading Semi-Automatic Washing Machine
+Given sorted clothes placed in a pile on the floor
+When I close the washing machine door
+Then I turn the knob on the top left of the washing machine to select the <water temperature> based on the <color> 
+   And I turn the knob in the middle of the washing machine to select the <washing cycle>
+   And I turn the knob on the top right of the washing machine to select the <load size>
+ 
+Example:
+| Wash Temperature | Color | 
+| Hot Water| Light Colored Clothes |
+| Cold Water| Dark Colored Clothes |
+| Washing Cycle |
+| Regular |
+| Permanent Press |
+| Delicate |
+| Load Size |
+| Small |
+| Medium |
+| High |
+Scenario: Start Adding Water to the Top Loading Semi-Automatic Washing Machine
+ based on Load Size
+Given clothes placed on a pile on the floor
+  And the wash cycle has been selected
+  And the load size has been selected
+When I push the Wash Cycle knob in
+Then the washing machine starts to fill up with water
+  And the washing machine will only fill up with water based on the <load size>
+ 
+Example:
+ 
+| Load Size |
+| Small |
+| Medium |
+| High |
+As a person with dirty clothes
+I want to wash, dry and put away my clothes 
+So that I have clean clothes to wear
+
+Scenario Outline:  Add Washing Fluids While Washing Machine is filling with water
+Given clothes placed on a pile on the floor
+  And the water temperature has been selected
+  And the wash cycle has been selected
+  And the load size has been selected
+  And the Wash Cycle knob has been pushed in
+When the washing machine is filled with 1/3 of the way with water
+Then add the <washing fluids> into the machine based on the < load size> 
+  And <color> of clothing I am going to place into the washer
+ 
+Example: 
+| Washing Fluids | Load Size | Color |
+| Detergent |Small – 1/3 cup, Medum – 2/3 cup, High – 1 cup | Lights and Darks |
+| Fabric Softner | Small – 1/3 cup, Medum – 2/3 cup, High – 1 cup | Lights and Darks |
+| Chlorine Bleach | Small – 1/3 cup, Medum – 2/3 cup, High – 1 cup | Lights Only |
+| All fabric Bleach | Small – 1/3 cup, Medum – 2/3 cup, High – 1 cup | Lights and Darks |
+ 
+
+ 
+ 
+ 
+
+© Kingsmen Software 2020
+Scenario: Add Clothes into the Washing Machine
+Given clothes placed on a pile on the floor
+  And the water temperature has been selected
+  And the wash cycle has been selected
+  And the load size has been selected
+  And the Wash Cycle knob has been pushed in
+ When the washing fluids have been added to the machine
+ Then I pick up one pile of sorted clothes from the floor and place them into the washing machine through the open lid on the top of the washing machine
+     And I close the lid
+     And the washing machine cleans the clothes 
+     And I wait for the buzzer to go off telling me the clothes are clean and ready to be placed in the dryer
+Scenario: Remove Clothes from the Washer and Place into the Dryer
+Given the washing machine buzzes indicating the clothes are clean
+ When I lift the lid
+    And pull the clothes from the washing machine out
+Then I place them in the dryer through the open dryer door
+ 
+Scenario Outline: Start the Dryer Cycle
+Given clothes placed in the dryer
+When I select my <dryer cycle>
+  And shut the dryer door
+Then the dryer will dry the clothes 
+   And I will wait for the buzzer to tell me the clothes are clean
+ 
+Example:
+| Dryer Cycle |
+| Regular |
+| Permanent Press |
+| Delicate |
+ 
+ 
+Scenario: Dryer Cycle is complete
+Given the dryer buzzer goes off
+ When I open the lid on the dryer
+   And the clothes are dry
+Then I fold the clothes that I take out of the dryer one by one 
+   And I place them into the laundry basket once folded
+ 
+Scenario: Tell the Children to put away the Laundry
+Given clean, dry, and folded laundry in a laundry basket
+When I ask one of the children to put away the folded clothes
+Then they take the laundry basket to each of the <rooms> 
+  And they put away the clothes
+ 
+Example:
+| Rooms |
+| Bedroom 1 |
+| Bedroom 2 |
+| Bedroom 3 |
+   
+ 
+Additional Features:
+Feature for Unsorted Clothes in a Semi-Automatic Washing Machine
+Feature for Sorted Clothes in an Automatic Washing Machine
+Feature for Unsorted Clothes in an Automatic Washing Machine
+
+As a person with dirty clothes
+I want to wash, dry and put away my clothes 
+So that I have clean clothes to wear … cont.
+
+Scenario: Dryer Cycle is complete
+Given the dryer buzzer goes off
+ When I open the lid on the dryer
+   And the clothes are dry
+Then I fold the clothes that I take out of the dryer one by one 
+   And I place them into the laundry basket once folded
+ 
+Scenario: Tell the Children to put away the Laundry
+Given clean, dry, and folded laundry in a laundry basket
+When I ask one of the children to put away the folded clothes
+Then they take the laundry basket to each of the <rooms> 
+  And they put away the clothes
+ 
+Example:
+| Rooms |
+| Bedroom 1 |
+| Bedroom 2 |
+| Bedroom 3 |
+© Kingsmen Software 2020
+Additional Features:
+Feature for Unsorted Clothes in a Semi-Automatic Washing Machine
+Feature for Sorted Clothes in an Automatic Washing Machine
+Feature for Unsorted Clothes in an Automatic Washing Machine
+ 
+ 
+
+As a person with dirty clothes
+I want to wash, dry and put away my clothes 
+So that I have clean clothes to wear … cont.
+
+Scenario: 
+Given I have dirty clothes
+And the washing machine is not in use
+When I load them into the washing machine
+And add laundry detergent
+And hit start button
+Then the clothes will be clean when the alarm has gone off
+ 
+ 
+
+© Kingsmen Software 2020
+Scenario:
+Given I have clean clothes that need to be dried
+And the dryer is not in use
+When I load them into the dryer
+And add a single dryer sheet
+And hit the start button
+Then the clothes will be dry when the alarm goes off
+Scenario:
+Given I have dry clothes in the dryer
+When I take them out of the dryer and fold them
+Then the clothes will be ready to wear
+
+No Description
+
+Scenario: 
+Given that I want to wear my new shirt tomorrow
+And it needs to be washed before wearing
+When I put my shirt in the washing machine
+And I put in laundry detergent
+And I set the dial to the proper wash setting And start
+And I close the lid for the washer to agitate
+Then my shirt will be clean when the wash cycle ends
+ 
+ 
+
+© Kingsmen Software 2020
+As a fashionista
+I want to wash my new shirt
+So that I can wear my new shirt tomorrow
+
+© Kingsmen Software 2020
+Scenario: Dry Clothes
+Given clean wet clothes
+   And clothes that can be dried
+    And an empty dryer
+    And the lint trap is clean
+When I put the clothes in the dryer
+   And I set the dryer to Energy Efficient 
+    And I set the Temperature to Low
+    And I press the start button
+ Then the dryer will dry my clothes
+
+
+Scenario Outline:  Put Clothes Away
+Given clean clothes ready to be put away
+When I take a <clothing type>
+    And put away in <location>
+ Then my daughter has clean clothes to wear
+ 
+Examples: 
+| Clothing Type | Location |
+| shirt | closet |
+| pants | dresser |
+| pajamas | dresser |
+| underwear | dresser |
+| socks | dresser |
+
+ 
+
+Scenario Outline:  Fold/sort Clothes
+Given dry clothes from the dryer
+    And a laundry basket
+    And clothes hangers
+When I take <clothing type> from the laundry basket
+    And <action>
+Then I have unwrinkled clothes ready to be put away
+ 
+Examples:
+| clothing type | action |
+| shirt | place on hanger |
+| pants | fold |
+| pajamas | fold |
+| underwear | fold |
+| socks | match and fold |
+ 
+
+As a parent
+I want to do laundry
+So that my daughter will have clean clothes
+Scenario:  Pre-treat Stains
+Given dirty clothes
+   And clothes with food stains
+   And laundry stain remover
+When I put the stain remover on the stain
+Then the stain is pretreated
+   And ready to be washed
+ 
+Scenario:  Wash Clothes
+Given dirty clothes
+   And any pretreated clothes
+    And an empty washing machine
+    And laundry detergent
+When I put the clothes in the washer
+   And I put a cap full of laundry detergent
+    And I set the washer to Normal Wash
+    And I set the water temp to Cold
+    And I press the start button
+ Then the washer will clean the clothes
+ 
+ 
+ 
+
+
+© Kingsmen Software 2020
+Scenario 2: Dry clothes
+Given Background
+    And Scenario 1 is complete
+When I move my clean, wet clothes from the washer to the dryer
+    And I place reusable wool dryer balls in the dryer
+    And I start the dryer with the appropriate timer
+Then my clothes run through the dryer cycle
+    And they are dry, warm, and fresh at the end of the cycle
+
+ Scenario 3: Fold or hang clothes
+Given Background
+    And Scenario 2 is complete
+When I take out the clean clothes from the dryer
+    And I fold the items that belong in a drawer or on a shelf
+    And I use a hanger for items that require hanging
+Then all of my clean, folded, and hung clothes are ready to be put away
+Scenario 4: Put away
+Given Background
+    And Scenario 3 is complete
+When I put away the folded and hanger clothes
+Then I have clean clothes ready to be worn
+    And my hamper is empty
+    And my laundry task is complete 
+
+As a hygienic human
+I want clean clothes to wear
+So that I don't repel myself or others 
+Background:
+Given I own clothes
+    And I have access to a washer and dryer
+ 
+Scenario 1: Wash clothes
+Given Background
+When my hamper is full of dirty clothes
+     And I empty my hamper into the washer
+     And I add laundry detergent
+     And I start the washer with the appropriate timer
+Then my dirty clothes run through the wash cycle
+     And they are clean at the end of the cycle
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+
+© Kingsmen Software 2020
+
+ 
+
+As a human lives in 2020
+I want to avoid corona virus
+So that my family can stay safe
+Scenario 1: I just came back from grocery store.
+Given I've been to the public space
+      And it was crowded when I shopped there
+When I'm back to home
+      And I put all dirty clothes in the machine
+      And I add laundry detergent
+      And I add 30ml Dettol antiseptic liquid
+      And I close the lid            And I set the temperature to Hot
+      And I press Start button
+Then the washer starts
+      And it starts filling with water
+
+ 
+ 
+ 
+
+
+Exercise
+Description Syntax
+
+As a website customer
+I want to see the order history
+So that I can review order details
+Acceptance Criteria Syntax
+
+Scenario: View Order Details
+Given I have placed an orderWhen I select orders menu
+Then I see a list of my orders
+Title
+
+Title: Display Orders
+Most recent order first
+Scroll if there are more
+
+
+Stories
+Stories are the secret sauce to delivering business value
+Requirements can be interpreted in different ways and stories allow for the removal of ambiguity
+Knowing who is using the software is just as important as what is being built
+It’s important to know why we are building even the smallest incremental piece of software
+Planning Poker
+Business Analysist reads user story or describes feature to estimators
+Each estimator has a deck of Planning Poker cards
+Estimators discuss the feature or story, asking questions of the Business Analyst as needed
+When fully discussed, each estimator privately selects one card to represent their estimate
+All cards revealed at the same time
+If all estimators selected the same value, that becomes the estimate
+If not, estimators discuss their estimates and reasons, especially high and low estimators
+Again, after discussion, repeat from step 4
+Planning poker is repeated until consensus is achieved or estimators decide they need additional information before they can estimate further
+
+Definition of Ready
+Criteria, as agreed on by the team, that determines when a work item is ready to be started. Required for a story to be brought into an iteration.
+
+Examples:
+Story is in system of record and traced back to the function
+Acceptance Criteria defined
+Story Point Estimates are complete
+Design is sufficiently ready
+Team understands the story
+Small enough to be completed in an iteration, including testing
+Business Value is understood
+
+Definition of Done
+Criteria, as agreed on by the team, that determines when a work item is complete. Required for a story to be accepted and a function to be released.
+
+Examples:
+Code is checked into code repository
+Unit Testing completed and documented
+Meets all Acceptance Criteria
+Demoed and accepted by Product Owner
+All Test scenarios executed successfully
+Test cases written and uploaded to tool
+Code has been reviewed and the review documented (peer review)
+System of record is fully updated
+All testing has passed, no open Sev 1 or 2 bugs
+Meets all relevant Non-Functional Requirements (NFRs)
+
+
+Blob Story and Task Updates.pptx content:
+The Kingsmen Way
+Updating Stories & Tasks
+
+February 2022
+Iteration Planning
+Iteration Planning determines the stories from the backlog that will be brought into the next iteration:
+Brings entire team together to determine velocity and capacity of iteration
+Allows the team an opportunity to validate story size and the stories ready for iteration
+Commit to completing stories in next iteration
+The team meets the first day of each iteration
+Definition of Ready
+Criteria, as agreed on by the team, that determines when a work item is ready to be started. Required for a story to be brought into an iteration.
+
+Examples:
+Story is in system of record and traced back to the function
+Acceptance Criteria defined
+Story Point Estimates are complete
+Design is sufficiently ready
+Team understands the story
+Small enough to be completed in an iteration, including testing
+Business Value is understood
+Definition of Done
+Criteria, as agreed on by the team, that determines when a work item is complete. Required for a story to be accepted and a function to be released.
+
+Examples:
+Code is checked into code repository
+Unit Testing completed and documented
+Meets all Acceptance Criteria
+Demoed and accepted by Product Owner
+All Test scenarios executed successfully
+Test cases written and uploaded to tool
+Code has been reviewed and the review documented (peer review)
+System of record is fully updated
+All testing has passed, no open Sev 1 or 2 bugs
+Meets all relevant Non-Functional Requirements (NFRs)
+Capacity Planning
+Capacity is the time, in hours, team members can commit to an iteration. Items to consider include:
+Focus factor for a full day should be 6 hours given a 5x8 work-week
+Don’t include time for vacations or holidays
+Don’t include time for work being done for other initiatives
+Sample Capacity:
+Tasking
+Tasking stories allows the team to identify the daily tasks that must be completed to meet the definition of done for a story
+Each team member that will contribute to completing the story enters that tasks required
+Includes development, testing, automated testing
+Tasks should not be more than about 6 hours
+Tasks include the hours it takes to complete
+Tasks
+Enter ALL tasks for your stories
+Confirm the story and tasks are assigned to the appropriate person
+More than one person can work on a story, but each person should have their own tasks (this is the exception rather than the rule)
+Tasks must include Original Estimate and Remaining hours
+Tasking a Story
+First day of iteration
+When you start a story put it in the active state (this can change depending on client)
+Burn down hours DAILY – update Completed hours with how many hours you have worked; update Remaining hours with how many hours you have left. Remaining is an estimate. Remaining + Completed may not = Original Estimate
+Working a Story
+Throughout the iteration
+When a story is ready for testing put it in the testing state (this can change depending on client)
+All tasks should be closed with Remaining hours at 0 and Completed hours at the number of hours it took to complete that task. Completed hours may not = Original Estimate
+Completing a Story
+Work is done
+When and how to update
+Tasking stories
+Additional considerations
+Original Estimate should not be changed after the first day of the iteration
+If all tasks have been closed and a story is returned due to issues, completed hours may be updated – but only if changes are significant
+If you are spending more than 2 minutes a day on tasks, you’re doing something wrong
+Add a daily, recurring reminder to your calendar to remind you to update your hours
+Daily Stand Up
+Daily Stand Up is a quick pull up with the entire team to review the iteration:
+Each team member should indicate what they did yesterday, what is planned for today and any impediments
+Limited to 15 minutes a day
+The team meets daily throughout the iteration (not Iteration planning day)
+
