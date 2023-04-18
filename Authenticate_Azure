@@ -1,6 +1,6 @@
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 
-account_name = "aiqueryknowledgebasb659"
-account_key = "PwD+IEPbwGFqqQbu/VW+CXppECgVlbuI+R/xjjiP8HGw7tjdoPk7AJ8hstB0ZWxJr9Ed9OmohX0V+AStio6bDA=="
+account_name = "Account Name"
+account_key = "Account Key"
 
 blob_service_client = BlobServiceClient(account_url=f"https://{account_name}.blob.core.windows.net", credential=account_key)

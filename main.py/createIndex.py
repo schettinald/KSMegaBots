@@ -70,7 +70,6 @@ with open("output.txt", "w", encoding="utf-8") as output_file:
         print(f"Blob {blob.name} content:\n{content}\n", file=output_file)
 
 load_dotenv()
-#os.environ["OPENAI_API_KEY"] = "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"
 
 api_key = os.environ["OPENAI_API_KEY"]
 
