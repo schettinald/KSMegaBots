@@ -29,9 +29,9 @@ def read_pdf_document(content_bytes):
     return text
 
 # Replace these with your storage account name, container name, and access key
-storage_account_name = "aiqueryknowledgebasb659" 
-container_name = "ks-db-test" 
-access_key = "PwD+IEPbwGFqqQbu/VW+CXppECgVlbuI+R/xjjiP8HGw7tjdoPk7AJ8hstB0ZWxJr9Ed9OmohX0V+AStio6bDA==" 
+storage_account_name = "Storage Account Name" 
+container_name = "Container Name" 
+access_key = "Access Key" 
 
  
 
